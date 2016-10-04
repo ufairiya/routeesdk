@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Routee\lib\Api\UseCase</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Routee.html">
+						Routee<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Routee.config.html">
+						config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Routee.lib.html">
+						lib<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Routee.lib.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Routee.lib.Api.Accounts.html">Accounts</a></li>
+				<li><a href="class-Routee.lib.Api.Authorization.html">Authorization</a></li>
+				<li><a href="class-Routee.lib.Api.Contacts.html">Contacts</a></li>
+				<li><a href="class-Routee.lib.Api.Messaging.html">Messaging</a></li>
+				<li><a href="class-Routee.lib.Api.Reports.html">Reports</a></li>
+				<li><a href="class-Routee.lib.Api.TwoStep.html">TwoStep</a></li>
+				<li class="active"><a href="class-Routee.lib.Api.UseCase.html">UseCase</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Routee.lib.Api.html" title="Summary of Routee\lib\Api"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class UseCase</h1>
+
+
+	<div class="description">
+	<p>Class UseCase</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
+		<b>Package:</b> Routee\lib\Api<br>
+
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.UseCase.html#20-1159" title="Go to source code">Routee/lib/Api/UseCase.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="usecase1" id="_usecase1">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_usecase1">#</a>
+		<code><a href="source-class-Routee.lib.Api.UseCase.html#29-252" title="Go to source code">usecase1</a>( )</code>
+
+		<div class="description short">
+			<p>Use Case 1:I want to get authorized with application credentials, create a contact with custom
+labels (first create the labels (one text label and one numeric label) and then use them for the
+creation of the contact), create a new group and add this contact to the group.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use Case 1:I want to get authorized with application credentials, create a contact with custom
+labels (first create the labels (one text label and one numeric label) and then use them for the
+creation of the contact), create a new group and add this contact to the group.</p>
+
+<table>
+<thead>
+<tr>
+  <th>STEPS</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+  <td>Get authorized</td>
+</tr>
+<tr>
+  <td>2.</td>
+  <td>Create a custom numeric lable named "cats"</td>
+</tr>
+<tr>
+  <td>3.</td>
+  <td>Create a custom text label named "address"</td>
+</tr>
+<tr>
+  <td>4.</td>
+  <td>Create a new contact that has 5 cats and lives at "Some address"</td>
+</tr>
+<tr>
+  <td>5.</td>
+  <td>Create a new group called "PeopleWithCats"</td>
+</tr>
+<tr>
+  <td>6.</td>
+  <td>Add the contact to the group</td>
+</tr>
+<tr>
+  <td>7.</td>
+  <td>Retrieve the details of the contact to see if the contact has the group attached to it</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>Code</p>
+
+<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'57b5b7bde4b007f5ba82952b'</span>,
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'6k6sitD5hU'</span>,
+);
+
+<span class="php-comment">// Step 1:  Get authorized</span>
+<span class="php-var">$authResponse</span> = <span class="php-keyword1">new</span> api\Authorization();
+<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization(<span class="php-var">$config</span>);
+<span class="php-var">$authResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$authResult</span>);
+
+<span class="php-comment">// Step 2:  Create a custom numeric label named &quot;cats&quot;</span>
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
+<span class="php-keyword1">array</span>(
+       <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'cats'</span>,
+       <span class="php-quote">'type'</span> =&gt; <span class="php-quote">'Number'</span>
+    )
+);
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$contactlabelResult</span> = <span class="php-var">$contactResponse</span>-&gt;createLabel(<span class="php-var">$data</span>);
+<span class="php-var">$ContactlabelDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$contactlabelResult</span>);
+
+<span class="php-comment">// Step 3:  Create a custom text label named &quot;address&quot;</span>
+<span class="php-var">$data_group_address</span> = <span class="php-keyword1">array</span>(
+    <span class="php-keyword1">array</span>(
+       <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'address'</span>,
+       <span class="php-quote">'type'</span> =&gt; <span class="php-quote">'Text'</span>
+    )
+);
+<span class="php-var">$contactlabelAddrResult</span> = <span class="php-var">$contactResponse</span>-&gt;createLabel(<span class="php-var">$data_group_address</span>);
+<span class="php-var">$contactlabelAddrDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$contactlabelAddrResult</span>);
+
+<span class="php-comment">// Step 4:  Create a new contact that has 5 cats and lives at &quot;Some Address&quot;</span>
+<span class="php-var">$data_contact</span> = <span class="php-keyword1">array</span>(
+               <span class="php-quote">'firstName'</span> =&gt; <span class="php-quote">'kesava'</span>,
+               <span class="php-quote">'lastName'</span> =&gt; <span class="php-quote">'moorthi m'</span>,
+               <span class="php-quote">'mobile'</span> =&gt; <span class="php-quote">'+919025060261'</span>,
+               <span class="php-quote">'vip'</span> =&gt; <span class="php-quote">'false'</span>,
+               <span class="php-quote">'labels'</span>=&gt; <span class="php-keyword1">array</span>(
+                     <span class="php-keyword1">array</span>(
+                        <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'cats'</span>,
+                        <span class="php-quote">'type'</span> =&gt; <span class="php-quote">'Number'</span>,
+                        <span class="php-quote">'value'</span> =&gt; <span class="php-num">5</span>,
+                     ),
+                     <span class="php-keyword1">array</span>(
+                        <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'address'</span>,
+                        <span class="php-quote">'value'</span> =&gt; <span class="php-quote">'Some Address'</span>,
+                     ),
+                )
+);
+<span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;createContacts( <span class="php-var">$data_contact</span> );
+<span class="php-var">$contactDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$contactResult</span>);
+
+<span class="php-comment">// Step 5:  Create a new group called &quot;PeopleWithCats&quot;</span>
+<span class="php-var">$group_name</span> = <span class="php-quote">'PeopleWithCats'</span>;
+<span class="php-var">$data_group</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'name'</span> =&gt; <span class="php-var">$group_name</span>,
+);
+<span class="php-var">$contactGroupResult</span> = <span class="php-var">$contactResponse</span>-&gt;createGroup(<span class="php-var">$data_group</span>);
+<span class="php-var">$contactGroupDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$contactGroupResult</span>);
+
+<span class="php-comment">// Step 6: Add the contact to the group</span>
+<span class="php-var">$data_group_name</span> = <span class="php-keyword1">array</span>(<span class="php-var">$contactDecode</span>-&gt;id);
+<span class="php-var">$contactGroupAddResult</span> = <span class="php-var">$contactResponse</span>-&gt;addContactsToGroupByName(<span class="php-var">$data_group_name</span>,<span class="php-var">$group_name</span>);
+<span class="php-var">$contactGroupContactDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$contactGroupAddResult</span>);
+
+<span class="php-comment">// Step 7:  Retrieve the details of the contact to see if the contact has the group attached to it</span>
+<span class="php-var">$contactSingleResult</span> = <span class="php-var">$contactResponse</span>-&gt;retrieveSingleContacts(<span class="php-var">$contactDecode</span>-&gt;id );
+<span class="php-var">$contactSingleResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$contactSingleResult</span>);
+
+<span class="php-keyword1">echo</span> <span class="php-quote">'&lt;pre&gt;'</span>;<span class="php-keyword2">print_r</span>(<span class="php-var">$contactSingleResultDecode</span>); <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;/pre&gt;'</span>;</pre><br>
+						<p>Response</p>
+
+<pre>Step <span class="php-num">1</span>: Get authorized - Result
+-------------------------------
+stdClass Object
+(
+    [access_token] =&gt; <span class="php-num">7</span>f93272e-a473-<span class="php-num">4257</span>-<span class="php-num">9</span>ff2-<span class="php-num">7e9</span>b3a55bb49
+    [token_type] =&gt; bearer
+    [expires_in] =&gt; <span class="php-num">3423</span>
+    [scope] =&gt; contact sms report account
+    [permissions] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; MT_ROLE_ACCOUNT_FINANCE
+            [<span class="php-num">1</span>] =&gt; MT_ROLE_SMS
+            [<span class="php-num">2</span>] =&gt; MT_ROLE_REPORT
+            [<span class="php-num">3</span>] =&gt; MT_ROLE_2STEP
+            [<span class="php-num">4</span>] =&gt; MT_ROLE_CONTACT
+        )
+)
+
+Step <span class="php-num">2</span>: Create a custom numeric label named <span class="php-quote">&quot;cats&quot;</span> - Result
+-----------------------------------------------------------
+<span class="php-keyword1">Array</span>
+(
+    [<span class="php-num">0</span>] =&gt; stdClass Object
+        (
+            [name] =&gt; cats
+            [type] =&gt; Number
+        )
+)
+
+Step <span class="php-num">3</span>: Step <span class="php-num">3</span>:  Create a custom text label named <span class="php-quote">&quot;address&quot;</span> - Result
+--------------------------------------------------------------------
+<span class="php-keyword1">Array</span>
+(
+    [<span class="php-num">0</span>] =&gt; stdClass Object
+        (
+            [name] =&gt; address
+            [type] =&gt; Text
+        )
+)
+
+Step <span class="php-num">4</span>: Create a <span class="php-keyword1">new</span> contact that has <span class="php-num">5</span> cats <span class="php-keyword1">and</span> lives at <span class="php-quote">&quot;Some Address&quot;</span> - Result
+---------------------------------------------------------------------------------
+stdClass Object
+(
+    [id] =&gt; <span class="php-num">57</span>df63d60cf2232979762d5e
+    [firstName] =&gt; kesava
+    [lastName] =&gt; moorthi m
+    [mobile] =&gt; +<span class="php-num">919025060261</span>
+    [country] =&gt; IN
+    [vip] =&gt;
+    [groups] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; All
+            [<span class="php-num">1</span>] =&gt; PeopleWithCats
+        )
+    [blacklistedServices] =&gt; <span class="php-keyword1">Array</span>
+        (
+        )
+    [labels] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; stdClass Object
+                (
+                    [name] =&gt; cats
+                    [value] =&gt; <span class="php-num">5</span>
+                    [type] =&gt; Number
+                )
+
+            [<span class="php-num">1</span>] =&gt; stdClass Object
+                (
+                    [name] =&gt; address
+                    [value] =&gt; Some Address
+                    [type] =&gt; Text
+                )
+        )
+)
+
+Step <span class="php-num">5</span>: Create a <span class="php-keyword1">new</span> group called <span class="php-quote">&quot;PeopleWithCats&quot;</span> - Result
+-----------------------------------------------------------
+stdClass Object
+(
+    [name] =&gt; PeopleWithCats
+    [size] =&gt; <span class="php-num">0</span>
+)
+
+Step <span class="php-num">6</span>: Add the contact to the group - Result
+---------------------------------------------
+stdClass Object
+(
+    [name] =&gt; PeopleWithCats
+    [size] =&gt; <span class="php-num">1</span>
+)
+
+Step <span class="php-num">7</span>: Retrieve the details of the contact to see <span class="php-keyword1">if</span> the contact has the group attached to it - Result
+--------------------------------------------------------------------------------------------------------
+stdClass Object
+(
+    [id] =&gt; <span class="php-num">57</span>df63d60cf2232979762d5e
+    [firstName] =&gt; kesava
+    [lastName] =&gt; moorthi m
+    [mobile] =&gt; +<span class="php-num">919025060261</span>
+    [country] =&gt; IN
+    [vip] =&gt;
+    [groups] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; All
+            [<span class="php-num">1</span>] =&gt; PeopleWithCats
+        )
+    [blacklistedServices] =&gt; <span class="php-keyword1">Array</span>
+        (
+        )
+    [labels] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; stdClass Object
+                (
+                    [name] =&gt; cats
+                    [value] =&gt; <span class="php-num">5</span>
+                )
+            [<span class="php-num">1</span>] =&gt; stdClass Object
+                (
+                    [name] =&gt; address
+                    [value] =&gt; Some Address
+                )
+        )
+)</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="usecase2" id="_usecase2">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_usecase2">#</a>
+		<code><a href="source-class-Routee.lib.Api.UseCase.html#253-451" title="Go to source code">usecase2</a>( )</code>
+
+		<div class="description short">
+			<p>Use Case 2:​ I want to get authorized with application credentials, send a single sms and track it
+filtered by senderId</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use Case 2:​ I want to get authorized with application credentials, send a single sms and track it
+filtered by senderId</p>
+
+<table>
+<thead>
+<tr>
+  <th>STEPS</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+  <td>Get authorized</td>
+</tr>
+<tr>
+  <td>2.</td>
+  <td>Send a single SMS to a mobile number and "To":"amdTelecom"</td>
+</tr>
+<tr>
+  <td>3.</td>
+  <td>Track your messages with filters and use fieldName: "To" and "searchTerm":"amdTelecom"\</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>code</p>
+
+<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+     <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'57b5b7bde4b007f5ba82952b'</span>,
+     <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'6k6sitD5hU'</span>,
+);
+
+<span class="php-comment">// Step 1:  Get authorized</span>
+<span class="php-var">$authResponse</span> = <span class="php-keyword1">new</span> api\Authorization();
+<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization(<span class="php-var">$config</span>);
+<span class="php-var">$authResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$authResult</span>);
+
+<span class="php-comment">// Step 2:  Send a single SMS to a mobile number and “To”:”amdTelecom”</span>
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
+    <span class="php-var">$data_sms</span> = <span class="php-keyword1">array</span>(
+        <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'Test Message- AMDTelcom Routee Api'</span>,
+        <span class="php-quote">'to'</span>=&gt; <span class="php-quote">'amdTelecom'</span>,
+        <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'kesav'</span>,
+        <span class="php-quote">'flash'</span>=&gt; <span class="php-keyword1">false</span>,
+        <span class="php-quote">'label'</span>=&gt;<span class="php-quote">'AMDTelcom Routee'</span>,
+        <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
+            <span class="php-quote">'strategy'</span> =&gt; <span class="php-quote">'OnChange'</span>,
+            <span class="php-quote">'url'</span> =&gt; <span class="php-quote">'http://www.yourserver.com/message/callback.php'</span>,
+            )
+        );
+<span class="php-var">$sendSmsResult</span> = <span class="php-var">$sms</span>-&gt;sendSingleSMS(<span class="php-var">$data_sms</span>);
+<span class="php-var">$sendSmsResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$sendSmsResult</span>);
+<span class="php-var">$data_sms_success</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'Test Message- AMDTelcom Routee Api'</span>,
+    <span class="php-quote">'to'</span>=&gt; <span class="php-quote">'919787136232'</span>,
+    <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'kesav'</span>,
+    <span class="php-quote">'flash'</span>=&gt; <span class="php-keyword1">false</span>,
+    <span class="php-quote">'label'</span>=&gt;<span class="php-quote">'AMDTelcom Routee'</span>,
+    <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-quote">'strategy'</span> =&gt; <span class="php-quote">'OnChange'</span>,
+        <span class="php-quote">'url'</span> =&gt; <span class="php-quote">'http://www.yourserver.com/message/callback.php'</span>,
+        )
+);
+<span class="php-var">$sendSmsSuccessResult</span> = <span class="php-var">$sms</span>-&gt;sendSingleSMS(<span class="php-var">$data_sms_success</span>);
+<span class="php-var">$sendSmsSuccessResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$sendSmsSuccessResult</span>);
+
+<span class="php-comment">//Step 3:  Track your messages with filters and use fieldName: &quot;To&quot; and &quot;searchTerm&quot;:&quot;amdTelecom&quot;</span>
+
+<span class="php-var">$data_filter</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'filter_param'</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-keyword1">array</span>(
+            <span class="php-quote">'fieldName'</span>  =&gt; <span class="php-quote">'to'</span>,
+            <span class="php-quote">'searchTerm'</span> =&gt; <span class="php-quote">'amdTelecom'</span>
+            )
+        ),
+
+);
+<span class="php-var">$SMSfilterResponse</span> = <span class="php-var">$sms</span>-&gt;filterMultipleSMS( <span class="php-var">$data_filter</span> );
+<span class="php-var">$SMSfilterResponseDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$SMSfilterResponse</span>);
+
+<span class="php-var">$data_filters</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'filter_param'</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-keyword1">array</span>(
+            <span class="php-quote">'fieldName'</span>  =&gt; <span class="php-quote">'to'</span>,
+            <span class="php-quote">'searchTerm'</span> =&gt; <span class="php-quote">'+917871962432'</span>
+             )
+        ),
+);
+<span class="php-var">$SMSfilterResponseB</span> = <span class="php-var">$sms</span>-&gt;filterMultipleSMS( <span class="php-var">$data_filters</span> );
+<span class="php-var">$SMSfilterResponseBDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$SMSfilterResponseB</span>);</pre><br>
+						<p>Response</p>
+
+<pre>Step <span class="php-num">1</span>: Get authorized - Result
+-------------------------------------
+stdClass Object
+(
+    [access_token] =&gt; <span class="php-num">7</span>f93272e-a473-<span class="php-num">4257</span>-<span class="php-num">9</span>ff2-<span class="php-num">7e9</span>b3a55bb49
+    [token_type] =&gt; bearer
+    [expires_in] =&gt; <span class="php-num">630</span>
+    [scope] =&gt; contact sms report account
+    [permissions] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; MT_ROLE_ACCOUNT_FINANCE
+            [<span class="php-num">1</span>] =&gt; MT_ROLE_SMS
+            [<span class="php-num">2</span>] =&gt; MT_ROLE_REPORT
+            [<span class="php-num">3</span>] =&gt; MT_ROLE_2STEP
+            [<span class="php-num">4</span>] =&gt; MT_ROLE_CONTACT
+        )
+)
+
+Step <span class="php-num">2</span> a): Send a single SMS to a mobile number <span class="php-keyword1">and</span> <span class="php-quote">&quot;To&quot;</span>:<span class="php-quote">&quot;amdTelecom&quot;</span> - Result
+----------------------------------------------------------------------------
+stdClass Object
+(
+    [code] =&gt; <span class="php-num">400000000</span>
+    [developerMessage] =&gt; Validation Error!
+    [entity] =&gt; SmsTracking
+    [properties] =&gt; stdClass Object
+        (
+            [to] =&gt; Invalid mobile number
+        )
+)
+
+Step <span class="php-num">2</span> b): Send a single SMS to a mobile number <span class="php-keyword1">and</span> <span class="php-quote">&quot;To&quot;</span>:<span class="php-quote">&quot;919787136232&quot;</span> - Result
+----------------------------------------------------------------------------
+stdClass Object
+(
+    [trackingId] =&gt; <span class="php-num">1</span>fd5355b-<span class="php-num">4963</span>-<span class="php-num">495e-8208-</span>eb93dda8d124
+    [status] =&gt; Queued
+    [createdAt] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T07:<span class="php-num">54</span>:<span class="php-num">50.95</span>Z
+    [from] =&gt; kesav
+    [to] =&gt; +<span class="php-num">919787136232</span>
+    [body] =&gt; Test Message- AMDTelcom Routee Api
+    [bodyAnalysis] =&gt; stdClass Object
+        (
+            [parts] =&gt; <span class="php-num">1</span>
+            [unicode] =&gt;
+            [characters] =&gt; <span class="php-num">34</span>
+        )
+    [flash] =&gt;
+    [callback] =&gt; stdClass Object
+        (
+            [url] =&gt; http:<span class="php-comment">//www.yourserver.com/message/callback.php</span>
+            [strategy] =&gt; OnChange
+        )
+    [label] =&gt; AMDTelcom Routee
+)
+
+Step <span class="php-num">3</span> a): Track your messages with filters <span class="php-keyword1">and</span> <span class="php-keyword1">use</span> fieldName: <span class="php-quote">&quot;To&quot;</span> <span class="php-keyword1">and</span> <span class="php-quote">&quot;searchTerm&quot;</span>:<span class="php-quote">&quot;amdTelecom&quot;</span> - Result
+-------------------------------------------------------------------------------------------------------------------
+stdClass Object
+(
+    [content] =&gt; <span class="php-keyword1">Array</span>
+        (
+        )
+    [totalPages] =&gt; <span class="php-num">0</span>
+    [totalElements] =&gt; <span class="php-num">0</span>
+    [last] =&gt; <span class="php-num">1</span>
+    [numberOfElements] =&gt; <span class="php-num">0</span>
+    [first] =&gt; <span class="php-num">1</span>
+    [size] =&gt; <span class="php-num">20</span>
+    [number] =&gt; <span class="php-num">0</span>
+)
+
+Step <span class="php-num">3</span> b): Track your messages with filters <span class="php-keyword1">and</span> <span class="php-keyword1">use</span> fieldName: <span class="php-quote">&quot;To&quot;</span> <span class="php-keyword1">and</span> <span class="php-quote">&quot;searchTerm&quot;</span>:<span class="php-quote">&quot;917871962432&quot;</span> - Result
+-------------------------------------------------------------------------------------------------------------------
+stdClass Object
+(
+    [content] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; stdClass Object
+                (
+                    [smsId] =&gt; <span class="php-num">9742</span>aef4-dbef-<span class="php-num">4b</span>d8-abde-bccf3f45ad11
+                    [messageId] =&gt; <span class="php-num">3</span>da376a8-<span class="php-num">943</span>a-<span class="php-num">4</span>dc0-a509-<span class="php-num">2169</span>af8a4897
+                    [to] =&gt; +<span class="php-num">917871962432</span>
+                    [groups] =&gt; <span class="php-keyword1">Array</span>
+                        (
+                        )
+                    [country] =&gt; IN
+                    [operator] =&gt; Airtel (Bharti Airtel)
+                    [status] =&gt; stdClass Object
+                        (
+                            [status] =&gt; Delivered
+                            [<span class="php-keyword2">date</span>] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T06:<span class="php-num">46</span>:<span class="php-num">33</span>Z
+                        )
+                    [body] =&gt; Your code is <span class="php-num">2622</span>
+                    [applicationName] =&gt; php
+                    [originatingService] =&gt; TwoStep
+                    [latency] =&gt; <span class="php-num">3</span>
+                    [parts] =&gt; <span class="php-num">1</span>
+                    [price] =&gt; <span class="php-num">0.08</span>
+                    [from] =&gt; verify
+                    [direction] =&gt; Outbound
+                )
+     ..........
+        )
+    [totalPages] =&gt; <span class="php-num">1</span>
+    [totalElements] =&gt; <span class="php-num">11</span>
+    [last] =&gt; <span class="php-num">1</span>
+    [numberOfElements] =&gt; <span class="php-num">11</span>
+    [first] =&gt; <span class="php-num">1</span>
+    [size] =&gt; <span class="php-num">20</span>
+    [number] =&gt; <span class="php-num">0</span>
+)</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="usecase3" id="_usecase3">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_usecase3">#</a>
+		<code><a href="source-class-Routee.lib.Api.UseCase.html#452-791" title="Go to source code">usecase3</a>( )</code>
+
+		<div class="description short">
+			<p>Use Case 3: ​I want to send an SMS campaign with campaign callback to one of my contacts
+and a recipient, retrieve its details and track its messages.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use Case 3: ​I want to send an SMS campaign with campaign callback to one of my contacts
+and a recipient, retrieve its details and track its messages.</p>
+
+<table>
+<thead>
+<tr>
+  <th>STEPS</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+  <td>Get authorized</td>
+</tr>
+<tr>
+  <td>2.</td>
+  <td>Create a contact</td>
+</tr>
+<tr>
+  <td>3.</td>
+  <td>Send a campaign to this contact and an additional recipient. Make sure you add campaign callback details.</td>
+</tr>
+<tr>
+  <td>4.</td>
+  <td>Make sure you receive campaign callback for the campaign you just sent.</td>
+</tr>
+<tr>
+  <td>5.</td>
+  <td>Retrieve the details of the campaign (use the https://connect.routee.net/campaigns/{trackingId ​ }  ​ endpoint)</td>
+</tr>
+<tr>
+  <td>6.</td>
+  <td>Track the messages of the campaign to see if they were both delivered.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>code</p>
+
+<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'57b5b7bde4b007f5ba82952b'</span>,
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'6k6sitD5hU'</span>,
+);
+
+<span class="php-comment">// Step 1:  Get authorized</span>
+<span class="php-var">$authResponse</span> = <span class="php-keyword1">new</span> api\Authorization();
+<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization(<span class="php-var">$config</span>);
+<span class="php-var">$authResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$authResult</span>);
+
+<span class="php-comment">// Step 2:  Create a contact</span>
+<span class="php-var">$data_contact</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'firstName'</span> =&gt; <span class="php-quote">'Gokul'</span>,
+    <span class="php-quote">'lastName'</span> =&gt; <span class="php-quote">'kumar statllioni'</span>,
+    <span class="php-quote">'mobile'</span> =&gt; <span class="php-quote">'+919787136232'</span>,
+    <span class="php-quote">'vip'</span> =&gt; <span class="php-quote">'false'</span>,
+);
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;createContacts( <span class="php-var">$data_contact</span> );
+<span class="php-var">$contactDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$contactResult</span>);
+
+<span class="php-comment">// Step 3:  Send a campaign to this contact and an additional recipient. Make sure you add campaign callback details</span>
+
+<span class="php-var">$data_camp</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'Hi [~firstName] Test Message- stallioni Routee Api'</span>,
+    <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'919600951898'</span>,
+    <span class="php-quote">'contacts'</span>=&gt;<span class="php-keyword1">array</span>(<span class="php-var">$contactDecode</span>-&gt;id),
+    <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-quote">&quot;strategy&quot;</span> =&gt; <span class="php-quote">&quot;OnChange&quot;</span>,
+        <span class="php-quote">&quot;url&quot;</span>=&gt;<span class="php-quote">&quot;http://www.yourserver.com/message/callback.php&quot;</span>
+        ),
+    <span class="php-quote">'flash'</span> =&gt; <span class="php-keyword1">false</span>,
+    <span class="php-quote">'smsCallback'</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-quote">&quot;strategy&quot;</span> =&gt; <span class="php-quote">&quot;OnChange&quot;</span>,
+        <span class="php-quote">&quot;url&quot;</span>=&gt;<span class="php-quote">&quot;http://www.yourserver.com/message/callback.php&quot;</span>
+        ),
+    <span class="php-quote">'campaignName'</span> =&gt; <span class="php-quote">'API-'</span>.<span class="php-keyword2">time</span>(),
+    <span class="php-quote">'to'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'+917871962432'</span>),
+    <span class="php-quote">'fallbackValues'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'firstName'</span>=&gt;<span class="php-quote">'Gokul'</span>,<span class="php-quote">'firstName'</span>=&gt;<span class="php-quote">'Subash'</span>),
+);
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
+<span class="php-var">$sendCampResult</span> = <span class="php-var">$sms</span>-&gt;sendCampaign(<span class="php-var">$data_camp</span>);
+<span class="php-var">$sendCampResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$sendCampResult</span>);
+
+<span class="php-comment">// Step 4: Make sure you receive campaign callback for the campaign you just sent.</span>
+
+ callback.php
+ ------------
+ <span class="php-var">$webhookContent</span> = <span class="php-quote">''</span>;
+ <span class="php-var">$webhook</span> = <span class="php-keyword2">fopen</span>(<span class="php-quote">'php://input'</span> , <span class="php-quote">'rb'</span>);
+ <span class="php-keyword1">while</span> (!<span class="php-keyword2">feof</span>(<span class="php-var">$webhook</span>)) {
+     <span class="php-var">$webhookContent</span> .= <span class="php-keyword2">fread</span>(<span class="php-var">$webhook</span>, <span class="php-num">4096</span>);
+     }
+ <span class="php-keyword2">fclose</span>(<span class="php-var">$webhook</span>);
+ <span class="php-keyword1">echo</span> <span class="php-var">$webhookContent</span>;
+
+<span class="php-comment">// Step 5: Retrieve the details of the campaign (use the https://connect.routee.net/campaigns/{trackingId} endpoint)</span>
+<span class="php-comment">// Step 6: Track the messages of the campaign to see if they were both delivered</span>
+<span class="php-var">$campaignTrackingId</span> = <span class="php-var">$sendCampResultDecode</span>-&gt;trackingId;
+<span class="php-var">$param</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'page'</span>=&gt;<span class="php-quote">'0'</span> );
+<span class="php-var">$campaignTrackingResponse</span> = <span class="php-var">$sms</span>-&gt;trackCampaignMultiSMS( <span class="php-var">$campaignTrackingId</span>,<span class="php-var">$param</span> );
+<span class="php-var">$campaignTrackingDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$campaignTrackingResponse</span>);
+<span class="php-keyword1">echo</span> <span class="php-quote">'&lt;pre&gt;'</span>;
+<span class="php-keyword2">print_r</span>(<span class="php-var">$campaignTrackingDecode</span>);
+<span class="php-keyword1">exit</span>;</pre><br>
+						<p>Response</p>
+
+<pre>Step <span class="php-num">1</span>: Get authorized - Result
+-------------------------------------
+stdClass Object
+(
+    [access_token] =&gt; <span class="php-num">8029</span>f88d-ce61-<span class="php-num">4b87</span>-b2be-<span class="php-num">1260</span>d1b605a0
+    [token_type] =&gt; bearer
+    [expires_in] =&gt; <span class="php-num">3599</span>
+    [scope] =&gt; contact sms report account
+    [permissions] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; MT_ROLE_ACCOUNT_FINANCE
+            [<span class="php-num">1</span>] =&gt; MT_ROLE_SMS
+            [<span class="php-num">2</span>] =&gt; MT_ROLE_REPORT
+            [<span class="php-num">3</span>] =&gt; MT_ROLE_2STEP
+            [<span class="php-num">4</span>] =&gt; MT_ROLE_CONTACT
+        )
+)
+
+Step <span class="php-num">2</span>: Create a contact - Result
+-------------------------------------
+stdClass Object
+(
+    [id] =&gt; <span class="php-num">57</span>df6bd40cf2232979762e18
+    [firstName] =&gt; Gokul
+    [lastName] =&gt; kumar statllioni
+    [mobile] =&gt; +<span class="php-num">919787136232</span>
+    [country] =&gt; IN
+    [vip] =&gt;
+    [groups] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; All
+            [<span class="php-num">1</span>] =&gt; NotListed
+        )
+    [blacklistedServices] =&gt; <span class="php-keyword1">Array</span>
+        (
+        )
+    [labels] =&gt; <span class="php-keyword1">Array</span>
+        (
+        )
+)
+Step <span class="php-num">3</span>: Send a campaign to this contact <span class="php-keyword1">and</span> an additional recipient. Make sure you add campaign callback details - Result
+------------------------------------------------------------------------------------------------------------------
+stdClass Object
+(
+    [campaignName] =&gt; API-<span class="php-num">1474276611</span>
+    [trackingId] =&gt; <span class="php-num">941</span>c7c3f-c45f-<span class="php-num">4</span>d35-<span class="php-num">9739</span>-<span class="php-num">6</span>c67f06c5228
+    [type] =&gt; Sms
+    [state] =&gt; Queued
+    [createdAt] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">16</span>:<span class="php-num">53.344</span>Z
+    [respectQuietHours] =&gt;
+    [from] =&gt; <span class="php-num">919600951898</span>
+    [to] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; +<span class="php-num">917871962432</span>
+        )
+    [contacts] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; <span class="php-num">57</span>df6bd40cf2232979762e18
+        )
+    [body] =&gt; Hi [~firstName] Test Message- stallioni Routee Api
+    [smsAnalysis] =&gt; stdClass Object
+        (
+            [numberOfRecipients] =&gt; <span class="php-num">2</span>
+            [recipientsPerCountry] =&gt; stdClass Object
+                (
+                    [IN] =&gt; <span class="php-num">2</span>
+                )
+            [recipientCountries] =&gt; stdClass Object
+                (
+                    [+<span class="php-num">917871962432</span>] =&gt; IN
+                )
+            [contacts] =&gt; stdClass Object
+                (
+                    [<span class="php-num">57</span>df6bd40cf2232979762e18] =&gt; stdClass Object
+                        (
+                            [recipient] =&gt; +<span class="php-num">919787136232</span>
+                            [recipientCountry] =&gt; IN
+                            [blacklisted] =&gt;
+                        )
+                )
+            [recipientsPerGroup] =&gt; stdClass Object
+                (
+                )
+            [totalInGroups] =&gt; <span class="php-num">0</span>
+            [bodyAnalysis] =&gt; stdClass Object
+                (
+                    [parts] =&gt; <span class="php-num">1</span>
+                    [unicode] =&gt;
+                    [characters] =&gt; <span class="php-num">50</span>
+                )
+        )
+    [flash] =&gt;
+    [fallbackValues] =&gt; stdClass Object
+        (
+            [firstName] =&gt; Subash
+        )
+    [statuses] =&gt; stdClass Object
+        (
+            [Queued] =&gt; <span class="php-num">0</span>
+            [Sent] =&gt; <span class="php-num">0</span>
+            [Failed] =&gt; <span class="php-num">0</span>
+            [Delivered] =&gt; <span class="php-num">0</span>
+            [Undelivered] =&gt; <span class="php-num">0</span>
+        )
+    [callback] =&gt; stdClass Object
+        (
+            [url] =&gt; http:<span class="php-comment">//www.yourserver.com/message/callback.php</span>
+            [strategy] =&gt; OnChange
+        )
+    [cost] =&gt; <span class="php-num">0</span>
+    [totalMessages] =&gt; <span class="php-num">2</span>
+)
+
+Step <span class="php-num">4</span>: campaign callback  - Result
+------------------------------------------------------------------------------------------------------------------
+{<span class="php-quote">&quot;messageId&quot;</span>:<span class="php-quote">&quot;9571ef84-6e34-4601-ba3c-7a5748bc8e7f&quot;</span>,<span class="php-quote">&quot;campaignTrackingId&quot;</span>:<span class="php-quote">&quot;941c7c3f-c45f-4d35-9739-6c67f06c5228&quot;</span>,<span class="php-quote">&quot;to&quot;</span>:<span class="php-quote">&quot;+919787136232&quot;</span>,<span class="php-quote">&quot;from&quot;</span>:<span class="php-quote">&quot;919600951898&quot;</span>,<span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;IN&quot;</span>,<span class="php-quote">&quot;operator&quot;</span>:<span class="php-quote">&quot;Vodafone&quot;</span>,<span class="php-quote">&quot;groups&quot;</span>:[],<span class="php-quote">&quot;campaignName&quot;</span>:<span class="php-quote">&quot;API-1474276611&quot;</span>,<span class="php-quote">&quot;status&quot;</span>:{<span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;Queued&quot;</span>,<span class="php-quote">&quot;updatedDate&quot;</span>:<span class="php-quote">&quot;2016-09-19T09:16:54Z&quot;</span>},<span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;Hi Gokul Test Message- stallioni Routee Api&quot;</span>,<span class="php-quote">&quot;applicationName&quot;</span>:<span class="php-quote">&quot;default&quot;</span>,<span class="php-quote">&quot;latency&quot;</span>:<span class="php-num">0</span>,<span class="php-quote">&quot;parts&quot;</span>:<span class="php-num">1</span>,<span class="php-quote">&quot;price&quot;</span>:<span class="php-num">0.00600000</span>,<span class="php-quote">&quot;direction&quot;</span>:<span class="php-quote">&quot;Outbound&quot;</span>,<span class="php-quote">&quot;originatingService&quot;</span>:<span class="php-quote">&quot;Sms&quot;</span>}
+{<span class="php-quote">&quot;messageId&quot;</span>:<span class="php-quote">&quot;6ab6a203-bb5e-4cb6-964c-bd3e3fa1602a&quot;</span>,<span class="php-quote">&quot;campaignTrackingId&quot;</span>:<span class="php-quote">&quot;941c7c3f-c45f-4d35-9739-6c67f06c5228&quot;</span>,<span class="php-quote">&quot;to&quot;</span>:<span class="php-quote">&quot;+917871962432&quot;</span>,<span class="php-quote">&quot;from&quot;</span>:<span class="php-quote">&quot;919600951898&quot;</span>,<span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;IN&quot;</span>,<span class="php-quote">&quot;operator&quot;</span>:<span class="php-quote">&quot;Airtel (Bharti Airtel)&quot;</span>,<span class="php-quote">&quot;groups&quot;</span>:[],<span class="php-quote">&quot;campaignName&quot;</span>:<span class="php-quote">&quot;API-1474276611&quot;</span>,<span class="php-quote">&quot;status&quot;</span>:{<span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;Sent&quot;</span>,<span class="php-quote">&quot;updatedDate&quot;</span>:<span class="php-quote">&quot;2016-09-19T09:16:54Z&quot;</span>},<span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;Hi Subash Test Message- stallioni Routee Api&quot;</span>,<span class="php-quote">&quot;applicationName&quot;</span>:<span class="php-quote">&quot;default&quot;</span>,<span class="php-quote">&quot;latency&quot;</span>:<span class="php-num">0</span>,<span class="php-quote">&quot;parts&quot;</span>:<span class="php-num">1</span>,<span class="php-quote">&quot;price&quot;</span>:<span class="php-num">0.00600000</span>,<span class="php-quote">&quot;direction&quot;</span>:<span class="php-quote">&quot;Outbound&quot;</span>,<span class="php-quote">&quot;originatingService&quot;</span>:<span class="php-quote">&quot;Sms&quot;</span>}
+
+Step <span class="php-num">5</span>: Retrieve the details of the campaign - Result
+------------------------------------------------------------------------------------------------------------------
+stdClass Object
+(
+    [content] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; stdClass Object
+                (
+                    [smsId] =&gt; <span class="php-num">89</span>d475e1-<span class="php-num">7560</span>-<span class="php-num">4713</span>-a70e-ec9be722cf0d
+                    [messageId] =&gt; <span class="php-num">6</span>ab6a203-bb5e-<span class="php-num">4</span>cb6-<span class="php-num">964</span>c-bd3e3fa1602a
+                    [to] =&gt; +<span class="php-num">917871962432</span>
+                    [groups] =&gt; <span class="php-keyword1">Array</span>
+                        (
+                        )
+                    [country] =&gt; IN
+                    [operator] =&gt; Airtel (Bharti Airtel)
+                    [status] =&gt; stdClass Object
+                        (
+                            [status] =&gt; Sent
+                            [<span class="php-keyword2">date</span>] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">16</span>:<span class="php-num">54</span>Z
+                        )
+                    [body] =&gt; Hi Subash Test Message- stallioni Routee Api
+                    [campaignName] =&gt; API-<span class="php-num">1474276611</span>
+                    [applicationName] =&gt; <span class="php-keyword1">default</span>
+                    [originatingService] =&gt; Sms
+                    [latency] =&gt; <span class="php-num">0</span>
+                    [parts] =&gt; <span class="php-num">1</span>
+                    [price] =&gt; <span class="php-num">0.006</span>
+                    [from] =&gt; <span class="php-num">919600951898</span>
+                    [direction] =&gt; Outbound
+                )
+            [<span class="php-num">1</span>] =&gt; stdClass Object
+                (
+                    [smsId] =&gt; ff17fb17-<span class="php-num">19</span>d8-<span class="php-num">43e</span>f-a2f4-<span class="php-num">73135203553e</span>
+                    [messageId] =&gt; <span class="php-num">9571e</span>f84-<span class="php-num">6e34-4601-</span>ba3c-<span class="php-num">7</span>a5748bc8e7f
+                    [to] =&gt; +<span class="php-num">919787136232</span>
+                    [groups] =&gt; <span class="php-keyword1">Array</span>
+                        (
+                        )
+                    [country] =&gt; IN
+                    [operator] =&gt; Vodafone
+                    [status] =&gt; stdClass Object
+                        (
+                            [status] =&gt; Sent
+                            [<span class="php-keyword2">date</span>] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">16</span>:<span class="php-num">54</span>Z
+                        )
+                    [body] =&gt; Hi Gokul Test Message- stallioni Routee Api
+                    [campaignName] =&gt; API-<span class="php-num">1474276611</span>
+                    [applicationName] =&gt; <span class="php-keyword1">default</span>
+                    [originatingService] =&gt; Sms
+                    [latency] =&gt; <span class="php-num">0</span>
+                    [parts] =&gt; <span class="php-num">1</span>
+                    [price] =&gt; <span class="php-num">0.006</span>
+                    [from] =&gt; <span class="php-num">919600951898</span>
+                    [direction] =&gt; Outbound
+                )
+            )
+    [totalPages] =&gt; <span class="php-num">1</span>
+    [totalElements] =&gt; <span class="php-num">2</span>
+    [last] =&gt; <span class="php-num">1</span>
+    [numberOfElements] =&gt; <span class="php-num">2</span>
+    [first] =&gt; <span class="php-num">1</span>
+    [size] =&gt; <span class="php-num">20</span>
+    [number] =&gt; <span class="php-num">0</span>
+)
+Step <span class="php-num">6</span>: Track the messages of the campaign to see <span class="php-keyword1">if</span> they were both delivered - Result
+------------------------------------------------------------------------------------------------------------------
+stdClass Object
+(
+    [content] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; stdClass Object
+                (
+                    [smsId] =&gt; <span class="php-num">89</span>d475e1-<span class="php-num">7560</span>-<span class="php-num">4713</span>-a70e-ec9be722cf0d
+                    [messageId] =&gt; <span class="php-num">6</span>ab6a203-bb5e-<span class="php-num">4</span>cb6-<span class="php-num">964</span>c-bd3e3fa1602a
+                    [to] =&gt; +<span class="php-num">917871962432</span>
+                    [groups] =&gt; <span class="php-keyword1">Array</span>
+                        (
+                        )
+                    [country] =&gt; IN
+                    [operator] =&gt; Airtel (Bharti Airtel)
+                    [status] =&gt; stdClass Object
+                        (
+                            [status] =&gt; Sent
+                            [<span class="php-keyword2">date</span>] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">16</span>:<span class="php-num">54</span>Z
+                        )
+                    [body] =&gt; Hi Subash Test Message- stallioni Routee Api
+                    [campaignName] =&gt; API-<span class="php-num">1474276611</span>
+                    [applicationName] =&gt; <span class="php-keyword1">default</span>
+                    [originatingService] =&gt; Sms
+                    [latency] =&gt; <span class="php-num">0</span>
+                    [parts] =&gt; <span class="php-num">1</span>
+                    [price] =&gt; <span class="php-num">0.006</span>
+                    [from] =&gt; <span class="php-num">919600951898</span>
+                    [direction] =&gt; Outbound
+                )
+            [<span class="php-num">1</span>] =&gt; stdClass Object
+                (
+                    [smsId] =&gt; ff17fb17-<span class="php-num">19</span>d8-<span class="php-num">43e</span>f-a2f4-<span class="php-num">73135203553e</span>
+                    [messageId] =&gt; <span class="php-num">9571e</span>f84-<span class="php-num">6e34-4601-</span>ba3c-<span class="php-num">7</span>a5748bc8e7f
+                    [to] =&gt; +<span class="php-num">919787136232</span>
+                    [groups] =&gt; <span class="php-keyword1">Array</span>
+                        (
+                        )
+                    [country] =&gt; IN
+                    [operator] =&gt; Vodafone
+                    [status] =&gt; stdClass Object
+                        (
+                            [status] =&gt; Sent
+                            [<span class="php-keyword2">date</span>] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">16</span>:<span class="php-num">54</span>Z
+                        )
+                    [body] =&gt; Hi Gokul Test Message- stallioni Routee Api
+                    [campaignName] =&gt; API-<span class="php-num">1474276611</span>
+                    [applicationName] =&gt; <span class="php-keyword1">default</span>
+                    [originatingService] =&gt; Sms
+                    [latency] =&gt; <span class="php-num">0</span>
+                    [parts] =&gt; <span class="php-num">1</span>
+                    [price] =&gt; <span class="php-num">0.006</span>
+                    [from] =&gt; <span class="php-num">919600951898</span>
+                    [direction] =&gt; Outbound
+                )
+            )
+    [totalPages] =&gt; <span class="php-num">1</span>
+    [totalElements] =&gt; <span class="php-num">2</span>
+    [last] =&gt; <span class="php-num">1</span>
+    [numberOfElements] =&gt; <span class="php-num">2</span>
+    [first] =&gt; <span class="php-num">1</span>
+    [size] =&gt; <span class="php-num">20</span>
+    [number] =&gt; <span class="php-num">0</span>
+)</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="usecase4" id="_usecase4">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_usecase4">#</a>
+		<code><a href="source-class-Routee.lib.Api.UseCase.html#792-982" title="Go to source code">usecase4</a>( )</code>
+
+		<div class="description short">
+			<p>Use Case 4: ​I want to create a scheduled campaign and then delete it. Then I want to track the
+campaign and make sure that it doesn’t exist anymore.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use Case 4: ​I want to create a scheduled campaign and then delete it. Then I want to track the
+campaign and make sure that it doesn’t exist anymore.</p>
+
+<table>
+<thead>
+<tr>
+  <th>STEPS</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+  <td>Get authorized</td>
+</tr>
+<tr>
+  <td>2.</td>
+  <td>Create a scheduled campaign for the future</td>
+</tr>
+<tr>
+  <td>3.</td>
+  <td>Using the campaign’s tracking id delete it.</td>
+</tr>
+<tr>
+  <td>4.</td>
+  <td>Track the messages of the campaign. An error should appear saying that the campaign doesn’t exist.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>Code</p>
+
+<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'57b5b7bde4b007f5ba82952b'</span>,
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'6k6sitD5hU'</span>,
+);
+
+<span class="php-comment">// Step 1:  Get authorized</span>
+
+<span class="php-var">$authResponse</span> = <span class="php-keyword1">new</span> api\Authorization();
+<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization(<span class="php-var">$config</span>);
+<span class="php-var">$authResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$authResult</span>);
+
+<span class="php-comment">// Step 2:  Create a scheduled campaign for the future</span>
+
+<span class="php-var">$data_camp</span> = <span class="php-keyword1">array</span>(
+        <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'Hi [~firstName] Test Message- stallioni Routee Api'</span>,
+        <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'kesav'</span>,
+        <span class="php-quote">'contacts'</span>=&gt;<span class="php-keyword1">array</span>(<span class="php-quote">'57df6bd40cf2232979762e18'</span>),
+        <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
+              <span class="php-quote">&quot;strategy&quot;</span> =&gt; <span class="php-quote">&quot;OnChange&quot;</span>,
+              <span class="php-quote">&quot;url&quot;</span>=&gt;<span class="php-quote">&quot;http://www.yourserver.com/message/callback.php&quot;</span>
+            ),
+        <span class="php-quote">'flash'</span> =&gt; <span class="php-keyword1">false</span>,
+        <span class="php-quote">'smsCallback'</span> =&gt; <span class="php-keyword1">array</span>(
+              <span class="php-quote">&quot;strategy&quot;</span> =&gt; <span class="php-quote">&quot;OnChange&quot;</span>,
+               <span class="php-quote">&quot;url&quot;</span>=&gt;<span class="php-quote">&quot;http://www.yourserver.com/message/callback.php&quot;</span>
+            ),
+        <span class="php-quote">'campaignName'</span> =&gt; <span class="php-quote">'API-'</span>.<span class="php-keyword2">time</span>(),
+        <span class="php-quote">'to'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'+917871962432'</span>),
+        <span class="php-quote">'scheduledDate'</span>=&gt;<span class="php-keyword2">strtotime</span>(<span class="php-quote">'+1 days'</span>),
+        <span class="php-quote">'fallbackValues'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'firstName'</span>=&gt;<span class="php-quote">'Gokul'</span>,<span class="php-quote">'firstName'</span>=&gt;<span class="php-quote">'Subash'</span>),
+    );
+
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
+<span class="php-var">$sendCampResult</span> = <span class="php-var">$sms</span>-&gt;sendCampaign(<span class="php-var">$data_camp</span>);
+<span class="php-var">$sendCampResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$sendCampResult</span>);
+
+<span class="php-comment">// Step 3: Using the campaign’s tracking id delete it</span>
+
+<span class="php-var">$campaignTrackingId</span> = <span class="php-var">$sendCampResultDecode</span>-&gt;trackingId;
+<span class="php-var">$deleteScheduledCampaignResponse</span> = <span class="php-var">$sms</span>-&gt;deleteScheduledCampaign( <span class="php-var">$campaignTrackingId</span> );
+<span class="php-var">$deleteScheduledCampaignDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$deleteScheduledCampaignResponse</span>);
+
+<span class="php-comment">// Step 4: Track the messages of the campaign to see if they were both delivered</span>
+
+<span class="php-var">$param</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'page'</span>=&gt;<span class="php-quote">'0'</span> );
+<span class="php-var">$campaignTrackingResponse</span> = <span class="php-var">$sms</span>-&gt;trackCampaignMultiSMS( <span class="php-var">$campaignTrackingId</span>,<span class="php-var">$param</span> );
+<span class="php-var">$campaignTrackingDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$campaignTrackingResponse</span>);</pre><br>
+						<p>Response</p>
+
+<pre>Step <span class="php-num">1</span>: Get authorized - Result
+-------------------------------------
+stdClass Object
+(
+    [access_token] =&gt; <span class="php-num">8029</span>f88d-ce61-<span class="php-num">4b87</span>-b2be-<span class="php-num">1260</span>d1b605a0
+    [token_type] =&gt; bearer
+    [expires_in] =&gt; <span class="php-num">3142</span>
+    [scope] =&gt; contact sms report account
+    [permissions] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; MT_ROLE_ACCOUNT_FINANCE
+            [<span class="php-num">1</span>] =&gt; MT_ROLE_SMS
+            [<span class="php-num">2</span>] =&gt; MT_ROLE_REPORT
+            [<span class="php-num">3</span>] =&gt; MT_ROLE_2STEP
+            [<span class="php-num">4</span>] =&gt; MT_ROLE_CONTACT
+        )
+
+ )
+
+Step <span class="php-num">2</span>: Create a scheduled campaign <span class="php-keyword1">for</span> the future - Result
+-----------------------------------------------------------
+stdClass Object
+(
+    [campaignName] =&gt; API-<span class="php-num">1474277055</span>
+    [trackingId] =&gt; <span class="php-num">88</span>a98a23-<span class="php-num">00</span>df-<span class="php-num">448</span>a-<span class="php-num">91</span>d7-ac5a5363f998
+    [type] =&gt; Sms
+    [state] =&gt; Scheduled
+    [createdAt] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">24</span>:<span class="php-num">28.661</span>Z
+    [respectQuietHours] =&gt;
+    [scheduledDate] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">20</span>T09:<span class="php-num">24</span>:<span class="php-num">15</span>Z
+    [from] =&gt; kesav
+    [to] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; +<span class="php-num">917871962432</span>
+        )
+
+    [contacts] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; <span class="php-num">57</span>df6bd40cf2232979762e18
+
+        )
+
+    [body] =&gt; Hi [~firstName] Test Message- stallioni Routee Api
+    [smsAnalysis] =&gt; stdClass Object
+        (
+            [numberOfRecipients] =&gt; <span class="php-num">2</span>
+            [recipientsPerCountry] =&gt; stdClass Object
+                (
+                    [IN] =&gt; <span class="php-num">2</span>
+                )
+
+            [recipientCountries] =&gt; stdClass Object
+               (
+                    [+<span class="php-num">917871962432</span>] =&gt; IN
+                )
+
+            [contacts] =&gt; stdClass Object
+                (
+                    [<span class="php-num">57</span>df6bd40cf2232979762e18] =&gt; stdClass Object
+                        (
+                            [recipient] =&gt; +<span class="php-num">919787136232</span>
+                            [recipientCountry] =&gt; IN
+                            [blacklisted] =&gt;
+                        )
+
+
+                )
+            [recipientsPerGroup] =&gt; stdClass Object
+               (
+                )
+            [totalInGroups] =&gt; <span class="php-num">0</span>
+            [bodyAnalysis] =&gt; stdClass Object
+                (
+                    [parts] =&gt; <span class="php-num">1</span>
+                    [unicode] =&gt;
+                    [characters] =&gt; <span class="php-num">50</span>
+               )
+        )
+    [flash] =&gt;
+    [fallbackValues] =&gt; stdClass Object
+        (
+            [firstName] =&gt; Subash
+        )
+    [statuses] =&gt; stdClass Object
+        (
+            [Queued] =&gt; <span class="php-num">0</span>
+            [Sent] =&gt; <span class="php-num">0</span>
+            [Failed] =&gt; <span class="php-num">0</span>
+            [Delivered] =&gt; <span class="php-num">0</span>
+            [Undelivered] =&gt; <span class="php-num">0</span>
+        )
+    [callback] =&gt; stdClass Object
+        (
+            [url] =&gt; http:<span class="php-comment">//www.yourserver.com/message/callback.php</span>
+            [strategy] =&gt; OnChange
+        )
+    [cost] =&gt; <span class="php-num">0</span>
+    [totalMessages] =&gt; <span class="php-num">2</span>
+)
+
+Step <span class="php-num">3</span>: Using the campaign’s tracking id <span class="php-keyword2">delete</span> it - Result
+------------------------------------------------------------
+
+
+Step <span class="php-num">4</span>: Track the messages of the campaign to see <span class="php-keyword1">if</span> they were both delivered - Result
+--------------------------------------------------------------------------------------
+stdClass Object
+(
+    [code] =&gt; <span class="php-num">404009001</span>
+    [developerMessage] =&gt; campaign with trackingId <span class="php-quote">'88a98a23-00df-448a-91d7-ac5a5363f998'</span> was not found!
+    [entity] =&gt; campaign
+    [property] =&gt; trackingId
+    [value] =&gt; <span class="php-num">88</span>a98a23-<span class="php-num">00</span>df-<span class="php-num">448</span>a-<span class="php-num">91</span>d7-ac5a5363f998
+)</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="usecase5" id="_usecase5">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_usecase5">#</a>
+		<code><a href="source-class-Routee.lib.Api.UseCase.html#983-1158" title="Go to source code">usecase5</a>( )</code>
+
+		<div class="description short">
+			<p>Use Case5:I want to get authorized with my application credentials,send a two-step verification,
+see its status,invalidate it and check that its status is now "Cancelled".</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use Case5:I want to get authorized with my application credentials,send a two-step verification,
+see its status,invalidate it and check that its status is now "Cancelled".</p>
+
+<table>
+<thead>
+<tr>
+  <th>STEPS</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1.</td>
+  <td>Get authorized with application credentials ( make sure your application has "Two-step Verification" service permissions)</td>
+</tr>
+<tr>
+  <td>2.</td>
+  <td>Send a two step verification to your mobile with a 5-digit code</td>
+</tr>
+<tr>
+  <td>3.</td>
+  <td>Using the verification's id view its status.It should be "Pending"</td>
+</tr>
+<tr>
+  <td>4.</td>
+  <td>Using the verification's id invalidate it.</td>
+</tr>
+<tr>
+  <td>5.</td>
+  <td>Get the code from your phone and try to confirm it.You should get an error.</td>
+</tr>
+<tr>
+  <td>6.</td>
+  <td>Using the verification's id view its status.It should be "Cancelled".</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+				<h4>Example</h4>
+				<div class="list">
+						<p>Code</p>
+
+<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'57bd7450e4b07bf187df66ed'</span>,
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'tC1XhTGae4'</span>
+);
+
+<span class="php-comment">// Step 1:  Get authorized with application credentials (make sure your application has &quot;Two­StepVerification&quot; service permissions)</span>
+<span class="php-var">$authResponse</span> = <span class="php-keyword1">new</span> api\Authorization();
+<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization(<span class="php-var">$config</span>);
+<span class="php-var">$authResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$authResult</span>);
+<span class="php-var">$premissions</span> = <span class="php-var">$authResultDecode</span>-&gt;permissions;
+
+<span class="php-comment">// Step 2:  Send a two step verification to your mobile with a 5­digit code</span>
+<span class="php-keyword1">if</span>(<span class="php-keyword2">in_array</span>(<span class="php-quote">'MT_ROLE_2STEP'</span>,<span class="php-var">$premissions</span>))
+{
+    <span class="php-var">$twostep</span> = api\TwoStep::getInstance( <span class="php-var">$config</span> );
+    <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
+        <span class="php-quote">'method'</span> =&gt; <span class="php-quote">'sms'</span>,
+        <span class="php-quote">'type'</span>   =&gt; <span class="php-quote">'code'</span>,
+        <span class="php-quote">'recipient'</span>   =&gt; <span class="php-quote">'+917871962432'</span>
+    );
+    <span class="php-var">$twostepResponse</span> = <span class="php-var">$twostep</span>-&gt;start2StepVerification(<span class="php-var">$data</span>);
+    <span class="php-var">$twostepResponseDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$twostepResponse</span>);
+}
+
+<span class="php-comment">// Step 3: Using the verification’s id view its status. It should be &quot;Pending&quot;</span>
+<span class="php-keyword1">if</span>(<span class="php-keyword1">isset</span>(<span class="php-var">$twostepResponseDecode</span>) &amp;&amp; <span class="php-var">$twostepResponseDecode</span>-&gt;status == <span class="php-quote">'Pending'</span>)
+{
+    <span class="php-keyword1">echo</span> <span class="php-quote">'True'</span>;<span class="php-keyword1">echo</span> <span class="php-quote">'&lt;br&gt;'</span>;
+}
+
+<span class="php-var">$smsTrackid</span> = <span class="php-var">$twostepResponseDecode</span>-&gt;trackingId;
+
+<span class="php-comment">// Step 4: Using the verification's id invalidate it.</span>
+<span class="php-keyword1">for</span>(<span class="php-var">$i</span>=<span class="php-num">1</span>; <span class="php-var">$i</span>&lt;=<span class="php-num">5</span>;<span class="php-var">$i</span>++){
+    <span class="php-var">$verify_data</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'answer'</span>=&gt;<span class="php-quote">'6036'</span>);
+    <span class="php-var">$verificationResult</span> = <span class="php-var">$twostep</span>-&gt;confirm2StepStatus(<span class="php-var">$verify_data</span>,<span class="php-var">$smsTrackid</span>);
+    <span class="php-var">$verificationResultDecodes</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$verificationResult</span>);
+    <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;pre&gt;'</span>;<span class="php-keyword2">print_r</span>(<span class="php-var">$verificationResultDecodes</span>);<span class="php-keyword1">echo</span> <span class="php-quote">'&lt;/pre&gt;'</span>;
+}
+
+<span class="php-comment">// Step 5: Get the code from your phone and try to confirm it. You should get an error</span>
+
+<span class="php-var">$verify_data</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'answer'</span>=&gt;<span class="php-quote">'2622'</span>);
+<span class="php-var">$verificationResult</span> = <span class="php-var">$twostep</span>-&gt;confirm2StepStatus(<span class="php-var">$verify_data</span>,<span class="php-var">$smsTrackid</span>);
+<span class="php-var">$verificationResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$verificationResult</span>);
+
+<span class="php-keyword1">if</span>(<span class="php-keyword1">isset</span>(<span class="php-var">$verificationResultDecode</span>) &amp;&amp; <span class="php-var">$verificationResultDecode</span>-&gt;developerMessage !=<span class="php-quote">''</span>)
+{
+  <span class="php-keyword1">echo</span> <span class="php-var">$verificationResultDecode</span>-&gt;developerMessage; <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;br&gt;'</span>;
+}
+
+
+<span class="php-comment">// Step 6: Using the verification’s id view its status. It should be &quot;Failed&quot;.</span>
+
+<span class="php-var">$retrieveResult</span> = <span class="php-var">$twostep</span>-&gt;retrieve2StepStatus(<span class="php-var">$smsTrackid</span>);
+<span class="php-var">$retrieveResultDecode</span> = <span class="php-keyword2">json_decode</span>(<span class="php-var">$retrieveResult</span>);
+
+<span class="php-keyword1">echo</span> <span class="php-quote">'&lt;pre&gt;'</span>; <span class="php-keyword2">print_r</span>(<span class="php-var">$retrieveResultDecode</span>); <span class="php-keyword1">echo</span> <span class="php-quote">'&lt;/pre&gt;'</span>;</pre><br>
+						<p>Response</p>
+
+<pre>Step <span class="php-num">1</span>: Get authorized - Result
+--------------------------------
+stdClass Object
+(
+    [access_token] =&gt; <span class="php-num">169</span>f7e17-fd84-<span class="php-num">46e7-</span>a808-<span class="php-num">0</span>f2f70286b2b
+    [token_type] =&gt; bearer
+    [expires_in] =&gt; <span class="php-num">3599</span>
+    [scope] =&gt; contact <span class="php-num">2</span>step sms report account
+    [permissions] =&gt; <span class="php-keyword1">Array</span>
+        (
+            [<span class="php-num">0</span>] =&gt; MT_ROLE_ACCOUNT_FINANCE
+            [<span class="php-num">1</span>] =&gt; MT_ROLE_SMS
+            [<span class="php-num">2</span>] =&gt; MT_ROLE_REPORT
+            [<span class="php-num">3</span>] =&gt; MT_ROLE_2STEP
+            [<span class="php-num">4</span>] =&gt; MT_ROLE_CONTACT
+
+
+        )
+)
+
+Step <span class="php-num">1</span> a) : Listout Permissions - Result
+-----------------------------------------
+<span class="php-keyword1">Array</span>
+(
+
+    [<span class="php-num">0</span>] =&gt; MT_ROLE_ACCOUNT_FINANCE
+    [<span class="php-num">1</span>] =&gt; MT_ROLE_SMS
+    [<span class="php-num">2</span>] =&gt; MT_ROLE_REPORT
+    [<span class="php-num">3</span>] =&gt; MT_ROLE_2STEP
+    [<span class="php-num">4</span>] =&gt; MT_ROLE_CONTACT
+)
+
+
+Step <span class="php-num">2</span>: Send a two step verification to your mobile with a <span class="php-num">5</span>­digit code - Result
+-------------------------------------------------------------------------------
+stdClass Object
+(
+    [trackingId] =&gt; <span class="php-num">0</span>ac530cb-<span class="php-num">5</span>d48-<span class="php-num">4b</span>ac-<span class="php-num">9</span>f10-<span class="php-num">61860374</span>f213
+    [status] =&gt; Pending
+    [updatedAt] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">29</span>:<span class="php-num">39.155</span>Z
+)
+
+Step <span class="php-num">3</span>: Using the verification<span class="php-quote">'s id view its status. It should be &quot;Pending&quot; - Result
+------------------------------------------------------------------------------------
+
+True
+
+Step 4: Using the verification'</span>s id invalidate it - Result
+----------------------------------------------------------------
+stdClass Object
+(
+    [code] =&gt; <span class="php-num">400011005</span>
+    [developerMessage] =&gt; Wrong Answer!
+)
+stdClass Object
+(
+    [code] =&gt; <span class="php-num">400011005</span>
+    [developerMessage] =&gt; Wrong Answer!
+)
+stdClass Object
+(
+    [code] =&gt; <span class="php-num">400011005</span>
+    [developerMessage] =&gt; Wrong Answer!
+)
+stdClass Object
+(
+    [code] =&gt; <span class="php-num">400011005</span>
+    [developerMessage] =&gt; Wrong Answer!
+)
+stdClass Object
+(
+    [code] =&gt; <span class="php-num">400011002</span>
+    [developerMessage] =&gt; Invalid Status
+
+)
+
+Step <span class="php-num">4</span>: Get the code from your phone <span class="php-keyword1">and</span> <span class="php-keyword1">try</span> to confirm it. You should get an error- Result
+-------------------------------------------------------------------------------------------
+Invalid Status
+
+Step <span class="php-num">6</span>: Using the verification’s id view its status. It should be <span class="php-quote">&quot;Failed&quot;</span> - Result
+-----------------------------------------------------------------------------------
+stdClass Object
+(
+    [trackingId] =&gt; <span class="php-num">0</span>ac530cb-<span class="php-num">5</span>d48-<span class="php-num">4b</span>ac-<span class="php-num">9</span>f10-<span class="php-num">61860374</span>f213
+    [status] =&gt; Failed
+    [updatedAt] =&gt; <span class="php-num">2016</span>-<span class="php-num">09</span>-<span class="php-num">19</span>T09:<span class="php-num">29</span>:<span class="php-num">44.223</span>Z
+
+)</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

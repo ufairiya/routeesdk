@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Routee\lib\Api\Accounts</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Routee.html">
+						Routee<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Routee.config.html">
+						config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Routee.lib.html">
+						lib<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Routee.lib.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Routee.lib.Api.Accounts.html">Accounts</a></li>
+				<li><a href="class-Routee.lib.Api.Authorization.html">Authorization</a></li>
+				<li><a href="class-Routee.lib.Api.Contacts.html">Contacts</a></li>
+				<li><a href="class-Routee.lib.Api.Messaging.html">Messaging</a></li>
+				<li><a href="class-Routee.lib.Api.Reports.html">Reports</a></li>
+				<li><a href="class-Routee.lib.Api.TwoStep.html">TwoStep</a></li>
+				<li><a href="class-Routee.lib.Api.UseCase.html">UseCase</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Routee.lib.Api.html" title="Summary of Routee\lib\Api"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Accounts</h1>
+
+
+	<div class="description">
+	<p>Class Accounts</p>
+
+<p>The account class used to get the information about balance,routee services etc.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.Accounts.html#23-431" title="Go to source code">Routee/lib/Api/Accounts.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#72-109" title="Go to source code">__construct</a>( <span> <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Default Constructor
+This function used to get the access token from the authenticate the user credentials</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Default Constructor
+This function used to get the access token from the authenticate the user credentials</p>
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInstance" id="_getInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstance">#</a>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#112-121" title="Go to source code">getInstance</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Static function which reurns new TwoStep Object.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Static function which reurns new TwoStep Object.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br>JSON
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAccountBal" id="_retrieveAccountBal">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAccountBal">#</a>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#150-191" title="Go to source code">retrieveAccountBal</a>( )</code>
+
+		<div class="description short">
+			<p>returns your available balance.
+Routee will return the amount in the currency you have defined in your account's settings.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>returns your available balance.
+Routee will return the amount in the currency you have defined in your account's settings.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON that indicates the account balance, or throws Exception</p>
+
+<pre>{
+  <span class="php-quote">&quot;balance&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;currency&quot;</span>:{
+    <span class="php-quote">&quot;code&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+    <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+    <span class="php-quote">&quot;sign&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   }
+ }</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>balance</td>
+  <td>The amount of the available balance.</td>
+</tr>
+<tr>
+  <td>currency</td>
+  <td>Contains information about the accounts selected currency.</td>
+</tr>
+<tr>
+  <td>currency.code</td>
+  <td>The currency code in ISO 4217 format.</td>
+</tr>
+<tr>
+  <td>currency.name</td>
+  <td>The currency name in english.</td>
+</tr>
+<tr>
+  <td>currency.sign</td>
+  <td>The sign of the currency.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-keyword1">echo</span> <span class="php-var">$account</span>-&gt;retrieveAccountBal();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveRouteeServices" id="_retrieveRouteeServices">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveRouteeServices">#</a>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#194-274" title="Go to source code">retrieveRouteeServices</a>( <span>array <var>$param</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>retrieve all the prices for all Routee services, you can also specify various filters in order to retrieve only
+the prices that are of interest.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retrieve all the prices for all Routee services, you can also specify various filters in order to retrieve only
+the prices that are of interest.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$param</var>,…</dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>mcc</td>
+  <td>Yes</td>
+  <td>The mcc to filter price results</td>
+  <td>202</td>
+</tr>
+<tr>
+  <td>mnc</td>
+  <td>Yes</td>
+  <td>The mnc to filter price results</td>
+  <td>01</td>
+</tr>
+<tr>
+  <td>service</td>
+  <td>Yes</td>
+  <td>The service to filter price results (it can accept Sms, TwoStep, Lookup)</td>
+  <td>Sms</td>
+</tr>
+<tr>
+  <td>currency</td>
+  <td>Yes</td>
+  <td>The currency code to retrieve the prices</td>
+  <td>EUR</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON that indicates the routee services, or throws Exception</p>
+
+<pre>{
+     <span class="php-quote">&quot;sms&quot;</span>:[
+        {
+           <span class="php-quote">&quot;mcc&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+           <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+           <span class="php-quote">&quot;iso&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+           <span class="php-quote">&quot;networks&quot;</span>:[
+              {
+                 <span class="php-quote">&quot;network&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+                 <span class="php-quote">&quot;mnc&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+                 <span class="php-quote">&quot;price&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+              }
+           ]
+        }
+     ],
+     <span class="php-quote">&quot;lookup&quot;</span>:{
+        <span class="php-quote">&quot;PerRequest&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+     },
+     <span class="php-quote">&quot;twoStep&quot;</span>:{
+        <span class="php-quote">&quot;SmsVerification&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+        <span class="php-quote">&quot;VoiceVerification&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+     },
+     <span class="php-quote">&quot;currency&quot;</span>:{
+        <span class="php-quote">&quot;code&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+        <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+        <span class="php-quote">&quot;sign&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+     }
+  }</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>sms</td>
+  <td>Contains all the prices for sms service (per mcc and mnc).</td>
+</tr>
+<tr>
+  <td>sms.mcc</td>
+  <td>The mobile country code.</td>
+</tr>
+<tr>
+  <td>sms.country</td>
+  <td>The country name.</td>
+</tr>
+<tr>
+  <td>sms.iso</td>
+  <td>The ISO-3166 alpha 2 code of the country.</td>
+</tr>
+<tr>
+  <td>sms.networks</td>
+  <td>All the networks of the country each containing the price.</td>
+</tr>
+<tr>
+  <td>sms.networks.network</td>
+  <td>The network name.</td>
+</tr>
+<tr>
+  <td>sms.networks.mnc</td>
+  <td>The mobile network code.</td>
+</tr>
+<tr>
+  <td>sms.networks.price</td>
+  <td>The price for the specific network.</td>
+</tr>
+<tr>
+  <td>twoStep</td>
+  <td>Contains prices for the 2Step service.</td>
+</tr>
+<tr>
+  <td>twoStep.SmsVerification</td>
+  <td>Prices per successful verification when verification is sent through SMS.</td>
+</tr>
+<tr>
+  <td>twoStep.VoiceVerification</td>
+  <td>Prices per successful verification when verification is sent through Audio.</td>
+</tr>
+<tr>
+  <td>lookup</td>
+  <td>Contains prices for the lookup service.</td>
+</tr>
+<tr>
+  <td>lookup.PerRequest</td>
+  <td>Price per lookup request.</td>
+</tr>
+<tr>
+  <td>currency</td>
+  <td>The currency of all prices.</td>
+</tr>
+<tr>
+  <td>currency.code</td>
+  <td>The currency code in ISO 4217 format.</td>
+</tr>
+<tr>
+  <td>currency.name</td>
+  <td>The currency name in english.</td>
+</tr>
+<tr>
+  <td>currency.sign</td>
+  <td>The sign of the currency.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-keyword1">echo</span> <span class="php-var">$account</span>-&gt;retrieveRouteeServices();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAccountTransactions" id="_retrieveAccountTransactions">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAccountTransactions">#</a>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#277-367" title="Go to source code">retrieveAccountTransactions</a>( <span>array <var>$param</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>retrieveAccountBal can be used to retrieve the transactions of your account.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retrieveAccountBal can be used to retrieve the transactions of your account.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$param</var>,…</dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>from</td>
+  <td>Yes</td>
+  <td>ISO-8601 date-time format</td>
+  <td>2015-11-11T15:00Z</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>Yes</td>
+  <td>ISO-8601 date-time format</td>
+  <td>2015-11-11T15:00Z</td>
+</tr>
+<tr>
+  <td>page</td>
+  <td>Yes</td>
+  <td>The page number to retrieve, default value is 0 (meaning the first page)</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>Yes</td>
+  <td>The number of items to retrieve, default value is 20</td>
+  <td>1</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+    <span class="php-quote">&quot;totalPages&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+    <span class="php-quote">&quot;totalElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+    <span class="php-quote">&quot;last&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+    <span class="php-quote">&quot;numberOfElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+    <span class="php-quote">&quot;first&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+    <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+    <span class="php-quote">&quot;number&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+    <span class="php-quote">&quot;content&quot;</span>:[
+       {
+          <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;source&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;transactionType&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;amount&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+          <span class="php-quote">&quot;status&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;balanceBefore&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+          <span class="php-quote">&quot;balanceAfter&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+          <span class="php-quote">&quot;date&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+          <span class="php-quote">&quot;actions&quot;</span>:[
+             {
+                <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+                <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+                <span class="php-quote">&quot;amount&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+                <span class="php-quote">&quot;date&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+                <span class="php-quote">&quot;balanceBefore&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+                <span class="php-quote">&quot;balanceAfter&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+                <span class="php-quote">&quot;status&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+             }
+          ]
+       }
+    ]
+ }</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>totalPages</td>
+  <td>The number of total pages.</td>
+</tr>
+<tr>
+  <td>last</td>
+  <td>Whether the current page is the last one.</td>
+</tr>
+<tr>
+  <td>totalElements</td>
+  <td>The total amount of elements for the current search.</td>
+</tr>
+<tr>
+  <td>first</td>
+  <td>Whether the current page is the first one.</td>
+</tr>
+<tr>
+  <td>numberOfElements</td>
+  <td>The number of elements currently on this page.</td>
+</tr>
+<tr>
+  <td>number</td>
+  <td>The requested page number.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The requested page size.</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>Contains the search results.</td>
+</tr>
+<tr>
+  <td>content.id</td>
+  <td>The id of the transaction.</td>
+</tr>
+<tr>
+  <td>content.source</td>
+  <td>The source that created this transaction (can be PayPal, Bank).</td>
+</tr>
+<tr>
+  <td>content.transactionType</td>
+  <td>Always TopUp.</td>
+</tr>
+<tr>
+  <td>content.amount</td>
+  <td>The amount of this transaction.</td>
+</tr>
+<tr>
+  <td>content.status</td>
+  <td>1.PendingNotCredited ,2.Pending ,3.Completed .</td>
+</tr>
+<tr>
+  <td>content.balanceBefore</td>
+  <td>The balance the account had before the transaction was processed.</td>
+</tr>
+<tr>
+  <td>content.balanceAfter</td>
+  <td>The balance of the account after the transaction, depending on the transaction status the balance might or might not be affected.</td>
+</tr>
+<tr>
+  <td>content.date</td>
+  <td>The date that the transaction was created.</td>
+</tr>
+<tr>
+  <td>content.actions</td>
+  <td>A list of all the transaction actions (see action type for more).</td>
+</tr>
+<tr>
+  <td>content.actions.id</td>
+  <td>The id of the action.</td>
+</tr>
+<tr>
+  <td>content.actions.type</td>
+  <td>Actions can be applied to transactions and affect the balance of the account depending on the transaction status. 1.Paid ,2.Credit ,3.ChangeStatus ,4.Remove ,5.Refund .</td>
+</tr>
+<tr>
+  <td>content.actions.amount</td>
+  <td>The amount of the action.</td>
+</tr>
+<tr>
+  <td>content.actions.date</td>
+  <td>The date that the action was created.</td>
+</tr>
+<tr>
+  <td>content.actions.balanceBefore</td>
+  <td>The balance the account had before the action was processed.</td>
+</tr>
+<tr>
+  <td>content.actions.balanceAfter</td>
+  <td>The balance of the account after the action, see action type to see how the balance might be affected.</td>
+</tr>
+<tr>
+  <td>content.actions.status</td>
+  <td>The status of the action (Pending, Completed).</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-keyword1">echo</span>  <span class="php-var">$account</span>-&gt;retrieveAccountTransactions();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAvailBankAccounts" id="_retrieveAvailBankAccounts">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAvailBankAccounts">#</a>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#370-430" title="Go to source code">retrieveAvailBankAccounts</a>( )</code>
+
+		<div class="description short">
+			<p>retrieve the AMD billing details and the available bank accounts where you can transfer money.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>retrieve the AMD billing details and the available bank accounts where you can transfer money.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+    <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+    <span class="php-quote">&quot;address&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+    <span class="php-quote">&quot;phone&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+    <span class="php-quote">&quot;vatId&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+    <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+    <span class="php-quote">&quot;banks&quot;</span>:[
+       {
+          <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;address&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;number&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;iban&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;currency&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;minAmount&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+          <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+          <span class="php-quote">&quot;swiftCode&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+       }
+    ]
+ }</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of AMD company.</td>
+</tr>
+<tr>
+  <td>address</td>
+  <td>The address of AMD company.</td>
+</tr>
+<tr>
+  <td>phone</td>
+  <td>The phone number of AMD company.</td>
+</tr>
+<tr>
+  <td>vatId</td>
+  <td>The vat id of AMD company.</td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>The email of AMD company.</td>
+</tr>
+<tr>
+  <td>banks</td>
+  <td>A list with all available banks where you can transfer money.</td>
+</tr>
+<tr>
+  <td>bank.name</td>
+  <td>The name of the bank.</td>
+</tr>
+<tr>
+  <td>bank.country</td>
+  <td>The country of the bank.</td>
+</tr>
+<tr>
+  <td>bank.address</td>
+  <td>The address of the bank.</td>
+</tr>
+<tr>
+  <td>bank.swiftCode</td>
+  <td>The swift code of the bank.</td>
+</tr>
+<tr>
+  <td>bank.number</td>
+  <td>The number of our bank account.</td>
+</tr>
+<tr>
+  <td>bank.iban</td>
+  <td>The iban of our bank account.</td>
+</tr>
+<tr>
+  <td>bank.currency</td>
+  <td>The currency that will be used when sending money to this bank account.</td>
+</tr>
+<tr>
+  <td>bank.minAmount</td>
+  <td>The minimum amount of money to send to this bank account.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-keyword1">echo</span> <span class="php-var">$account</span>-&gt;retrieveAvailBankAccounts();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

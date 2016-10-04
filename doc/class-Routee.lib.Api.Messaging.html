@@ -1,0 +1,2579 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Routee\lib\Api\Messaging</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Routee.html">
+						Routee<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Routee.config.html">
+						config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Routee.lib.html">
+						lib<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Routee.lib.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Routee.lib.Api.Accounts.html">Accounts</a></li>
+				<li><a href="class-Routee.lib.Api.Authorization.html">Authorization</a></li>
+				<li><a href="class-Routee.lib.Api.Contacts.html">Contacts</a></li>
+				<li class="active"><a href="class-Routee.lib.Api.Messaging.html">Messaging</a></li>
+				<li><a href="class-Routee.lib.Api.Reports.html">Reports</a></li>
+				<li><a href="class-Routee.lib.Api.TwoStep.html">TwoStep</a></li>
+				<li><a href="class-Routee.lib.Api.UseCase.html">UseCase</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Routee.lib.Api.html" title="Summary of Routee\lib\Api"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Messaging</h1>
+
+
+	<div class="description">
+	<p>Class Messaging</p>
+
+<p>Messages are identified by a unique tracking Id.
+With this Id you can always check the status of the message through the provided endpoint.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.Messaging.html#21-1336" title="Go to source code">Routee/lib/Api/Messaging.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#64-107" title="Go to source code">__construct</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Default Constructor
+This function used to get the access token from the authenticate the user credentials</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Default Constructor
+This function used to get the access token from the authenticate the user credentials</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInstance" id="_getInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			srting
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstance">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#110-118" title="Go to source code">getInstance</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Static function which reurns new TwoStep Object.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Static function which reurns new TwoStep Object.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					srting<br>JSON
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendSingleSMS" id="_sendSingleSMS">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendSingleSMS">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#146-248" title="Go to source code">sendSingleSMS</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Sending a single SMS is one of the most common tasks performed on the Routee Platform.
+Sending a message is as simple as POST-ing to the SMS resource.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sending a single SMS is one of the most common tasks performed on the Routee Platform.
+Sending a message is as simple as POST-ing to the SMS resource.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>from</td>
+  <td>No</td>
+  <td>The sender of the message. This can be a telephone number or an alphanumeric string. In case of an alphanumeric string, the maximum length is 11 characters. In case of a numeric only string the length is 16 characters.</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>No</td>
+  <td>The message you want to send.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>No</td>
+  <td>The destination phone number. Format with a '+' and country code e.g., +306948530920 (E.164 format).</td>
+</tr>
+<tr>
+  <td>flash</td>
+  <td>Yes</td>
+  <td>Indicates if the SMS is a flash SMS. A flash SMS is a type of SMS that appears directly on the main screen without user interaction and is not automatically stored in the inbox. It can be useful in emergencies, such as a fire alarm or cases of confidentiality, as in delivering one-time passwords.</td>
+</tr>
+<tr>
+  <td>label</td>
+  <td>Yes</td>
+  <td>A generic label which can be used for tagging the SMS. The maximum length is 20 characters.</td>
+</tr>
+<tr>
+  <td>callback</td>
+  <td>Yes</td>
+  <td>Defines the callback information for an individual message.</td>
+</tr>
+<tr>
+  <td>callback.url</td>
+  <td>Yes</td>
+  <td>A URL that Routee will POST to, each time your message status changes to one of the following: Queued, Failed, Sent, Delivered, or Undelivered. Routee will POST the trackingId along with the other request parameters as well as statuses and ErrorDescriptions.</td>
+</tr>
+<tr>
+  <td>callback.strategy</td>
+  <td>Yes</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion).</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;createdAt&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+   <span class="php-quote">&quot;flash&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;body&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;to&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;from&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;bodyAnalysis&quot;</span>:{
+      <span class="php-quote">&quot;characters&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;transcode&quot;</span>:{
+         <span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      },
+      <span class="php-quote">&quot;unicode&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+      <span class="php-quote">&quot;unsupportedGSMCharacters&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ]
+   },
+   <span class="php-quote">&quot;callback&quot;</span>:{
+      <span class="php-quote">&quot;strategy&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;url&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;status&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;label&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;trackingId&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>trackingId</td>
+  <td>The tracking id used to identify the message.</td>
+</tr>
+<tr>
+  <td>createdAt</td>
+  <td>The date that this resource was created.</td>
+</tr>
+<tr>
+  <td>from</td>
+  <td>The sender of the message.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>The phone number the message is about to be sent to.</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>The message you sent.</td>
+</tr>
+<tr>
+  <td>status</td>
+  <td>The status of the SMS.</td>
+</tr>
+<tr>
+  <td>label</td>
+  <td>The label that was given to the SMS.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis</td>
+  <td>The analysis for the body of the SMS.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.characters</td>
+  <td>The total number of characters of the message body.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.transcode</td>
+  <td>Contains information for the transcoded body of the SMS message. This will be available only if the message can be transcoded.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.transcode.message</td>
+  <td>The transcoded message of the original unicode message.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.unicode</td>
+  <td>Indicates if the body contains unicode characters.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.unsupportedGSMCharacters</td>
+  <td>Which characters caused the message to be considered as unicode.</td>
+</tr>
+<tr>
+  <td>flash</td>
+  <td>Indicates if the message is flash SMS.</td>
+</tr>
+<tr>
+  <td>callback</td>
+  <td>Defines the notification callback information for an individual SMS message.</td>
+</tr>
+<tr>
+  <td>callback.url</td>
+  <td>The URL that Routee will POST to, each time your message status changes to one of the following: Queued, Failed, Sent, Delivered, or Undelivered.</td>
+</tr>
+<tr>
+  <td>callback.strategy</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion).</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$data_sms</span> = <span class="php-keyword1">array</span>(
+  <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'A new game has been posted to the MindPuzzle. Check it out'</span>,
+  <span class="php-quote">'to'</span>=&gt; <span class="php-quote">'+306973359355'</span>,
+  <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'amdTelecom'</span>,
+  <span class="php-quote">'flash'</span>=&gt; <span class="php-keyword1">false</span>,
+  <span class="php-quote">'label'</span>=&gt;<span class="php-quote">'Routee'</span>,
+  <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
+  <span class="php-quote">'strategy'</span> =&gt; <span class="php-quote">'OnChange'</span>,
+      <span class="php-quote">'url'</span> =&gt; <span class="php-quote">'http://www.yourserver.com/message'</span>,
+      )
+   );
+<span class="php-keyword1">echo</span> <span class="php-var">$send_sms</span> = <span class="php-var">$sms</span>-&gt;sendSingleSMS(<span class="php-var">$data_sms</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAnalyzeSingleMessage" id="_getAnalyzeSingleMessage">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAnalyzeSingleMessage">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#251-320" title="Go to source code">getAnalyzeSingleMessage</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Analyzing a single SMS is useful when the user needs information about the message before actually sending it.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Analyzing a single SMS is useful when the user needs information about the message before actually sending it.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>from</td>
+  <td>No</td>
+  <td>The sender of the message. This can be a telephone number or an alphanumeric string. In case of an alphanumeric string, the maximum length is 11 characters. In case of a numeric only string the length is 16 characters.</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>No</td>
+  <td>The message you want to send.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>No</td>
+  <td>The destination phone number. Format with a '+' and country code e.g., +306948530920 (E.164 format).</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;bodyAnalysis&quot;</span>:{
+      <span class="php-quote">&quot;characters&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;transcode&quot;</span>:{
+         <span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      },
+      <span class="php-quote">&quot;unicode&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+      <span class="php-quote">&quot;unsupportedGSMCharacters&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ]
+   },
+   <span class="php-quote">&quot;cost&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+ }</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>bodyAnalysis</td>
+  <td>The analysis for the body of the SMS.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.characters</td>
+  <td>The total number of characters of the message body.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.transcode</td>
+  <td>Contains information for the transcoded body of the sms message. This will be available only if the message can be transcoded.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.transcode.message</td>
+  <td>The transcoded message of the original unicode message.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.unicode</td>
+  <td>Indicates if the body contains unicode characters.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.unsupportedGSMCharacters</td>
+  <td>Which characters caused the message to be considered as unicode.</td>
+</tr>
+<tr>
+  <td>cost</td>
+  <td>The cost of the SMS.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$data_sms</span> = <span class="php-keyword1">array</span>(
+  <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'A new game has been posted to the MindPuzzle. Check it out'</span>,
+  <span class="php-quote">'to'</span>=&gt; <span class="php-quote">'+306973359355'</span>,
+  <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'amdTelecom'</span>,
+  );
+<span class="php-keyword1">echo</span> <span class="php-var">$send_sms</span> = <span class="php-var">$sms</span>-&gt;getAnalyzeSingleMessage(<span class="php-var">$data_sms</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="sendCampaign" id="_sendCampaign">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_sendCampaign">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#323-520" title="Go to source code">sendCampaign</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Routee allows to send an SMS campaign to multiple recipients/contacts/groups.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Routee allows to send an SMS campaign to multiple recipients/contacts/groups.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>contacts</td>
+  <td>Yes</td>
+  <td>The contact ids that the message will be sent.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>Yes</td>
+  <td>The groups of contacts in the account selected as recipients.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>Yes</td>
+  <td>The phone numbers the message is about to be sent to. Format with a '+' and country code e.g., +306948530920 (E.164 format).</td>
+</tr>
+<tr>
+  <td>from</td>
+  <td>No</td>
+  <td>The sender of the message. This can be a telephone number or an alphanumeric string. In case of an alphanumeric string, the maximum length is 11 characters. In case of a numeric only string the length is 16 characters</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>No</td>
+  <td>The message you want to send.</td>
+</tr>
+<tr>
+  <td>scheduledDate</td>
+  <td>Yes</td>
+  <td>The datetime the campaign will run.</td>
+</tr>
+<tr>
+  <td>campaignName</td>
+  <td>Yes</td>
+  <td>The name of the campaign. If you want to be able to track the whole campaign from Routee console use a name, if no name is provided you won’t be able to see the campaign from the console but you can track all the individual messages.</td>
+</tr>
+<tr>
+  <td>flash</td>
+  <td>Yes</td>
+  <td>Indicates if the SMS is a flash SMS. A flash SMS is a type of SMS that appears directly on the main screen without user interaction and is not automatically stored in the inbox. It can be useful in emergencies, such as a fire alarm or cases of confidentiality, as in delivering one-time passwords.</td>
+</tr>
+<tr>
+  <td>respectQuietHours</td>
+  <td>Yes</td>
+  <td>Indicates if the SMS should respect the quiet hours. Quiet Hours are set by default to 23.00 - 08.00 and 14.00-17.00 destination local time. Please note that not all countries are supported with this feature due to multiple time zones within the country.</td>
+</tr>
+<tr>
+  <td>campaignCallback</td>
+  <td>Yes</td>
+  <td>Defines the notification callback information for the progress of the SMS campaign.</td>
+</tr>
+<tr>
+  <td>campaignCallback.url</td>
+  <td>No</td>
+  <td>The URL that Routee will POST to, each time your campaign status changes to one of the following: Scheduled, Queued, Sent, Running, Finished, or Failed.</td>
+</tr>
+<tr>
+  <td>campaignCallback.strategy</td>
+  <td>No</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion).</td>
+</tr>
+<tr>
+  <td>callback</td>
+  <td>Yes</td>
+  <td>Defines the notification callback information for an individual message progress of the SMS campaign.</td>
+</tr>
+<tr>
+  <td>callback.url</td>
+  <td>No</td>
+  <td>The URL that Routee will POST to, each time your message status changes to one of the following: Queued, Failed, Sent, Delivered, or Undelivered.</td>
+</tr>
+<tr>
+  <td>callback.strategy</td>
+  <td>No</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion)</td>
+</tr>
+<tr>
+  <td>reminder</td>
+  <td>Yes</td>
+  <td>Defines the recipients that will receive a test SMS before and/or after the actual SMS is sent.</td>
+</tr>
+<tr>
+  <td>reminder.minutesAfter</td>
+  <td>Yes</td>
+  <td>The minutes after the scheduled date (that the SMS will be sent) that the test SMS will be sent.</td>
+</tr>
+<tr>
+  <td>reminder.minutesBefore</td>
+  <td>Yes</td>
+  <td>The minutes before the scheduled date (that the SMS will be sent) that the test SMS will be sent.</td>
+</tr>
+<tr>
+  <td>reminder.to</td>
+  <td>No</td>
+  <td>The recipients that will get the test SMS before and/or after the campaign will start. Must be a list with valid mobile numbers starting with “ + ” and the country code.</td>
+</tr>
+<tr>
+  <td>fallbackValues</td>
+  <td>Yes</td>
+  <td>Defines the default values when the SMS has labels, in case a contact does not contain any of these labels.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+     <span class="php-quote">&quot;campaignCallback&quot;</span>:{
+        <span class="php-quote">&quot;strategy&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+        <span class="php-quote">&quot;url&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+     },
+     <span class="php-quote">&quot;contacts&quot;</span>:[
+        <span class="php-quote">&quot;string&quot;</span>
+     ],
+     <span class="php-quote">&quot;createdAt&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+     <span class="php-quote">&quot;fallbackValues&quot;</span>:{
+        <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+     },
+     <span class="php-quote">&quot;flash&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+     <span class="php-quote">&quot;groups&quot;</span>:[
+        <span class="php-quote">&quot;string&quot;</span>
+     ],
+     <span class="php-quote">&quot;body&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+     <span class="php-quote">&quot;campaignName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+     <span class="php-quote">&quot;to&quot;</span>:[
+        <span class="php-quote">&quot;string&quot;</span>
+     ],
+     <span class="php-quote">&quot;respectQuietHours&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+     <span class="php-quote">&quot;scheduledDate&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+     <span class="php-quote">&quot;from&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+     <span class="php-quote">&quot;smsAnalysis&quot;</span>:{
+        <span class="php-quote">&quot;bodyAnalysis&quot;</span>:{
+           <span class="php-quote">&quot;characters&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+           <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+           <span class="php-quote">&quot;transcode&quot;</span>:{
+              <span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+              <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+           },
+           <span class="php-quote">&quot;unicode&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+           <span class="php-quote">&quot;unsupportedGSMCharacters&quot;</span>:[
+              <span class="php-quote">&quot;string&quot;</span>
+           ]
+        },
+        <span class="php-quote">&quot;contacts&quot;</span>:{
+           <span class="php-quote">&quot;string&quot;</span>:{
+              <span class="php-quote">&quot;recipient&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+              <span class="php-quote">&quot;recipientCountry&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+              <span class="php-quote">&quot;blacklisted&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+           }
+        },
+        <span class="php-quote">&quot;numberOfRecipients&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+        <span class="php-quote">&quot;recipientCountries&quot;</span>:{
+           <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+        },
+        <span class="php-quote">&quot;recipientsPerCountry&quot;</span>:{
+           <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+        },
+        <span class="php-quote">&quot;recipientsPerGroup&quot;</span>:{
+           <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+        },
+        <span class="php-quote">&quot;totalInGroups&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+     },
+     <span class="php-quote">&quot;callback&quot;</span>:{
+        <span class="php-quote">&quot;strategy&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+        <span class="php-quote">&quot;url&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+     },
+     <span class="php-quote">&quot;state&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+     <span class="php-quote">&quot;statuses&quot;</span>:{
+        <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+     },
+     <span class="php-quote">&quot;reminder&quot;</span>:{
+        <span class="php-quote">&quot;minutesAfter&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+        <span class="php-quote">&quot;minutesBefore&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+        <span class="php-quote">&quot;to&quot;</span>:[
+           <span class="php-quote">&quot;string&quot;</span>
+        ]
+     },
+     <span class="php-quote">&quot;trackingId&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+     <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+ }</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>trackingId</td>
+  <td>The tracking id used to identify the campaign.</td>
+</tr>
+<tr>
+  <td>createdAt</td>
+  <td>The date that this resource was created.</td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>The service type of the campaign.</td>
+</tr>
+<tr>
+  <td>scheduledDate</td>
+  <td>The time the campaign is scheduled to run.</td>
+</tr>
+<tr>
+  <td>campaignName</td>
+  <td>The name of the campaign.</td>
+</tr>
+<tr>
+  <td>from</td>
+  <td>The sender of the message.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>The phone numbers the message is about to be sent to.</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>The message you sent.</td>
+</tr>
+<tr>
+  <td>state</td>
+  <td>The state of the campaign.</td>
+</tr>
+<tr>
+  <td>statuses</td>
+  <td>Defines the number of SMS per message status. Either, Queued, Sent, Failed, Delivered, Undelivered</td>
+</tr>
+<tr>
+  <td>smsAnalysis</td>
+  <td>The data analysis the this SMS.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts</td>
+  <td>The details for each contact. The key refers to the id of the contact given in the request.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts.recipient</td>
+  <td>The mobile phone that corresponds to the given contact id.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts.recipientCountry</td>
+  <td>The country that corresponds to the given contact id.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts.blacklisted</td>
+  <td>Indicates if the contact is in the SMS blacklist. If true the contact will be excluded from the request.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.numberOfRecipients</td>
+  <td>The total number of recipients.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.recipientCountries</td>
+  <td>The country that each mobile belongs to. The key refers to the mobile of the recipients request property</td>
+</tr>
+<tr>
+  <td>smsAnalysis.recipientsPerCountry</td>
+  <td>The total recipients per country. The key refers to the country.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.recipientsPerGroup</td>
+  <td>For each group the number of recipients that it contains without the blacklisted contacts (in SMS blacklist). The key refers to the group given in the group request property.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.totalInGroups</td>
+  <td>The total number of recipients in all given groups excluding the ones already specified (in contacts and recipients request property) as well as the ones that are blacklisted.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis</td>
+  <td>The analysis for the body of the SMS.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.characters</td>
+  <td>The total number of characters of message body.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.transcode</td>
+  <td>Contains information for the transcoded body of the SMS message. This will be available only if the message can be transcoded.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.transcode.message</td>
+  <td>The transcoded message of the original unicode message.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.transcode.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.unicode</td>
+  <td>Indicates if the body contains unicode characters.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.unsupportedGSMCharacters</td>
+  <td>Which characters caused the message to be considered as unicode.</td>
+</tr>
+<tr>
+  <td>flash</td>
+  <td>Indicates if the message is a flash SMS.</td>
+</tr>
+<tr>
+  <td>respectQuietHours</td>
+  <td>Indicates if the SMS should respect the quiet hours.</td>
+</tr>
+<tr>
+  <td>campaignCallback</td>
+  <td>Defines the notification callback information for the progress of the SMS campaign.</td>
+</tr>
+<tr>
+  <td>campaignCallback.url</td>
+  <td>The URL that Routee will POST to, each time your campaign status changes to one of the following: Scheduled, Queued, Sent, Running, Finished, or Failed.</td>
+</tr>
+<tr>
+  <td>campaignCallback.strategy</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion).</td>
+</tr>
+<tr>
+  <td>callback</td>
+  <td>Defines the notification callback information for an individual message progress of the SMS campaign.</td>
+</tr>
+<tr>
+  <td>callback.url</td>
+  <td>The URL that Routee will POST to, each time your message status changes to one of the following: Queued, Failed, Sent, Delivered, or Undelivered.</td>
+</tr>
+<tr>
+  <td>callback.strategy</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion).</td>
+</tr>
+<tr>
+  <td>reminder</td>
+  <td>Defines the recipients that will receive a test SMS before and/or after the actual SMS is sent.</td>
+</tr>
+<tr>
+  <td>reminder.minutesAfter</td>
+  <td>The minutes after the scheduled date (that the SMS will be sent) that the test SMS will be sent.</td>
+</tr>
+<tr>
+  <td>reminder.minutesBefore</td>
+  <td>The minutes before the scheduled date (that the SMS will be sent) that the test SMS will be sent.</td>
+</tr>
+<tr>
+  <td>reminder.to</td>
+  <td>The recipients that will get the test SMS before and/or after the campaign will start. Must be a list with valid mobile numbers starting with “ + ” and the country code.</td>
+</tr>
+<tr>
+  <td>contacts</td>
+  <td>The contacts in the account selected as recipients.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>The groups of contacts in the account selected as recipients.</td>
+</tr>
+<tr>
+  <td>fallbackValues</td>
+  <td>Defines the default values when the SMS has labels, in case a contact does not contain any of these labels. The key refers to the label name.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$data_camp</span> = <span class="php-keyword1">array</span>(
+   <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'Hello [~firstName] a new version of MindPuzzle is available. Check it out'</span>,
+   <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'mindpuzzle'</span>,
+   <span class="php-quote">'reminder'</span> =&gt; <span class="php-keyword1">array</span>(
+       <span class="php-quote">'minutesAfter'</span>=&gt; <span class="php-quote">'5'</span>,
+       <span class="php-quote">'minutesBefore'</span>=&gt; <span class="php-quote">'5'</span>,
+       <span class="php-quote">'to'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'+306973359355'</span>),
+    ),
+    <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-quote">&quot;strategy&quot;</span> =&gt; <span class="php-quote">&quot;OnChange&quot;</span>,
+        <span class="php-quote">&quot;url&quot;</span>=&gt;<span class="php-quote">&quot;http://www.yourserver.com/campaign&quot;</span>
+    ),
+    <span class="php-quote">'flash'</span> =&gt; <span class="php-keyword1">false</span>,
+    <span class="php-quote">'smsCallback'</span> =&gt; <span class="php-keyword1">array</span>(
+        <span class="php-quote">&quot;strategy&quot;</span> =&gt; <span class="php-quote">&quot;OnChange&quot;</span>,
+        <span class="php-quote">&quot;url&quot;</span>=&gt;<span class="php-quote">&quot;http://www.yourserver.com/SMScampaign&quot;</span>
+    ),
+    <span class="php-quote">'campaignName'</span> =&gt; <span class="php-quote">'mindpuzzle Customer'</span>,
+    <span class="php-quote">'to'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'+306973359355'</span>),
+    <span class="php-quote">'fallbackValues'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'firstName'</span>=&gt;<span class="php-quote">'Kesav'</span>),
+);
+ <span class="php-keyword1">echo</span> <span class="php-var">$send_camp</span> = <span class="php-var">$sms</span>-&gt;sendCampaign(<span class="php-var">$data_camp</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="analyzeCampaignSMS" id="_analyzeCampaignSMS">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_analyzeCampaignSMS">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#523-625" title="Go to source code">analyzeCampaignSMS</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Analyzing a campaign is useful when the user needs information about the campaign before actually sending it.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Analyzing a campaign is useful when the user needs information about the campaign before actually sending it.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>contacts</td>
+  <td>Yes</td>
+  <td>The contact ids that the message will be sent.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>Yes</td>
+  <td>The groups of contacts in the account selected as recipients.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>Yes</td>
+  <td>The phone numbers the message is about to be sent to. Format with a '+' and country code e.g., +306948530920 (E.164 format).</td>
+</tr>
+<tr>
+  <td>from</td>
+  <td>No</td>
+  <td>The sender of the message. This can be a telephone number or an alphanumeric string. In case of an alphanumeric string, the maximum length is 11 characters. In case of a numeric only string the length is 16 characters.</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>No</td>
+  <td>The message you want to send.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;bodyAnalysis&quot;</span>:{
+      <span class="php-quote">&quot;characters&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;transcode&quot;</span>:{
+         <span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      },
+      <span class="php-quote">&quot;unicode&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+      <span class="php-quote">&quot;unsupportedGSMCharacters&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ]
+   },
+   <span class="php-quote">&quot;contacts&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:{
+         <span class="php-quote">&quot;recipient&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;recipientCountry&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;blacklisted&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+      }
+   },
+   <span class="php-quote">&quot;numberOfRecipients&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;recipientCountries&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;recipientsPerCountry&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   },
+   <span class="php-quote">&quot;recipientsPerGroup&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   },
+   <span class="php-quote">&quot;totalInGroups&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>contacts</td>
+  <td>The details for each contact. The key refers to the id of the contact given in the request.</td>
+</tr>
+<tr>
+  <td>contacts.recipient</td>
+  <td>The mobile phone that corresponds to the given contact id.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts.recipientCountry</td>
+  <td>The country that corresponds to the given contact id.</td>
+</tr>
+<tr>
+  <td>contacts.blacklisted</td>
+  <td>Indicates if the contact is in the SMS blacklist. If true the contact will be excluded from the request.</td>
+</tr>
+<tr>
+  <td>numberOfRecipients</td>
+  <td>The total number of recipients.</td>
+</tr>
+<tr>
+  <td>recipientCountries</td>
+  <td>The country that each mobile belongs to. The key refers to the mobile of the recipients request property.</td>
+</tr>
+<tr>
+  <td>recipientsPerCountry</td>
+  <td>The total recipients per country. The key refers to the country.</td>
+</tr>
+<tr>
+  <td>recipientsPerGroup</td>
+  <td>For each group the number of recipients that it contains without the blacklisted contacts (in SMS blacklist). The key refers to the group given in the group request property.</td>
+</tr>
+<tr>
+  <td>totalInGroups</td>
+  <td>The total number of recipients in all given groups excluding the ones already specified (in contacts and recipients request property) as well as the ones that are blacklisted.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis</td>
+  <td>The analysis for the body of the SMS.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.characters</td>
+  <td>The total number of characters of message body.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.transcode</td>
+  <td>Contains information for the transcoded body of the sms message. This will be available only if the message can be transcoded.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.transcode.message</td>
+  <td>The transcoded message of the original unicode message.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.transcode.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.unicode</td>
+  <td>Indicates if the body contains unicode characters.</td>
+</tr>
+<tr>
+  <td>bodyAnalysis.unsupportedGSMCharacters</td>
+  <td>Which characters caused the message to be considered as unicode.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$analyseCampData</span> = <span class="php-keyword1">array</span>(
+   <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'mindpuzzle'</span>,
+   <span class="php-quote">'to'</span>    =&gt;  <span class="php-keyword1">array</span>(
+                 <span class="php-quote">'+306973359355'</span>
+     ),
+   <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'Hello [~firstName] a new version of MindPuzzle is available. Check it out'</span>
+
+    );
+<span class="php-keyword1">echo</span> <span class="php-var">$analyseCampResponse</span> = <span class="php-var">$sms</span>-&gt;analyzeCampaignSMS( <span class="php-var">$analyseCampData</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="trackSingleSMSbyId" id="_trackSingleSMSbyId">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_trackSingleSMSbyId">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#628-709" title="Go to source code">trackSingleSMSbyId</a>( <span>string <var>$msgId</var></span> )</code>
+
+		<div class="description short">
+			<p>Use this function to track status of a Single SMS.
+The function gets only one argument, i.e., the ID of the SMS which was previously sent.
+Kindly note that TRACKING ID is different from MESSAGE ID.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use this function to track status of a Single SMS.
+The function gets only one argument, i.e., the ID of the SMS which was previously sent.
+Kindly note that TRACKING ID is different from MESSAGE ID.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$msgId</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>messageId</td>
+  <td>The id of the single SMS</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;applicationName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;groups&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ],
+      <span class="php-quote">&quot;body&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;operator&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;originatingService&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;to&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;label&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;status&quot;</span>:{
+         <span class="php-quote">&quot;date&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+         <span class="php-quote">&quot;status&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+      },
+      <span class="php-quote">&quot;latency&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;price&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>applicationName</td>
+  <td>The name of the application that was used to send this message.</td>
+</tr>
+<tr>
+  <td>campaign</td>
+  <td>The name of the campaign that this message was sent from.</td>
+</tr>
+<tr>
+  <td>country</td>
+  <td>The country of the recipient in ISO 3166-1 alpha 2 format.</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>The id of the SMS tracking.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>The groups that the recipient belongs to.</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>The message of the SMS.</td>
+</tr>
+<tr>
+  <td>operator</td>
+  <td>The operator of the recipient.</td>
+</tr>
+<tr>
+  <td>originatingService</td>
+  <td>The service that sent this message.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>The recipient.</td>
+</tr>
+<tr>
+  <td>latency</td>
+  <td>The overall delivery latency of the message.</td>
+</tr>
+<tr>
+  <td>parts</td>
+  <td>The number of actual SMS parts.</td>
+</tr>
+<tr>
+  <td>price</td>
+  <td>The cost of this SMS part.</td>
+</tr>
+<tr>
+  <td>label</td>
+  <td>The label of the SMS tracking.</td>
+</tr>
+<tr>
+  <td>status</td>
+  <td>The status of the SMS tracking.</td>
+</tr>
+<tr>
+  <td>status.date</td>
+  <td>The date that the status was reported.</td>
+</tr>
+<tr>
+  <td>status.status</td>
+  <td>The status.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$messageID</span> = <span class="php-quote">'f5b6f428-90a5-46f1-9e3f-c2f170cbe539'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$trackSMSResponse</span> = <span class="php-var">$sms</span>-&gt;trackSingleSMSbyId( <span class="php-var">$messageID</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="trackCampaignMultiSMS" id="_trackCampaignMultiSMS">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_trackCampaignMultiSMS">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#712-814" title="Go to source code">trackCampaignMultiSMS</a>( <span>string <var>$campTrackId</var></span>, <span>array <var>$param</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+		<div class="description short">
+			<p>You can get all the tracking information for the messages of a campaign by providing the campaign tracking id</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>You can get all the tracking information for the messages of a campaign by providing the campaign tracking id</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$campTrackId</var></dt>
+					<dd></dd>
+					<dt><var>$param</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>campaignTrackingId</td>
+  <td>The tracking id of the campaign which includes the messages.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>page</td>
+  <td>Yes</td>
+  <td>The page number to retrieve, default value is 0 (meaning the first page)</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>Yes</td>
+  <td>The number of items to retrieve, default value is 10</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>sort</td>
+  <td>Yes</td>
+  <td>The field name that will be used to sort the results</td>
+  <td>operator</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;totalPages&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;last&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;totalElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;first&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;numberOfElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;number&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;content&quot;</span>:[
+      {
+         <span class="php-quote">&quot;applicationName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;campaign&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;groups&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ],
+         <span class="php-quote">&quot;body&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;operator&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;originatingService&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;to&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;status&quot;</span>:{
+            <span class="php-quote">&quot;date&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+            <span class="php-quote">&quot;status&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+         },
+         <span class="php-quote">&quot;latency&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;price&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      }
+   ]
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>totalPages</td>
+  <td>The number of total pages.</td>
+</tr>
+<tr>
+  <td>last</td>
+  <td>Whether the current page is the last one.</td>
+</tr>
+<tr>
+  <td>totalElements</td>
+  <td>The total amount of elements for the current search.</td>
+</tr>
+<tr>
+  <td>first</td>
+  <td>Whether the current page is the first one.</td>
+</tr>
+<tr>
+  <td>numberOfElements</td>
+  <td>The number of elements currently on this page.</td>
+</tr>
+<tr>
+  <td>number</td>
+  <td>The requested page number.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The requested page size.</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>Contains the search results.</td>
+</tr>
+<tr>
+  <td>content.applicationName</td>
+  <td>The name of the application that was used to send this message.</td>
+</tr>
+<tr>
+  <td>content.campaign</td>
+  <td>The name of the campaign that this message was sent from.</td>
+</tr>
+<tr>
+  <td>content.country</td>
+  <td>The country of the recipient in ISO 3166-1 alpha 2 format.</td>
+</tr>
+<tr>
+  <td>content.id</td>
+  <td>The id of the SMS tracking.</td>
+</tr>
+<tr>
+  <td>content.groups</td>
+  <td>The groups that the recipient belongs to.</td>
+</tr>
+<tr>
+  <td>content.body</td>
+  <td>The message of the SMS.</td>
+</tr>
+<tr>
+  <td>content.operator</td>
+  <td>The operator of the recipient.</td>
+</tr>
+<tr>
+  <td>content.originatingService</td>
+  <td>The service that sent this message.</td>
+</tr>
+<tr>
+  <td>content.to</td>
+  <td>The recipient.</td>
+</tr>
+<tr>
+  <td>content.latency</td>
+  <td>The overall delivery latency of the message.</td>
+</tr>
+<tr>
+  <td>content.parts</td>
+  <td>The number of actual SMS parts.</td>
+</tr>
+<tr>
+  <td>content.price</td>
+  <td>The cost of this SMS part.</td>
+</tr>
+<tr>
+  <td>content.status</td>
+  <td>The status of the SMS tracking.</td>
+</tr>
+<tr>
+  <td>content.status.date</td>
+  <td>The date that the status was reported.</td>
+</tr>
+<tr>
+  <td>content.status.status</td>
+  <td>The status.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$campaignTrackingId</span> = <span class="php-quote">'125e05df-0dc9-41de-b3f7-4e0f71fe4f04'</span>;
+<span class="php-var">$param</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'page'</span>=&gt;<span class="php-quote">'0'</span> );
+<span class="php-keyword1">echo</span> <span class="php-var">$campaignTrackingResponse</span> = <span class="php-var">$sms</span>-&gt;trackCampaignMultiSMS( <span class="php-var">$campaignTrackingId</span>,<span class="php-var">$param</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filterMultipleSMS" id="_filterMultipleSMS">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filterMultipleSMS">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#817-942" title="Go to source code">filterMultipleSMS</a>( <span>array <var>$dataFilters</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+		<div class="description short">
+			<p>Use this function to track multiple sms with filters for a specific time range.
+Limit the tracking result of multiple sms by passing filters.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Use this function to track multiple sms with filters for a specific time range.
+Limit the tracking result of multiple sms by passing filters.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$dataFilters</var></dt>
+					<dd><p>contains two array element namely filter_param  and query_param.
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>dateStart</td>
+  <td>Yes</td>
+  <td>ISO-8601 date-time format</td>
+  <td>2015-11-11T15:00Z</td>
+</tr>
+<tr>
+  <td>dateEnd</td>
+  <td>Yes</td>
+  <td>ISO-8601 date-time format</td>
+  <td>2015-11-11T15:00Z</td>
+</tr>
+<tr>
+  <td>page</td>
+  <td>Yes</td>
+  <td>The page number to retrieve, default value is 0 (meaning the first page)</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>Yes</td>
+  <td>The number of items to retrieve, default value is 10</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>sort</td>
+  <td>Yes</td>
+  <td>The field name that will be used to sort the results</td>
+  <td>operator</td>
+</tr>
+<tr>
+  <td>trackingId</td>
+  <td>Yes</td>
+  <td>If provided then only the SMS messages for the specific tracking id will be retrieved</td>
+  <td>2c1379bb-f296-43a4-bfb0-6c8b20a97425</td>
+</tr>
+<tr>
+  <td>campaign</td>
+  <td>Yes</td>
+  <td>If true it will return only SMS messages that belong to an SMS campaign</td>
+  <td>true</td>
+</tr>
+</tbody>
+</table></p>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>fieldName</td>
+  <td>No</td>
+  <td>The name of the field to filter.</td>
+</tr>
+<tr>
+  <td>searchTerm</td>
+  <td>No</td>
+  <td>The exact value that the specified field must match.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;totalPages&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;last&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;totalElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;first&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;numberOfElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;number&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;content&quot;</span>:[
+      {
+         <span class="php-quote">&quot;applicationName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;campaign&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;groups&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ],
+         <span class="php-quote">&quot;body&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;operator&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;originatingService&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;to&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;status&quot;</span>:{
+            <span class="php-quote">&quot;date&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+         <span class="php-quote">&quot;label&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;status&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+         },
+         <span class="php-quote">&quot;latency&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;price&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      }
+   ]
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>totalPages</td>
+  <td>The number of total pages.</td>
+</tr>
+<tr>
+  <td>last</td>
+  <td>Whether the current page is the last one.</td>
+</tr>
+<tr>
+  <td>totalElements</td>
+  <td>The total amount of elements for the current search.</td>
+</tr>
+<tr>
+  <td>first</td>
+  <td>Whether the current page is the first one.</td>
+</tr>
+<tr>
+  <td>numberOfElements</td>
+  <td>The number of elements currently on this page.</td>
+</tr>
+<tr>
+  <td>number</td>
+  <td>The requested page number.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The requested page size.</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>Contains the search results.</td>
+</tr>
+<tr>
+  <td>content.applicationName</td>
+  <td>The name of the application that was used to send this message.</td>
+</tr>
+<tr>
+  <td>content.campaign</td>
+  <td>The name of the campaign that this message was sent from.</td>
+</tr>
+<tr>
+  <td>content.country</td>
+  <td>The country of the recipient in ISO 3166-1 alpha 2 format.</td>
+</tr>
+<tr>
+  <td>content.id</td>
+  <td>The id of the SMS tracking.</td>
+</tr>
+<tr>
+  <td>content.groups</td>
+  <td>The groups that the recipient belongs to.</td>
+</tr>
+<tr>
+  <td>content.body</td>
+  <td>The message of the SMS.</td>
+</tr>
+<tr>
+  <td>content.operator</td>
+  <td>The operator of the recipient.</td>
+</tr>
+<tr>
+  <td>content.originatingService</td>
+  <td>The service that sent this message.</td>
+</tr>
+<tr>
+  <td>content.to</td>
+  <td>The recipient.</td>
+</tr>
+<tr>
+  <td>content.latency</td>
+  <td>The overall delivery latency of the message.</td>
+</tr>
+<tr>
+  <td>content.parts</td>
+  <td>The number of actual SMS parts.</td>
+</tr>
+<tr>
+  <td>content.price</td>
+  <td>The cost of this SMS part.</td>
+</tr>
+<tr>
+  <td>content.label</td>
+  <td>The label that was given to the SMS tracking.</td>
+</tr>
+<tr>
+  <td>content.status</td>
+  <td>The status of the SMS tracking.</td>
+</tr>
+<tr>
+  <td>content.status.date</td>
+  <td>The date that the status was reported.</td>
+</tr>
+<tr>
+  <td>content.status.status</td>
+  <td>The status.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
+         <span class="php-quote">'filter_param'</span> =&gt; <span class="php-keyword1">array</span>(
+                <span class="php-keyword1">array</span>(
+                       <span class="php-quote">'fieldName'</span>  =&gt; <span class="php-quote">'smsId'</span>,
+                       <span class="php-quote">'searchTerm'</span> =&gt; <span class="php-quote">'335c5ec5-bc82-415d-af94-ad884da23d56'</span>
+               )
+         ),
+         <span class="php-quote">'query_param'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'dateStart'</span> =&gt; <span class="php-quote">'2016-08-19T15:00Z'</span>,<span class="php-quote">'dateEnd'</span> =&gt; <span class="php-quote">'2016-08-27T15:00Z'</span>)
+);
+<span class="php-keyword1">echo</span> <span class="php-var">$SMSfilterResponse</span> = <span class="php-var">$sms</span>-&gt;filterMultipleSMS( <span class="php-var">$data</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retriveCountriesQuietHour" id="_retriveCountriesQuietHour">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retriveCountriesQuietHour">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#945-997" title="Go to source code">retriveCountriesQuietHour</a>( <span>string <var>$langCode</var> = <span class="php-quote">''</span> </span> )</code>
+
+		<div class="description short">
+			<p>You can retrieve all the supported countries in your preferred language.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>You can retrieve all the supported countries in your preferred language.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$langCode</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>language</td>
+  <td>The language code is ISO 639-1 format (el, en) that will be used to translate the country names.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;code&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;localeName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;supported&quot;</span>: <span class="php-quote">&quot;boolean&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>code</td>
+  <td>The country code in ISO 3166-1 alpha-2 format (US, GR).</td>
+</tr>
+<tr>
+  <td>name</td>
+  <td>The country name translated in the requested language.</td>
+</tr>
+<tr>
+  <td>localeName</td>
+  <td>The country name translated in its native language (for Greece it will be Ελλάδα).</td>
+</tr>
+<tr>
+  <td>supported</td>
+  <td>If the country is supported or not.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$countryID</span> = <span class="php-quote">'en'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$retriveCountriesResponse</span> = <span class="php-var">$sms</span>-&gt;retriveCountriesQuietHour( <span class="php-var">$countryID</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateScheduledCampaign" id="_updateScheduledCampaign">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateScheduledCampaign">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#1000-1133" title="Go to source code">updateScheduledCampaign</a>( <span>array <var>$data</var></span>, <span>string <var>$campaignID</var> = <span class="php-quote">''</span> </span> )</code>
+
+		<div class="description short">
+			<p>Update an already scheduled campaign. You can change the recipients
+or the sender id or any other parameter you set previously.
+Note that the campaign must have status "Scheduled" in order to update it.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Update an already scheduled campaign. You can change the recipients
+or the sender id or any other parameter you set previously.
+Note that the campaign must have status "Scheduled" in order to update it.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$campaignID</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>campaignTrackingId</td>
+  <td>the campaign’s tracking id.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;callback&quot;</span>:{
+      <span class="php-quote">&quot;strategy&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;url&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;contacts&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;createdAt&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+   <span class="php-quote">&quot;fallbackValues&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;flash&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;groups&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;body&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;campaignName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;to&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;respectQuietHours&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;scheduledDate&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+   <span class="php-quote">&quot;from&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;smsAnalysis&quot;</span>:{
+      <span class="php-quote">&quot;bodyAnalysis&quot;</span>:{
+         <span class="php-quote">&quot;characters&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;transcode&quot;</span>:{
+            <span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+         },
+
+         <span class="php-quote">&quot;unicode&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+         <span class="php-quote">&quot;unsupportedGSMCharacters&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ]
+      },
+      <span class="php-quote">&quot;contacts&quot;</span>:{
+         <span class="php-quote">&quot;string&quot;</span>:{
+            <span class="php-quote">&quot;recipient&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;recipientCountry&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;blacklisted&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+         }
+      },
+      <span class="php-quote">&quot;numberOfRecipients&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;recipientCountries&quot;</span>:{
+         <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+      },
+      <span class="php-quote">&quot;recipientsPerCountry&quot;</span>:{
+         <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      },
+      <span class="php-quote">&quot;recipientsPerGroup&quot;</span>:{
+
+         <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      },
+      <span class="php-quote">&quot;totalInGroups&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   },
+   <span class="php-quote">&quot;campaignCallback&quot;</span>:{
+      <span class="php-quote">&quot;strategy&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;url&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;state&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;statuses&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   },
+   <span class="php-quote">&quot;reminder&quot;</span>:{
+      <span class="php-quote">&quot;minutesAfter&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;minutesBefore&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;to&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ]
+   },
+   <span class="php-quote">&quot;trackingId&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+}</pre>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$updateData</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'from'</span> =&gt; <span class="php-quote">'amdTelecome'</span>,
+    <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
+            <span class="php-quote">'url'</span> =&gt; <span class="php-quote">'http://www.yourserver.com/SMScampaign'</span>
+        ),
+    <span class="php-quote">'contacts'</span> =&gt; <span class="php-keyword1">array</span>( ),
+    <span class="php-quote">'flash'</span> =&gt; <span class="php-keyword1">false</span>,
+    <span class="php-quote">'groups'</span> =&gt; <span class="php-keyword1">array</span>( ),
+    <span class="php-quote">'body'</span> =&gt; <span class="php-quote">'Hi! This is a updated Campaign message 03.'</span>,
+    <span class="php-quote">'campaignName'</span> =&gt; <span class="php-quote">'Campaign-Update'</span>,
+    <span class="php-quote">'to'</span> =&gt; <span class="php-keyword1">array</span>(
+            <span class="php-quote">'0'</span> =&gt; <span class="php-quote">'+306984512344'</span>
+        ),
+    <span class="php-quote">'respectQuietHours'</span> =&gt; <span class="php-keyword1">true</span>,
+    <span class="php-quote">'scheduledDate'</span> =&gt; <span class="php-quote">'2016-09-20T09:26:53Z'</span>
+
+);
+<span class="php-keyword1">echo</span> <span class="php-var">$updateScheduledCampaignResponse</span> = <span class="php-var">$sms</span>-&gt;updateScheduledCampaign( <span class="php-var">$updateData</span>, <span class="php-quote">'a23e8ffc-f606-49aa-98c4-d46a83ed41f1'</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deleteScheduledCampaign" id="_deleteScheduledCampaign">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deleteScheduledCampaign">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#1136-1174" title="Go to source code">deleteScheduledCampaign</a>( <span>string <var>$campTrackingID</var> = <span class="php-quote">''</span> </span> )</code>
+
+		<div class="description short">
+			<p>When you no longer want to send an already scheduled campaign, deleting it is very simple.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>When you no longer want to send an already scheduled campaign, deleting it is very simple.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$campTrackingID</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>trackingId</td>
+  <td>the campaign’s tracking id.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre></pre>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$delCampTrID</span> = <span class="php-quote">'a23e8ffc-f606-49aa-98c4-d46a83ed41f1'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$deleteScheduledCampaignResponse</span> = <span class="php-var">$sms</span>-&gt;deleteScheduledCampaign( <span class="php-var">$delCampTrID</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveDetailsCampaign" id="_retrieveDetailsCampaign">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveDetailsCampaign">#</a>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#1177-1335" title="Go to source code">retrieveDetailsCampaign</a>( <span>string <var>$campTrackingID</var> = <span class="php-quote">''</span> </span> )</code>
+
+		<div class="description short">
+			<p>You can retrieve the details of a specific campaign by its tracking id.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>You can retrieve the details of a specific campaign by its tracking id.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$campTrackingID</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>trackingId</td>
+  <td>the campaign’s tracking id.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;callback&quot;</span>:{
+      <span class="php-quote">&quot;strategy&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;url&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;contacts&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;createdAt&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+   <span class="php-quote">&quot;fallbackValues&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;flash&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;groups&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;body&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;campaignName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;to&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;respectQuietHours&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;scheduledDate&quot;</span>:<span class="php-quote">&quot;date&quot;</span>,
+   <span class="php-quote">&quot;from&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;smsAnalysis&quot;</span>:{
+      <span class="php-quote">&quot;bodyAnalysis&quot;</span>:{
+         <span class="php-quote">&quot;characters&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+         <span class="php-quote">&quot;transcode&quot;</span>:{
+            <span class="php-quote">&quot;message&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;parts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+         },
+         <span class="php-quote">&quot;unicode&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+         <span class="php-quote">&quot;unsupportedGSMCharacters&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ]
+      },
+      <span class="php-quote">&quot;contacts&quot;</span>:{
+         <span class="php-quote">&quot;string&quot;</span>:{
+            <span class="php-quote">&quot;recipient&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;recipientCountry&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;blacklisted&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+         }
+      },
+      <span class="php-quote">&quot;numberOfRecipients&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;recipientCountries&quot;</span>:{
+         <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+      },
+      <span class="php-quote">&quot;recipientsPerCountry&quot;</span>:{
+         <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      },
+      <span class="php-quote">&quot;recipientsPerGroup&quot;</span>:{
+         <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      },
+      <span class="php-quote">&quot;totalInGroups&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   },
+   <span class="php-quote">&quot;campaignCallback&quot;</span>:{
+      <span class="php-quote">&quot;strategy&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;url&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   },
+   <span class="php-quote">&quot;state&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;statuses&quot;</span>:{
+      <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   },
+   <span class="php-quote">&quot;reminder&quot;</span>:{
+      <span class="php-quote">&quot;minutesAfter&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;minutesBefore&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+      <span class="php-quote">&quot;recipients&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+
+     ]
+   },
+   <span class="php-quote">&quot;trackingId&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>trackingId</td>
+  <td>The tracking id used to identify the campaign.</td>
+</tr>
+<tr>
+  <td>createdAt</td>
+  <td>The date that this resource was created.</td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>The service type of the campaign.</td>
+</tr>
+<tr>
+  <td>scheduledDate</td>
+  <td>The time the campaign is scheduled to run.</td>
+</tr>
+<tr>
+  <td>campaignName</td>
+  <td>The name of the campaign.</td>
+</tr>
+<tr>
+  <td>from</td>
+  <td>The sender of the message.</td>
+</tr>
+<tr>
+  <td>to</td>
+  <td>The phone numbers the message is about to be sent to.</td>
+</tr>
+<tr>
+  <td>body</td>
+  <td>The message you send.</td>
+</tr>
+<tr>
+  <td>state</td>
+  <td>The status of the campaign.</td>
+</tr>
+<tr>
+  <td>statuses</td>
+  <td>Defines the number of SMS per message status. Either, Queued, Sent, Failed, Delivered, Undelivered.</td>
+</tr>
+<tr>
+  <td>smsAnalysis</td>
+  <td>The data analysis the this SMS.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts</td>
+  <td>The details for each contact. The key refers to the id of the contact given in the request.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts.recipient</td>
+  <td>The mobile phone that corresponds to the given contact id.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts.recipientCountry</td>
+  <td>The country that corresponds to the given contact id.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.contacts.blacklisted</td>
+  <td>Indicates if the contact is in the SMS blacklist. If true the contact will be excluded from the request.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.numberOfRecipients</td>
+  <td>The total number of recipients.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.recipientCountries</td>
+  <td>The country that each mobile belongs to. The key refers to the mobile of the recipients request property.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.recipientsPerCountry</td>
+  <td>The total recipients per country. The key refers to the country.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.recipientsPerGroup</td>
+  <td>For each group the number of recipients that it contains without the blacklisted contacts (in SMS blacklist). The key refers to the group given in the group request property.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.totalInGroups</td>
+  <td>The total number of recipients in all given groups excluding the ones already specified (in contacts and recipients request property) as well as the ones that are blacklisted.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis</td>
+  <td>The analysis for the body of the SMS.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.characters</td>
+  <td>The total number of characters of message body.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.transcode</td>
+  <td>Contains information for the transcoded body of the SMS message. This will be available only if the message can be transcoded.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.transcode.message</td>
+  <td>The transcoded message of the original unicode message.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.transcode.parts</td>
+  <td>The number of actual SMS that will be sent.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.unicode</td>
+  <td>Indicates if the body contains unicode characters.</td>
+</tr>
+<tr>
+  <td>smsAnalysis.bodyAnalysis.unsupportedGSMCharacters</td>
+  <td>Which characters caused the message to be considered as unicode.</td>
+</tr>
+<tr>
+  <td>flash</td>
+  <td>Indicates if the message is a flash SMS.</td>
+</tr>
+<tr>
+  <td>respectQuietHours</td>
+  <td>Indicates if the SMS should respect the quiet hours.</td>
+</tr>
+<tr>
+  <td>callback</td>
+  <td>Defines the notification callback information for the progress of the SMS campaign.</td>
+</tr>
+<tr>
+  <td>callback.url</td>
+  <td>The URL that Routee will POST to, each time your campaign status changes to one of the following: Scheduled, Queued, Sent, Running, Finished, or Failed.</td>
+</tr>
+<tr>
+  <td>callback.strategy</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion).</td>
+</tr>
+<tr>
+  <td>campaignCallback</td>
+  <td>Defines the notification callback information for an individual message progress of the SMS campaign.</td>
+</tr>
+<tr>
+  <td>campaignCallback.url</td>
+  <td>The URL that Routee will POST to, each time your message status changes to one of the following: Queued, Failed, Sent, Delivered, or Undelivered.</td>
+</tr>
+<tr>
+  <td>campaignCallback.strategy</td>
+  <td>When the URL will be called. Two possible values: on every status change (OnChange) or when a final status arrives (OnCompletion).</td>
+</tr>
+<tr>
+  <td>reminder</td>
+  <td>Defines the recipients that will receive a test SMS before and/or after the actual SMS will be sent.</td>
+</tr>
+<tr>
+  <td>reminder.minutesAfter</td>
+  <td>The minutes after the scheduled date (that the SMS will be send) that the test SMS will be sent.</td>
+</tr>
+<tr>
+  <td>reminder.minutesBefore</td>
+  <td>The minutes before the scheduled date (that the SMS will be send) that the test SMS will be sent.</td>
+</tr>
+<tr>
+  <td>reminder.to</td>
+  <td>The recipients that will get the test SMS before and/or after the campaign will start. Must be a list with valid mobile numbers starting with “ + ” and the country code.</td>
+</tr>
+<tr>
+  <td>contacts</td>
+  <td>The contacts in the account selected as recipients.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>The groups of contacts in the account selected as recipients.</td>
+</tr>
+<tr>
+  <td>fallbackValues</td>
+  <td>Defines the default values when the SMS has labels, in case a contact does not contain any of these labels. The key refers to the label name.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$retrieveCampID</span> = <span class="php-quote">'0b978991-2b39-4b8b-874a-e449e792e020'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$retrieveCampaignResponse</span> = <span class="php-var">$sms</span>-&gt;retrieveDetailsCampaign( <span class="php-var">$retrieveCampID</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

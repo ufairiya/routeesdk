@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Routee\lib\Api\Authorization</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Routee.html">
+						Routee<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Routee.config.html">
+						config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Routee.lib.html">
+						lib<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Routee.lib.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Routee.lib.Api.Accounts.html">Accounts</a></li>
+				<li class="active"><a href="class-Routee.lib.Api.Authorization.html">Authorization</a></li>
+				<li><a href="class-Routee.lib.Api.Contacts.html">Contacts</a></li>
+				<li><a href="class-Routee.lib.Api.Messaging.html">Messaging</a></li>
+				<li><a href="class-Routee.lib.Api.Reports.html">Reports</a></li>
+				<li><a href="class-Routee.lib.Api.TwoStep.html">TwoStep</a></li>
+				<li><a href="class-Routee.lib.Api.UseCase.html">UseCase</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Routee.lib.Api.html" title="Summary of Routee\lib\Api"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Authorization</h1>
+
+
+	<div class="description">
+	<p>Class Authorization</p>
+
+<p>An authorization transaction.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
+		<b>Package:</b> Routee\Api<br>
+
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.Authorization.html#19-119" title="Go to source code">Routee/lib/Api/Authorization.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getAuthorization" id="_getAuthorization">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAuthorization">#</a>
+		<code><a href="source-class-Routee.lib.Api.Authorization.html#37-118" title="Go to source code">getAuthorization</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>This method used to authenticate the User application credentials and return as Json data</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>This method used to authenticate the User application credentials and return as Json data</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd><p>$param
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>grant_type</td>
+  <td>No</td>
+  <td>It must always be client_credentials.</td>
+</tr>
+<tr>
+  <td>scope</td>
+  <td>Yes</td>
+  <td>The body can also contain a scope parameter in order to limit the permissions of the access token. For example if an application only sends SMS it can request only the SMS scope. By default if the scope parameter is omitted then the token receives all the allowed scopes of the application.</td>
+</tr>
+</tbody>
+</table></p></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;access_token&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;token_type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;expires_in&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;scope&quot;</span>:<span class="php-quote">&quot;string,string,string&quot;</span>,
+   <span class="php-quote">&quot;permissions&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ]
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>access_token</td>
+  <td>The generated access_token. This must be used in all requests.</td>
+</tr>
+<tr>
+  <td>expires_in</td>
+  <td>Time in seconds that the token will expire. If for example it has 30, it means that the token will expire in 30 seconds. Default setting is for the token to be valid for 1 hour.</td>
+</tr>
+<tr>
+  <td>scope</td>
+  <td>The requested scopes.</td>
+</tr>
+<tr>
+  <td>permissions</td>
+  <td>The permissions granted to the authenticated application.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> auth;
+<span class="php-var">$authResponse</span> = <span class="php-keyword1">new</span> auth\Authorization();
+<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization();
+<span class="php-keyword1">echo</span> <span class="php-var">$authResult</span>;</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

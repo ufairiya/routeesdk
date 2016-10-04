@@ -1,0 +1,2874 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Routee\lib\Api\Contacts</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Routee.html">
+						Routee<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Routee.config.html">
+						config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Core.html">
+						Core					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Routee.Exception.html">
+						Exception					</a>
+
+						</li>
+				<li class="active">
+					<a href="namespace-Routee.lib.html">
+						lib<span></span>
+					</a>
+
+						<ul>
+				<li class="active">
+					<a href="namespace-Routee.lib.Api.html">
+						Api					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Routee.lib.Api.Accounts.html">Accounts</a></li>
+				<li><a href="class-Routee.lib.Api.Authorization.html">Authorization</a></li>
+				<li class="active"><a href="class-Routee.lib.Api.Contacts.html">Contacts</a></li>
+				<li><a href="class-Routee.lib.Api.Messaging.html">Messaging</a></li>
+				<li><a href="class-Routee.lib.Api.Reports.html">Reports</a></li>
+				<li><a href="class-Routee.lib.Api.TwoStep.html">TwoStep</a></li>
+				<li><a href="class-Routee.lib.Api.UseCase.html">UseCase</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Routee.lib.Api.html" title="Summary of Routee\lib\Api"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Contacts</h1>
+
+
+	<div class="description">
+	<p>Class Contacts</p>
+
+<p>Routee provides an API to create contacts so that you can later send SMS to them.</p>
+
+<p>Contacts are identified by a unique contact Id.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
+		
+
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.Contacts.html#21-1569" title="Go to source code">Routee/lib/Api/Contacts.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#52-95" title="Go to source code">__construct</a>( <span> <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Default Constructor
+This function used to get the access token from the authenticate the user credentials</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Default Constructor
+This function used to get the access token from the authenticate the user credentials</p>
+
+
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createContacts" id="_createContacts">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createContacts">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#98-174" title="Go to source code">createContacts</a>( <span> <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Create a new contact or update it if it already exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a new contact or update it if it already exists.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;blacklistedServices&quot;</span>: [
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;country&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;labels&quot;</span>: [
+      {
+         <span class="php-quote">&quot;name&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;type&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;value&quot;</span>: <span class="php-quote">&quot;string&quot;</span>
+      }
+   ],
+   <span class="php-quote">&quot;email&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;firstName&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;id&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;lastName&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;groups&quot;</span>: [
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;mobile&quot;</span>: <span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;vip&quot;</span>: <span class="php-quote">&quot;boolean&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>labels.value</td>
+  <td>The value of the label.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data_contact</span> = <span class="php-keyword1">array</span>(
+   <span class="php-quote">'firstName'</span> =&gt; <span class="php-quote">'kesava'</span>,
+   <span class="php-quote">'lastName'</span> =&gt; <span class="php-quote">'moorthi'</span>,
+   <span class="php-quote">'mobile'</span> =&gt; <span class="php-quote">'+919025060261'</span>,
+   <span class="php-quote">'vip'</span> =&gt; <span class="php-quote">'true'</span>,
+);
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;createContacts( <span class="php-var">$data_contact</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deleteMultipleContacts" id="_deleteMultipleContacts">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deleteMultipleContacts">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#177-220" title="Go to source code">deleteMultipleContacts</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Delete multiple contacts that exist in the specified account.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Delete multiple contacts that exist in the specified account.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[  <span class="php-quote">&quot;string&quot;</span>,  <span class="php-quote">&quot;string&quot;</span>  ]</pre>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$data_del</span> = <span class="php-keyword1">array</span>(
+          <span class="php-keyword1">array</span>(
+               <span class="php-quote">'id'</span> =&gt; <span class="php-quote">'57b707690cf2121b4951e8e9'</span>
+              ),
+          <span class="php-keyword1">array</span>(
+               <span class="php-quote">'id'</span> =&gt; <span class="php-quote">'57b703ea0cf2121b4951e8e2'</span>
+              ),
+ );
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;deleteMultipleContacts(<span class="php-var">$data_del</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAllContacts" id="_retrieveAllContacts">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAllContacts">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#223-316" title="Go to source code">retrieveAllContacts</a>( <span>array <var>$data</var>,…</span> )</code>
+
+		<div class="description short">
+			<p>Retrieve all the contacts of this account and sub-accounts in paged format.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve all the contacts of this account and sub-accounts in paged format.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var>,…</dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>page</td>
+  <td>Yes</td>
+  <td>The page number to retrieve, default value is 0 (meaning the first page)</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>Yes</td>
+  <td>The number of items to retrieve, default value is 10</td>
+  <td>1</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;totalPages&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;last&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;totalElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;first&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;numberOfElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;number&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;content&quot;</span>:[
+      {
+         <span class="php-quote">&quot;blacklistedServices&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ],
+         <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;labels&quot;</span>:[
+            {
+               <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+               <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+               <span class="php-quote">&quot;value&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+            }
+         ],
+         <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;firstName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;lastName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;groups&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ],
+         <span class="php-quote">&quot;mobile&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;vip&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+      }
+   ]
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>totalPages</td>
+  <td>The number of total pages.</td>
+</tr>
+<tr>
+  <td>last</td>
+  <td>Whether the current page is the last one.</td>
+</tr>
+<tr>
+  <td>totalElements</td>
+  <td>The total amount of elements for the current search.</td>
+</tr>
+<tr>
+  <td>first</td>
+  <td>Whether the current page is the first one.</td>
+</tr>
+<tr>
+  <td>numberOfElements</td>
+  <td>The number of elements currently on this page.</td>
+</tr>
+<tr>
+  <td>number</td>
+  <td>The requested page number.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The requested page size.</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>Contains the search results.</td>
+</tr>
+<tr>
+  <td>content.blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>content.country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>content.labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>content.email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>content.firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>content.id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>content.lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>content.groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>content.mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>content.vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>content.labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>content.labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>content.labels.value</td>
+  <td>The value of the label.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;retrieveAllContacts();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveSingleContacts" id="_retrieveSingleContacts">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveSingleContacts">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#319-393" title="Go to source code">retrieveSingleContacts</a>( <span>array <var>$data</var></span> )</code>
+
+		<div class="description short">
+			<p>Get the details of a specific contact providing the contact’s id.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the details of a specific contact providing the contact’s id.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>id</td>
+  <td>The id of the contact.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;blacklistedServices&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;labels&quot;</span>:[
+      {
+         <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;value&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+      }
+   ],
+   <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;firstName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;lastName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;groups&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;mobile&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;vip&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>labels.value</td>
+  <td>The value of the label.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$contactid</span> = <span class="php-quote">'57c3dc0a0cf2d47a564a2af1'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;retrieveSingleContacts(<span class="php-var">$contactid</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="updateContact" id="_updateContact">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_updateContact">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#396-478" title="Go to source code">updateContact</a>( <span>string <var>$data</var></span>, <span> <var>$contactId</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Change the details of a specific contact providing the contact’s id.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Change the details of a specific contact providing the contact’s id.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd>$contactId</dd>
+					<dt><var>$contactId</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>id</td>
+  <td>The id of the contact to be updated.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;blacklistedServices&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;labels&quot;</span>:[
+      {
+         <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;value&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+      }
+   ],
+   <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;firstName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;lastName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;groups&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;mobile&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;vip&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>labels.value</td>
+  <td>The value of the label.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$contactid</span> = <span class="php-quote">'57c3dc0a0cf2d47a564a2af1'</span>;
+<span class="php-var">$update_data</span> = <span class="php-keyword1">array</span>(
+              <span class="php-quote">'vip'</span> =&gt; <span class="php-quote">'false'</span>,
+              <span class="php-quote">'id'</span>  =&gt; <span class="php-var">$contactid</span>,
+              <span class="php-quote">'mobile'</span>=&gt; <span class="php-quote">'+917871962432'</span>,
+              <span class="php-quote">'groups'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'All'</span>,<span class="php-quote">'NotListed'</span>,<span class="php-quote">'Stallioni'</span>),
+            );
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;updateContact(<span class="php-var">$update_data</span>,<span class="php-var">$contactid</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deleteContact" id="_deleteContact">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deleteContact">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#481-555" title="Go to source code">deleteContact</a>( <span>string <var>$contactId</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Delete an already existing contact providing the contact’s id.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Delete an already existing contact providing the contact’s id.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$contactId</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>id</td>
+  <td>The id of the contact to be deleted.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;blacklistedServices&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;labels&quot;</span>:[
+      {
+         <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;value&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+      }
+   ],
+   <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;firstName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;lastName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;groups&quot;</span>:[
+      <span class="php-quote">&quot;string&quot;</span>
+   ],
+   <span class="php-quote">&quot;mobile&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;vip&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>labels.value</td>
+  <td>The value of the label.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$contactid</span> = <span class="php-quote">'57bc36470cf22cec5c422c9b'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;deleteContact(<span class="php-var">$contactid</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="checkExistContact" id="_checkExistContact">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_checkExistContact">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#558-609" title="Go to source code">checkExistContact</a>( <span>string <var>$mobileNumber</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Check if there is an already existing contact with the same mobile providing the contact’s mobile.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Check if there is an already existing contact with the same mobile providing the contact’s mobile.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$mobileNumber</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>value</td>
+  <td>No</td>
+  <td>The mobile used to check if a contact already exists</td>
+  <td>+306984512777</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre></pre>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$mobNumber</span> = <span class="php-quote">'+918940576727'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;checkExistContact( <span class="php-var">$mobNumber</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addContactToBlackLists" id="_addContactToBlackLists">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addContactToBlackLists">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#612-694" title="Go to source code">addContactToBlackLists</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$service</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Insert existing contacts to a service’s blacklist.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Insert existing contacts to a service’s blacklist.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$service</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>service</td>
+  <td>The service for which the contact will be added in blacklist.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;blacklistedServices&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ],
+      <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;labels&quot;</span>:[
+         {
+            <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;value&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+         }
+      ],
+      <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;firstName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;lastName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;groups&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ],
+      <span class="php-quote">&quot;mobile&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;vip&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>labels.value</td>
+  <td>The value of the label.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data_service</span> =  <span class="php-keyword1">array</span>(
+   <span class="php-keyword1">array</span>(
+   <span class="php-quote">'id'</span>     =&gt; <span class="php-quote">'57c580380cf2d47a564ae51c'</span>,),
+   );
+<span class="php-var">$service</span> = <span class="php-quote">'Sms'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;addContactToBlackLists( <span class="php-var">$data_service</span>,<span class="php-var">$service</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBlackListsContactService" id="_getBlackListsContactService">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBlackListsContactService">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#697-772" title="Go to source code">getBlackListsContactService</a>( <span>string <var>$service</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns all the contacts which are blacklisted for the given service.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all the contacts which are blacklisted for the given service.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$service</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>service</td>
+  <td>The service to get the blacklisted contacts.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;blacklistedServices&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ],
+      <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;labels&quot;</span>:[
+         {
+            <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+            <span class="php-quote">&quot;value&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+         }
+      ],
+      <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;firstName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;lastName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;groups&quot;</span>:[
+         <span class="php-quote">&quot;string&quot;</span>
+      ],
+      <span class="php-quote">&quot;mobile&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;vip&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>labels.value</td>
+  <td>The value of the label.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data_service</span> =  <span class="php-quote">'Sms'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;getBlackListsContactService( <span class="php-var">$data_service</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeGroupOfContactFromBlackList" id="_removeGroupOfContactFromBlackList">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeGroupOfContactFromBlackList">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#775-823" title="Go to source code">removeGroupOfContactFromBlackList</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$service</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Remove a group of existing contacts from the blacklist of a service</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Remove a group of existing contacts from the blacklist of a service</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$service</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>serviceName</td>
+  <td>The name of the service that the blacklist refers to (Sms, TwoStep)</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+     <span class="php-quote">&quot;updated&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>updated</td>
+  <td>The number of affected contacts.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data</span> =  <span class="php-keyword1">array</span>(<span class="php-quote">'testGroup'</span>);
+<span class="php-var">$service</span> = <span class="php-quote">'Sms'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;removeGroupOfContactFromBlackList( <span class="php-var">$data</span>,<span class="php-var">$service</span> );</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAccountContactsLabels" id="_retrieveAccountContactsLabels">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAccountContactsLabels">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#826-861" title="Go to source code">retrieveAccountContactsLabels</a>( )</code>
+
+		<div class="description short">
+			<p>Retrieve the account’s labels both default and custom.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve the account’s labels both default and custom.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;string&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+}</pre>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;retrieveAccountContactsLabels();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createLabel" id="_createLabel">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createLabel">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#864-912" title="Go to source code">createLabel</a>( <span> <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Creates extra contact labels for the specified account.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates extra contact labels for the specified account.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>type</td>
+  <td>The type of the label. Supported types are: Text or Number. Setting a label as Number will enable validation for it when changing the value for a contact.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
+    <span class="php-keyword1">array</span>(
+       <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'Company'</span>,
+       <span class="php-quote">'type'</span> =&gt; <span class="php-quote">'Text'</span>,)
+    );
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;createLabel(<span class="php-var">$data</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAccountGroups" id="_retrieveAccountGroups">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAccountGroups">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#915-955" title="Go to source code">retrieveAccountGroups</a>( )</code>
+
+		<div class="description short">
+			<p>Retrieve the specified account’s groups of contacts.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve the specified account’s groups of contacts.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;retrieveAccountGroups();</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAccountGroupByName" id="_retrieveAccountGroupByName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAccountGroupByName">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#958-998" title="Go to source code">retrieveAccountGroupByName</a>( <span> <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns one of the groups that the account has created with the number of contacts in it.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns one of the groups that the account has created with the number of contacts in it.</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The number of contact in the group.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;retrieveAccountGroupByName(<span class="php-quote">'All'</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="retrieveAccountGroupByPage" id="_retrieveAccountGroupByPage">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_retrieveAccountGroupByPage">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1001-1069" title="Go to source code">retrieveAccountGroupByPage</a>( <span>array <var>$pageData</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Retrieve a page of the specified account’s groups of contacts.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Retrieve a page of the specified account’s groups of contacts.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$pageData</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>page</td>
+  <td>Yes</td>
+  <td>The page number to retrieve, default value is 0 (meaning the first page)</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>Yes</td>
+  <td>The number of items to retrieve, default value is 10</td>
+  <td>1</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;totalPages&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;last&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;totalElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;first&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;numberOfElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;number&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;content&quot;</span>:[
+      {
+         <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;numberOfContacts&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+      }
+   ]
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>totalPages</td>
+  <td>The number of total pages.</td>
+</tr>
+<tr>
+  <td>last</td>
+  <td>Whether the current page is the last one.</td>
+</tr>
+<tr>
+  <td>totalElements</td>
+  <td>The total amount of elements for the current request.</td>
+</tr>
+<tr>
+  <td>first</td>
+  <td>Whether the current page is the first one.</td>
+</tr>
+<tr>
+  <td>numberOfElements</td>
+  <td>The number of elements currently on this page.</td>
+</tr>
+<tr>
+  <td>number</td>
+  <td>The requested page number.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The requested page size.</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>Contains the request results.</td>
+</tr>
+<tr>
+  <td>content.name</td>
+  <td>The name of the group.</td>
+</tr>
+<tr>
+  <td>content.numberOfContacts</td>
+  <td>content.numberOfContacts</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data_page</span> = <span class="php-keyword1">array</span>(
+          <span class="php-quote">'page'</span> =&gt; <span class="php-quote">'0'</span>,
+          <span class="php-quote">'size'</span> =&gt; <span class="php-quote">'3'</span>,
+    );
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;retrieveAccountGroupByPage(<span class="php-var">$data_page</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createGroup" id="_createGroup">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createGroup">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1072-1124" title="Go to source code">createGroup</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>The group can be either created empty or contacts can be added to it during the creation.
+The contacts can be added by using filters.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>The group can be either created empty or contacts can be added to it during the creation.
+The contacts can be added by using filters.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>No</td>
+  <td>The name of the group to be created.</td>
+</tr>
+<tr>
+  <td>strategy</td>
+  <td>Yes</td>
+  <td>Defines the way that the group should be populated. If not set (or set to 'None') the group will be empty. If it's set to 'Filtered' the group will be populated based on the filters provided. If it's set to 'All', the group will include all the contacts of the account.</td>
+</tr>
+<tr>
+  <td>filters</td>
+  <td>Yes</td>
+  <td>The filters to apply and create the group from their result.</td>
+</tr>
+<tr>
+  <td>filters.fieldName</td>
+  <td>Yes</td>
+  <td>Defines the name of the field for this filter.</td>
+</tr>
+<tr>
+  <td>filters.searchTerm</td>
+  <td>Yes</td>
+  <td>Defines the search term to be used for the search.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The size of the new group.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
+            <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'TestGroup'</span>.<span class="php-keyword2">rand</span>(<span class="php-num">0000</span>,<span class="php-num">9999</span>),
+    );
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;createGroup(<span class="php-var">$data</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="DeleteGroup" id="_DeleteGroup">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_DeleteGroup">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1127-1175" title="Go to source code">DeleteGroup</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Deletes groups from the specified account.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Deletes groups from the specified account.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>deleteContacts</td>
+  <td>Yes</td>
+  <td>If true, the contacts included in the group will also be deleted</td>
+  <td>true|false (default false)</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+      <span class="php-quote">&quot;deletedContacts&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group that was deleted.</td>
+</tr>
+<tr>
+  <td>deletedContacts</td>
+  <td>Indicates whether the contacts contained in the groups were also deleted or not.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'Stallioni Net Solutions'</span>,<span class="php-quote">'one'</span>,<span class="php-quote">'two'</span>,<span class="php-quote">'three'</span>,<span class="php-quote">'one-two-three'</span>,<span class="php-quote">'difference'</span>);
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;DeleteGroup(<span class="php-var">$data</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="mergeMultipleGroups" id="_mergeMultipleGroups">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_mergeMultipleGroups">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1178-1227" title="Go to source code">mergeMultipleGroups</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Creates a new group as a merged result of multiple groups of contacts.
+Duplicate contacts will be added once in the new group.
+An extra group tag of the new merged group is added in every associated contact.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new group as a merged result of multiple groups of contacts.
+Duplicate contacts will be added once in the new group.
+An extra group tag of the new merged group is added in every associated contact.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>No</td>
+  <td>The name of the group to be created.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>No</td>
+  <td>The names of the groups that will be merged.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>: <span class="php-quote">&quot;number&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The size of the new group.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>( <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'one-two-three'</span>,<span class="php-quote">'groups'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'one'</span>,<span class="php-quote">'two'</span>,<span class="php-quote">'three'</span>));
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;mergeMultipleGroups(<span class="php-var">$data</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="createGroupFromDifference" id="_createGroupFromDifference">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_createGroupFromDifference">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1230-1277" title="Go to source code">createGroupFromDifference</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Creates a new group from the difference of contacts between the provided groups.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Creates a new group from the difference of contacts between the provided groups.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>No</td>
+  <td>The name of the group to be created.</td>
+</tr>
+<tr>
+  <td>groups</td>
+  <td>No</td>
+  <td>The names of the groups used to create the new group.</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>: <span class="php-quote">&quot;number&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The size of the new group.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>( <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'difference'</span>,<span class="php-quote">'groups'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'one'</span>,<span class="php-quote">'two'</span>));
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;createGroupFromDifference(<span class="php-var">$data</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="viewContactsByGroupName" id="_viewContactsByGroupName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_viewContactsByGroupName">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1280-1379" title="Go to source code">viewContactsByGroupName</a>( <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>View the contacts that a group is consisted of.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>View the contacts that a group is consisted of.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>OPTIONAL</th>
+  <th>DESCRIPTION</th>
+  <th>EXAMPLE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>page</td>
+  <td>Yes</td>
+  <td>The page number to retrieve, default value is 0 (meaning the first page)</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>Yes</td>
+  <td>The number of items to retrieve, default value is 10</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>sort</td>
+  <td>Yes</td>
+  <td>The label name that will be used to sort the results</td>
+  <td>firstName</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;totalPages&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;last&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;totalElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;first&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>,
+   <span class="php-quote">&quot;numberOfElements&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;number&quot;</span>:<span class="php-quote">&quot;number&quot;</span>,
+   <span class="php-quote">&quot;content&quot;</span>:[
+      {
+         <span class="php-quote">&quot;blacklistedServices&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ],
+         <span class="php-quote">&quot;country&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;labels&quot;</span>:[
+            {
+               <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+               <span class="php-quote">&quot;type&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+               <span class="php-quote">&quot;value&quot;</span>:<span class="php-quote">&quot;string&quot;</span>
+            }
+         ],
+         <span class="php-quote">&quot;email&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;firstName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;id&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;lastName&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;groups&quot;</span>:[
+            <span class="php-quote">&quot;string&quot;</span>
+         ],
+         <span class="php-quote">&quot;mobile&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+         <span class="php-quote">&quot;vip&quot;</span>:<span class="php-quote">&quot;boolean&quot;</span>
+      }
+   ]
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>totalPages</td>
+  <td>The number of total pages.</td>
+</tr>
+<tr>
+  <td>last</td>
+  <td>Whether the current page is the last one.</td>
+</tr>
+<tr>
+  <td>totalElements</td>
+  <td>The total amount of elements for the current search.</td>
+</tr>
+<tr>
+  <td>first</td>
+  <td>Whether the current page is the first one.</td>
+</tr>
+<tr>
+  <td>numberOfElements</td>
+  <td>The number of elements currently on this page.</td>
+</tr>
+<tr>
+  <td>number</td>
+  <td>The requested page number.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The requested page size.</td>
+</tr>
+<tr>
+  <td>content</td>
+  <td>Contains the search results.</td>
+</tr>
+<tr>
+  <td>content.blacklistedServices</td>
+  <td>Defines all the services for which the contact has been blacklisted.</td>
+</tr>
+<tr>
+  <td>content.country</td>
+  <td>The country information of the contact.</td>
+</tr>
+<tr>
+  <td>content.labels</td>
+  <td>Contains the contact's labels with their respective values.</td>
+</tr>
+<tr>
+  <td>content.email</td>
+  <td>The e-mail address of the contact.</td>
+</tr>
+<tr>
+  <td>content.firstName</td>
+  <td>The first name of the contact.</td>
+</tr>
+<tr>
+  <td>content.id</td>
+  <td>The identification of the contact.</td>
+</tr>
+<tr>
+  <td>content.lastName</td>
+  <td>The last name of the contact.</td>
+</tr>
+<tr>
+  <td>content.groups</td>
+  <td>All contact groups (tags) that this contact belongs to.</td>
+</tr>
+<tr>
+  <td>content.mobile</td>
+  <td>The mobile number of the contact.</td>
+</tr>
+<tr>
+  <td>content.vip</td>
+  <td>Indicates whether the contact is treated as vip or not.</td>
+</tr>
+<tr>
+  <td>content.labels.name</td>
+  <td>The name of the label.</td>
+</tr>
+<tr>
+  <td>content.labels.type</td>
+  <td>The type of the label. Supported types are: Text or Number.</td>
+</tr>
+<tr>
+  <td>content.labels.value</td>
+  <td>content.labels.value.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$group_name</span> = <span class="php-quote">'All'</span>;
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;viewContactsByGroupName(<span class="php-var">$group_name</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deleteContactsByGroupName" id="_deleteContactsByGroupName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deleteContactsByGroupName">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1382-1430" title="Go to source code">deleteContactsByGroupName</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Deletes the contacts that match the provided ids from the specified group</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Deletes the contacts that match the provided ids from the specified group</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$name</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group which contains the contacts</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The new size of the group.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$group_name</span> = <span class="php-quote">'one'</span>;
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'57bc372f0cf22cec5c422c9c'</span>);
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;deleteContactsByGroupName(<span class="php-var">$data</span>,<span class="php-var">$group_name</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addContactsToGroupByName" id="_addContactsToGroupByName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addContactsToGroupByName">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1433-1481" title="Go to source code">addContactsToGroupByName</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$name</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Create a new contact or update it if it already exists.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Create a new contact or update it if it already exists.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$name</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>{
+   <span class="php-quote">&quot;name&quot;</span>:<span class="php-quote">&quot;string&quot;</span>,
+   <span class="php-quote">&quot;size&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+}</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>name</td>
+  <td>The name of the group.</td>
+</tr>
+<tr>
+  <td>size</td>
+  <td>The new size of the group.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$group_name</span> = <span class="php-quote">'Stallioni'</span>;
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'57c3dc0a0cf2d47a564a2af1'</span>);
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;addContactsToGroupByName(<span class="php-var">$data</span>,<span class="php-var">$group_name</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="removeContactsFromBlacklists" id="_removeContactsFromBlacklists">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_removeContactsFromBlacklists">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1484-1532" title="Go to source code">removeContactsFromBlacklists</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>() </span>, <span>string <var>$service</var> = <span class="php-quote">''</span></span> )</code>
+
+		<div class="description short">
+			<p>Extract existing contacts from a service’s blacklist.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Extract existing contacts from a service’s blacklist.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$data</var></dt>
+					<dd></dd>
+					<dt><var>$service</var></dt>
+					<dd><table>
+<thead>
+<tr>
+  <th>NAME</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>service</td>
+  <td>The service for which the contact will be extracted from blacklist (Sms, TwoStep).</td>
+</tr>
+</tbody>
+</table></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string<br><p>JSON</p>
+
+<pre>[
+   {
+      <span class="php-quote">&quot;updated&quot;</span>:<span class="php-quote">&quot;number&quot;</span>
+   }
+]</pre>
+
+<table>
+<thead>
+<tr>
+  <th>KEY</th>
+  <th>DESCRIPTION</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>updated</td>
+  <td>The number of affected contacts.</td>
+</tr>
+</tbody>
+</table>
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+				<h4>Example</h4>
+				<div class="list">
+						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
+<span class="php-var">$contactResponse</span> = <span class="php-keyword1">new</span> api\Contacts();
+<span class="php-var">$service_name</span> = <span class="php-quote">'Sms'</span>;
+<span class="php-var">$data</span> = <span class="php-keyword1">array</span>(<span class="php-keyword1">array</span>(<span class="php-quote">'id'</span>=&gt;<span class="php-quote">'57c580380cf2d47a564ae51c'</span>));
+<span class="php-keyword1">echo</span> <span class="php-var">$contactResult</span> = <span class="php-var">$contactResponse</span>-&gt;removeContactsFromBlacklists(<span class="php-var">$data</span>,<span class="php-var">$service_name</span>);</pre><br>
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInstance" id="_getInstance">
+
+		<td class="attributes"><code>
+			 public static
+
+			<code><a href="class-Routee.lib.Api.Accounts.html">Routee\lib\Api\Accounts</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getInstance">#</a>
+		<code><a href="source-class-Routee.lib.Api.Contacts.html#1534-1543" title="Go to source code">getInstance</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>() </span> )</code>
+
+		<div class="description short">
+			<p>Static function which reurns new TwoStep Object.</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Static function which reurns new TwoStep Object.</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$config</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Routee.lib.Api.Accounts.html">Routee\lib\Api\Accounts</a></code><br>Object.
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					RouteeConnectionException
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
