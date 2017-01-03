@@ -28,7 +28,7 @@ $data_contact = array(
                'vip' => 'false',               
                
 );
-$contactResponse = new api\Contacts();
+$contactResponse = new api\Contacts($config);
 $contactResult = $contactResponse->createContacts( $data_contact );
 $contactDecode = json_decode($contactResult);
 

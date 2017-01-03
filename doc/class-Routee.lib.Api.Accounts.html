@@ -128,7 +128,7 @@
 		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Routee.lib.Api.Accounts.html#23-431" title="Go to source code">Routee/lib/Api/Accounts.php</a>
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.Accounts.html#23-447" title="Go to source code">Routee/lib/Api/Accounts.php</a>
 		<br>
 	</div>
 
@@ -227,7 +227,7 @@ This function used to get the access token from the authenticate the user creden
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieveAccountBal">#</a>
-		<code><a href="source-class-Routee.lib.Api.Accounts.html#150-191" title="Go to source code">retrieveAccountBal</a>( )</code>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#150-195" title="Go to source code">retrieveAccountBal</a>( )</code>
 
 		<div class="description short">
 			<p>returns your available balance.
@@ -293,8 +293,12 @@ Routee will return the amount in the currency you have defined in your account's
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-var">$account</span> = api\Accounts::getInstance(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$account</span>-&gt;retrieveAccountBal();</pre><br>
 				</div>
 
@@ -314,7 +318,7 @@ Routee will return the amount in the currency you have defined in your account's
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieveRouteeServices">#</a>
-		<code><a href="source-class-Routee.lib.Api.Accounts.html#194-274" title="Go to source code">retrieveRouteeServices</a>( <span>array <var>$param</var>,…</span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#198-282" title="Go to source code">retrieveRouteeServices</a>( <span>array <var>$param</var>,…</span> )</code>
 
 		<div class="description short">
 			<p>retrieve all the prices for all Routee services, you can also specify various filters in order to retrieve only
@@ -488,8 +492,12 @@ the prices that are of interest.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-var">$account</span> = api\Accounts::getInstance(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$account</span>-&gt;retrieveRouteeServices();</pre><br>
 				</div>
 
@@ -509,7 +517,7 @@ the prices that are of interest.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieveAccountTransactions">#</a>
-		<code><a href="source-class-Routee.lib.Api.Accounts.html#277-367" title="Go to source code">retrieveAccountTransactions</a>( <span>array <var>$param</var>,…</span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#285-379" title="Go to source code">retrieveAccountTransactions</a>( <span>array <var>$param</var>,…</span> )</code>
 
 		<div class="description short">
 			<p>retrieveAccountBal can be used to retrieve the transactions of your account.</p>
@@ -713,8 +721,12 @@ the prices that are of interest.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-var">$account</span> = api\Accounts::getInstance(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span>  <span class="php-var">$account</span>-&gt;retrieveAccountTransactions();</pre><br>
 				</div>
 
@@ -734,7 +746,7 @@ the prices that are of interest.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieveAvailBankAccounts">#</a>
-		<code><a href="source-class-Routee.lib.Api.Accounts.html#370-430" title="Go to source code">retrieveAvailBankAccounts</a>( )</code>
+		<code><a href="source-class-Routee.lib.Api.Accounts.html#382-446" title="Go to source code">retrieveAvailBankAccounts</a>( )</code>
 
 		<div class="description short">
 			<p>retrieve the AMD billing details and the available bank accounts where you can transfer money.</p>
@@ -845,8 +857,12 @@ the prices that are of interest.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$account</span> = api\Accounts::getInstance();
+<span class="php-var">$account</span> = api\Accounts::getInstance(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$account</span>-&gt;retrieveAvailBankAccounts();</pre><br>
 				</div>
 

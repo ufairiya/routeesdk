@@ -208,8 +208,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $data_sms = array(
      *   'body'=>'A new game has been posted to the MindPuzzle. Check it out',
      *   'to'=> '+306973359355',
@@ -286,8 +290,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $data_sms = array(
      *   'body'=>'A new game has been posted to the MindPuzzle. Check it out',
      *   'to'=> '+306973359355',
@@ -469,8 +477,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $data_camp = array(
      *    'body'=>'Hello [~firstName] a new version of MindPuzzle is available. Check it out',        
      *    'from'=> 'mindpuzzle',       
@@ -586,8 +598,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $analyseCampData = array(
      *    'from'=> 'mindpuzzle', 
      *    'to'    =>  array(
@@ -678,8 +694,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
-     * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
+     * use Routee\lib\Api as api;     
+     * $sms = new api\Messaging($config);
      * $messageID = 'f5b6f428-90a5-46f1-9e3f-c2f170cbe539';
      * echo $trackSMSResponse = $sms->trackSingleSMSbyId( $messageID );
      * </code>
@@ -783,8 +803,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $campaignTrackingId = '125e05df-0dc9-41de-b3f7-4e0f71fe4f04';
      * $param = array('page'=>'0' );
      * echo $campaignTrackingResponse = $sms->trackCampaignMultiSMS( $campaignTrackingId,$param );
@@ -895,8 +919,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config );
      * $data = array(
      *          'filter_param' => array(
      *                 array(
@@ -967,8 +995,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $countryID = 'en';
      * echo $retriveCountriesResponse = $sms->retriveCountriesQuietHour( $countryID );
      * </code>
@@ -1087,8 +1119,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $updateData = array(
      *     'from' => 'amdTelecome',
      *     'callback' => array(
@@ -1144,8 +1180,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $delCampTrID = 'a23e8ffc-f606-49aa-98c4-d46a83ed41f1';
      * echo $deleteScheduledCampaignResponse = $sms->deleteScheduledCampaign( $delCampTrID );
      * </code>
@@ -1305,8 +1345,12 @@ class Messaging
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $sms = new api\Messaging();
+     * $sms = new api\Messaging($config);
      * $retrieveCampID = '0b978991-2b39-4b8b-874a-e449e792e020';
      * echo $retrieveCampaignResponse = $sms->retrieveDetailsCampaign( $retrieveCampID );
      * </code>

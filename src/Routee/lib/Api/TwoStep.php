@@ -62,14 +62,7 @@ class TwoStep
 	 * Used for making HTTP Requests and process Response.
 	 * @var core\RouteeHttpConnection object
 	 */
-	private $httpConnObj;
-	
-    /**
-	 * This is the default variable declaration for 2step URL.
-	 *
-	 * @var string
-	 */
-	static $requestURL = 'https://connect.routee.net';
+	private $httpConnObj;    
 
     /**
 	 * Default constructor.
@@ -184,8 +177,12 @@ class TwoStep
 	 * @example
 	 * <code>
 	 * require_once __DIR__ . '/vendor/autoload.php';
+	 * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
 	 * use Routee\lib\Api as api;
-     * $twostep = api\TwoStep::getInstance( );
+     * $twostep = api\TwoStep::getInstance($config);
      * $data = array(
      *    'method' => 'sms',
      *    'type'   => 'code',
@@ -236,8 +233,12 @@ class TwoStep
 	 * @example 
 	 * <code>
 	 * require_once __DIR__ . '/vendor/autoload.php';
+	 * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
 	 * use Routee\lib\Api as api;
-     * $twostep = api\TwoStep::getInstance( );
+     * $twostep = api\TwoStep::getInstance($config);
      * echo $twostep->retrieve2StepStatus('52040307-2179-49da-8291-83bbfd4ac4d3') ;
 	 * </code>
 	 * @throws RouteeConnectionException
@@ -283,8 +284,12 @@ class TwoStep
 	 * @example
 	 * <code>
 	 * require_once __DIR__ . '/vendor/autoload.php';
+	 * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
 	 * use Routee\lib\Api as api;
-     * $twostep = api\TwoStep::getInstance( );
+     * $twostep = api\TwoStep::getInstance($config);
      * echo $twostep->cancel2StepStatus('1b5df1e8-3701-41e5-9c41-00904532b656');
 	 * </code>
 	 * @throws RouteeConnectionException
@@ -330,8 +335,12 @@ class TwoStep
 	 * @example
 	 * <code>
 	 * require_once __DIR__ . '/vendor/autoload.php';
+	 * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
 	 * use Routee\lib\Api as api;
-     * $twostep = api\TwoStep::getInstance( );
+     * $twostep = api\TwoStep::getInstance($config);
      * $data = array('answer'=>'6036');
      * echo $twostep->confirm2StepStatus($data,'52040307-2179-49da-8291-83bbfd4ac4d3');
 	 * </code>
@@ -381,8 +390,12 @@ class TwoStep
 	 * @example
 	 * <code>
 	 * require_once __DIR__ . '/vendor/autoload.php';
+	 * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
 	 * use Routee\lib\Api as api;
-     * $twostep = api\TwoStep::getInstance( );
+     * $twostep = api\TwoStep::getInstance($config);
      * echo $twostep->retrieve2StepAccountReport();
 	 * </code>
 	 * @throws RouteeConnectionException
@@ -431,8 +444,12 @@ class TwoStep
 	 * @example
 	 * <code>
 	 * require_once __DIR__ . '/vendor/autoload.php';
+	 * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
 	 * use Routee\lib\Api as api;
-     * $twostep = api\TwoStep::getInstance( );
+     * $twostep = api\TwoStep::getInstance($config);
      * $app_id  = 'Your routee application-id';
      * echo $twostep->retrieve2StepAppReport($app_id);
 	 * </code>

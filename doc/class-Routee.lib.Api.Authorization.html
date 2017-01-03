@@ -235,9 +235,13 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> auth;
 <span class="php-var">$authResponse</span> = <span class="php-keyword1">new</span> auth\Authorization();
-<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization();
+<span class="php-var">$authResult</span> = <span class="php-var">$authResponse</span>-&gt;getAuthorization(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$authResult</span>;</pre><br>
 				</div>
 

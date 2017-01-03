@@ -140,7 +140,11 @@ class Contacts
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
+     * $contactResponse = new api\Contacts($config);
      * $data_contact = array(
      *    'firstName' => 'kesava',
      *    'lastName' => 'moorthi',
@@ -183,6 +187,10 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api; 
      * $data_del = array(
      *           array(
@@ -192,7 +200,7 @@ class Contacts
      *                'id' => '57b703ea0cf2121b4951e8e2'
      *               ),
      *  );
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * echo $contactResult = $contactResponse->deleteMultipleContacts($data_del );
      * </code>
      * @throws RouteeConnectionException
@@ -288,8 +296,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api; 
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * echo $contactResult = $contactResponse->retrieveAllContacts();
      * </code>
      * @throws RouteeConnectionException
@@ -364,8 +376,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $contactid = '57c3dc0a0cf2d47a564a2af1';
      * echo $contactResult = $contactResponse->retrieveSingleContacts($contactid );
      * </code>
@@ -442,14 +458,18 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $contactid = '57c3dc0a0cf2d47a564a2af1';
      * $update_data = array(
 	 *               'vip' => 'false',
 	 *               'id'  => $contactid,
 	 *               'mobile'=> '+917871962432',               
-     *               'groups' => array('All','NotListed','Stallioni'),
+     *               'groups' => array('All','NotListed'),
 	 *             );
 	 * echo $contactResult = $contactResponse->updateContact($update_data,$contactid );
      * </code>
@@ -526,8 +546,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $contactid = '57bc36470cf22cec5c422c9b';
      * echo $contactResult = $contactResponse->deleteContact($contactid );
      * </code>
@@ -566,9 +590,13 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
-     * $mobNumber = '+918940576727';
+     * $contactResponse = new api\Contacts($config);
+     * $mobNumber = '+919876543210';
      * echo $contactResult = $contactResponse->checkExistContact( $mobNumber );
      * </code>
      * @throws RouteeConnectionException
@@ -660,11 +688,15 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data_service =  array(
 	 *    array(
-	 *    'id'     => '57c580380cf2d47a564ae51c',),
+	 *        'id'     => '57c580380cf2d47a564ae51c',),
 	 *    );
      * $service = 'Sms';
      * echo $contactResult = $contactResponse->addContactToBlackLists( $data_service,$service );
@@ -744,8 +776,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data_service =  'Sms';
      * echo $contactResult = $contactResponse->getBlackListsContactService( $data_service );
      * </code>
@@ -792,8 +828,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data =  array('testGroup');
      * $service = 'Sms';
      * echo $contactResult = $contactResponse->removeGroupOfContactFromBlackList( $data,$service );
@@ -833,8 +873,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * echo $contactResult = $contactResponse->retrieveAccountContactsLabels();
      * </code>
      * @throws RouteeConnectionException
@@ -878,8 +922,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data = array(
 	 *     array(
      *        'name' => 'Company',
@@ -927,8 +975,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * echo $contactResult = $contactResponse->retrieveAccountGroups();
      * </code>
      * @throws RouteeConnectionException
@@ -970,8 +1022,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * echo $contactResult = $contactResponse->retrieveAccountGroupByName('All');
      * </code>
      * @throws RouteeConnectionException
@@ -1037,8 +1093,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data_page = array(
      *           'page' => '0',
      *           'size' => '3',
@@ -1093,8 +1153,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data = array(
      *             'name' => 'TestGroup'.rand(0000,9999),         
 	 *     );
@@ -1145,9 +1209,13 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
-     * $data = array('Stallioni Net Solutions','one','two','three','one-two-three','difference');
+     * $contactResponse = new api\Contacts($config);
+     * $data = array('AMD Telecom','one','two','three','one-two-three','difference');
      * echo $contactResult = $contactResponse->DeleteGroup($data);
      * </code>
      * @throws RouteeConnectionException
@@ -1197,8 +1265,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data = array( 'name' => 'one-two-three','groups' => array('one','two','three'));
      * echo $contactResult = $contactResponse->mergeMultipleGroups($data);
      * </code>
@@ -1247,8 +1319,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $data = array( 'name' => 'difference','groups' => array('one','two'));
      * echo $contactResult = $contactResponse->createGroupFromDifference($data);
      * </code>
@@ -1350,8 +1426,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $group_name = 'All';
      * echo $contactResult = $contactResponse->viewContactsByGroupName($group_name);
      * </code>
@@ -1399,8 +1479,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $group_name = 'one';
      * $data = array('57bc372f0cf22cec5c422c9c');
      * echo $contactResult = $contactResponse->deleteContactsByGroupName($data,$group_name);
@@ -1450,9 +1534,13 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
-     * $group_name = 'Stallioni';
+     * $contactResponse = new api\Contacts($config);
+     * $group_name = 'AMD Telecom';
      * $data = array('57c3dc0a0cf2d47a564a2af1');
      * echo $contactResult = $contactResponse->addContactsToGroupByName($data,$group_name);
      * </code>
@@ -1501,8 +1589,12 @@ class Contacts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $service_name = 'Sms';
      * $data = array(array('id'=>'57c580380cf2d47a564ae51c'));
      * echo $contactResult = $contactResponse->removeContactsFromBlacklists($data,$service_name);

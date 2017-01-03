@@ -5,8 +5,8 @@ use Routee\lib\Api as api;
 class ContactsTest extends TestCase
 {
 	static $config = array(
-         'application-id' => '57bd7450e4b07bf187df66ed',
-	     'application-secret' => 'tC1XhTGae4'
+         'application-id' => '57b5b7bde4b007f5ba82952b',
+	     'application-secret' => '6k6sitD5hU'
     );
     static $configInvalid =  array(
          	'application-id' => '57b5b7bde4b007f5ba82952b',
@@ -86,61 +86,19 @@ class ContactsTest extends TestCase
 	/**
 	 * @depends testcreateContacts
 	 */
-	public function testUpdateContact( $response )
-	{
-		$data = array(
-			           'vip' => 'false',
-			           'id'  => $response['id'],
-			           'mobile'=> '+9178719624'.rand(00,99).'',
-		               'groups' => array('All','NotListed'),
-			         );
-		$contact = new api\Contacts( self::$config );
-		$response = json_decode( $contact->updateContact( $data, $response['id'] ) );
-		if(isset($response->id))
-		{
-			$this->assertObjectHasAttribute('id', $response );
-			$this->assertObjectHasAttribute('mobile', $response );
-	    }
-	}
-	/**
-	 * @depends testcreateContacts
-	 */
-	public function testUpdateContactFailure( $response )
-	{
-		$data = array(
-			           'vip' => 'false',
-			           'id'  => $response['id'],
-			           'mobile'=> '+9178719624'.rand(00,99).'',
-		               'groups' => array('All','NotListed'),
-			         );
-		$contact = new api\Contacts( self::$config );
-		$response = json_decode( $contact->updateContact( $data, $response['id'].'989' ) );
-		$this->assertObjectHasAttribute('developerMessage', $response );
-	}
-	/**
-	 * @depends testcreateContacts
-	 */
-	public function testUpdateContactEmpty( $response )
-	{
-		$data = array(
-			         );
-		$contact = new api\Contacts( self::$config );
-		$response = json_decode( $contact->updateContact( null, null ) );
-		$this->assertObjectHasAttribute('developerMessage', $response );
-	}
-	/**
-	 * @depends testcreateContacts
-	 */
 	public function testcheckIfContactExists( $response )
 	{
-		$contact = new api\Contacts( self::$config );
-		$response = json_decode( $contact->checkExistContact( $response['mobile'] ) );
-		$this->assertEmpty( $response );
+		$contact = new api\Contacts( self::$config );		
+		$response = $contact->checkExistContact( $response['mobile'] ) ;
+		$this->assertTrue($response);				
+		$this->assertEquals(1,$response);
+		$this->assertNotEmpty( $response );
 	}
 	public function testcheckIfContactExistsFailure()
 	{
 		$contact = new api\Contacts( self::$config );
-		$response = json_decode( $contact->checkExistContact( '+0987654321' ) );
+		$response = $contact->checkExistContact( '+0987654321' ) ;		
+		$this->assertFalse($response);
 		$this->assertEmpty( $response );
 	}
 	/**
@@ -262,6 +220,53 @@ class ContactsTest extends TestCase
 		$response = json_decode( $contact->removeContactsFromBlacklists( $data, $service ) );
 		$this->assertObjectHasAttribute('developerMessage', $response );
 	}
+
+	/**
+	 * @depends testcreateContacts
+	 */
+	public function testUpdateContact( $response )
+	{
+		$data = array(
+			           'vip' => 'false',
+			           'id'  => $response['id'],
+			           'mobile'=> '+9178719624'.rand(00,99).'',
+		               'groups' => array('All','NotListed'),
+			         );
+		$contact = new api\Contacts( self::$config );
+		$response = json_decode( $contact->updateContact( $data, $response['id'] ) );
+		if(isset($response->id))
+		{
+			$this->assertObjectHasAttribute('id', $response );
+			$this->assertObjectHasAttribute('mobile', $response );
+	    }
+	}
+	/**
+	 * @depends testcreateContacts
+	 */
+	public function testUpdateContactFailure( $response )
+	{
+		$data = array(
+			           'vip' => 'false',
+			           'id'  => $response['id'],
+			           'mobile'=> '+9178719624'.rand(00,99).'',
+		               'groups' => array('All','NotListed'),
+			         );
+		$contact = new api\Contacts( self::$config );
+		$response = json_decode( $contact->updateContact( $data, $response['id'].'989' ) );
+		$this->assertObjectHasAttribute('developerMessage', $response );
+	}
+	/**
+	 * @depends testcreateContacts
+	 */
+	public function testUpdateContactEmpty( $response )
+	{
+		$data = array(
+			         );
+		$contact = new api\Contacts( self::$config );
+		$response = json_decode( $contact->updateContact( null, null ) );
+		$this->assertObjectHasAttribute('developerMessage', $response );
+	}
+	
 	
 	public function testCreateLabels()
 	{

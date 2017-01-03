@@ -128,7 +128,7 @@
 		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Routee.lib.Api.Reports.html#21-629" title="Go to source code">Routee/lib/Api/Reports.php</a>
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.Reports.html#21-661" title="Go to source code">Routee/lib/Api/Reports.php</a>
 		<br>
 	</div>
 
@@ -222,7 +222,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewMsgRangeReport">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#142-212" title="Go to source code">viewMsgRangeReport</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#142-216" title="Go to source code">viewMsgRangeReport</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view volume/price summary analytics for a range of messages.</p>
@@ -360,8 +360,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
   <span class="php-quote">'startDate'</span> =&gt; <span class="php-quote">'2015-01-01T00:00:00.000Z'</span>,
   <span class="php-quote">'endDate'</span> =&gt; <span class="php-quote">'2017-01-01T00:00:00.000Z'</span>
@@ -385,7 +389,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewCountryAnalytics">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#215-287" title="Go to source code">viewCountryAnalytics</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#219-295" title="Go to source code">viewCountryAnalytics</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view volume/price summary analytics for a country.</p>
@@ -529,8 +533,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'startDate'</span> =&gt; <span class="php-quote">'2015-01-01T00:00:00.000Z'</span>,
    <span class="php-quote">'endDate'</span> =&gt; <span class="php-quote">'2017-01-01T00:00:00.000Z'</span>,
@@ -555,7 +563,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewVolPriceCntryNtwrk">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#290-364" title="Go to source code">viewVolPriceCntryNtwrk</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#298-376" title="Go to source code">viewVolPriceCntryNtwrk</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view volume/price summary analytics for a country and network.</p>
@@ -705,8 +713,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'startDate'</span> =&gt; <span class="php-quote">'2015-01-01T00:00:00.000Z'</span>,
    <span class="php-quote">'endDate'</span> =&gt; <span class="php-quote">'2017-01-01T00:00:00.000Z'</span>,
@@ -732,7 +744,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewCampaignAnalytics">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#367-437" title="Go to source code">viewCampaignAnalytics</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#379-453" title="Go to source code">viewCampaignAnalytics</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view volume/price summary analytics for a campaign.</p>
@@ -870,8 +882,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'offset'</span> =&gt; <span class="php-quote">'+02:00'</span>,
    <span class="php-quote">'campaignId'</span> =&gt; <span class="php-quote">'f7691dc9-2ccc-4f5b-af29-aa61acb9cbd5'</span>,
@@ -895,7 +911,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewMsgRangeAnalytics">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#440-484" title="Go to source code">viewMsgRangeAnalytics</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#456-504" title="Go to source code">viewMsgRangeAnalytics</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view time summary analytics for a range of messages.</p>
@@ -968,8 +984,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'startDate'</span> =&gt; <span class="php-quote">'2015-01-01T00:00:00.000Z'</span>,
    <span class="php-quote">'endDate'</span> =&gt; <span class="php-quote">'2017-01-01T00:00:00.000Z'</span>
@@ -993,7 +1013,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewTimeCountryAnalytics">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#487-533" title="Go to source code">viewTimeCountryAnalytics</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#507-557" title="Go to source code">viewTimeCountryAnalytics</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view time summary analytics for a country.</p>
@@ -1072,8 +1092,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'startDate'</span> =&gt; <span class="php-quote">'2015-01-01T00:00:00.000Z'</span>,
    <span class="php-quote">'endDate'</span> =&gt; <span class="php-quote">'2017-01-01T00:00:00.000Z'</span>,
@@ -1098,7 +1122,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewTimeCntryNtwrkAnalytics">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#536-584" title="Go to source code">viewTimeCntryNtwrkAnalytics</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#560-612" title="Go to source code">viewTimeCntryNtwrkAnalytics</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view time summary analytics for a country and a network.</p>
@@ -1183,8 +1207,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'startDate'</span> =&gt; <span class="php-quote">'2015-01-01T00:00:00.000Z'</span>,
    <span class="php-quote">'endDate'</span> =&gt; <span class="php-quote">'2017-01-01T00:00:00.000Z'</span>,
@@ -1210,7 +1238,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_viewCampaignTimeAnalytics">#</a>
-		<code><a href="source-class-Routee.lib.Api.Reports.html#586-628" title="Go to source code">viewCampaignTimeAnalytics</a>( <span>array <var>$param</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Reports.html#614-660" title="Go to source code">viewCampaignTimeAnalytics</a>( <span>array <var>$param</var></span> )</code>
 
 		<div class="description short">
 			<p>Used to view time summary analytics for a campaign.</p>
@@ -1277,8 +1305,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$reports</span> = api\Reports::getInstance( );
+<span class="php-var">$reports</span> = api\Reports::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'campaignId'</span> =&gt; <span class="php-quote">'f7691dc9-2ccc-4f5b-af29-aa61acb9cbd5'</span>
 );

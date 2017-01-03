@@ -170,8 +170,12 @@ class Accounts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $account = api\Accounts::getInstance();
+     * $account = api\Accounts::getInstance($config);
      * echo $account->retrieveAccountBal();
      * </code> 
      * @throws RouteeConnectionException
@@ -253,8 +257,12 @@ class Accounts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $account = api\Accounts::getInstance();
+     * $account = api\Accounts::getInstance($config);
      * echo $account->retrieveRouteeServices();
      * </code>
      * @throws RouteeConnectionException 
@@ -346,8 +354,12 @@ class Accounts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $account = api\Accounts::getInstance();
+     * $account = api\Accounts::getInstance($config);
      * echo  $account->retrieveAccountTransactions();
      * </code>
      * @throws RouteeConnectionException
@@ -409,8 +421,12 @@ class Accounts
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as api;
-     * $account = api\Accounts::getInstance();
+     * $account = api\Accounts::getInstance($config);
      * echo $account->retrieveAvailBankAccounts();
      * </code>
      * @throws RouteeConnectionException

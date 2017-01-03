@@ -129,7 +129,7 @@ With this Id you can always check the status of the message through the provided
 		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-Routee.lib.Api.Messaging.html#21-1336" title="Go to source code">Routee/lib/Api/Messaging.php</a>
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.Messaging.html#21-1380" title="Go to source code">Routee/lib/Api/Messaging.php</a>
 		<br>
 	</div>
 
@@ -225,7 +225,7 @@ This function used to get the access token from the authenticate the user creden
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sendSingleSMS">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#146-248" title="Go to source code">sendSingleSMS</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#146-252" title="Go to source code">sendSingleSMS</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Sending a single SMS is one of the most common tasks performed on the Routee Platform.
@@ -416,8 +416,12 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$data_sms</span> = <span class="php-keyword1">array</span>(
   <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'A new game has been posted to the MindPuzzle. Check it out'</span>,
   <span class="php-quote">'to'</span>=&gt; <span class="php-quote">'+306973359355'</span>,
@@ -448,7 +452,7 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getAnalyzeSingleMessage">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#251-320" title="Go to source code">getAnalyzeSingleMessage</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#255-328" title="Go to source code">getAnalyzeSingleMessage</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Analyzing a single SMS is useful when the user needs information about the message before actually sending it.</p>
@@ -561,8 +565,12 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$data_sms</span> = <span class="php-keyword1">array</span>(
   <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'A new game has been posted to the MindPuzzle. Check it out'</span>,
   <span class="php-quote">'to'</span>=&gt; <span class="php-quote">'+306973359355'</span>,
@@ -587,7 +595,7 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sendCampaign">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#323-520" title="Go to source code">sendCampaign</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#331-532" title="Go to source code">sendCampaign</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Routee allows to send an SMS campaign to multiple recipients/contacts/groups.</p>
@@ -984,8 +992,12 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$data_camp</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'body'</span>=&gt;<span class="php-quote">'Hello [~firstName] a new version of MindPuzzle is available. Check it out'</span>,
    <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'mindpuzzle'</span>,
@@ -1026,7 +1038,7 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_analyzeCampaignSMS">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#523-625" title="Go to source code">analyzeCampaignSMS</a>( <span>array <var>$data</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#535-641" title="Go to source code">analyzeCampaignSMS</a>( <span>array <var>$data</var></span> )</code>
 
 		<div class="description short">
 			<p>Analyzing a campaign is useful when the user needs information about the campaign before actually sending it.</p>
@@ -1202,8 +1214,12 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$analyseCampData</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'from'</span>=&gt; <span class="php-quote">'mindpuzzle'</span>,
    <span class="php-quote">'to'</span>    =&gt;  <span class="php-keyword1">array</span>(
@@ -1231,7 +1247,7 @@ Sending a message is as simple as POST-ing to the SMS resource.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_trackSingleSMSbyId">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#628-709" title="Go to source code">trackSingleSMSbyId</a>( <span>string <var>$msgId</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#644-729" title="Go to source code">trackSingleSMSbyId</a>( <span>string <var>$msgId</var></span> )</code>
 
 		<div class="description short">
 			<p>Use this function to track status of a Single SMS.
@@ -1375,8 +1391,12 @@ Kindly note that TRACKING ID is different from MESSAGE ID.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$messageID</span> = <span class="php-quote">'f5b6f428-90a5-46f1-9e3f-c2f170cbe539'</span>;
 <span class="php-keyword1">echo</span> <span class="php-var">$trackSMSResponse</span> = <span class="php-var">$sms</span>-&gt;trackSingleSMSbyId( <span class="php-var">$messageID</span> );</pre><br>
 				</div>
@@ -1397,7 +1417,7 @@ Kindly note that TRACKING ID is different from MESSAGE ID.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_trackCampaignMultiSMS">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#712-814" title="Go to source code">trackCampaignMultiSMS</a>( <span>string <var>$campTrackId</var></span>, <span>array <var>$param</var> = <span class="php-keyword1">array</span>() </span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#732-838" title="Go to source code">trackCampaignMultiSMS</a>( <span>string <var>$campTrackId</var></span>, <span>array <var>$param</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 		<div class="description short">
 			<p>You can get all the tracking information for the messages of a campaign by providing the campaign tracking id</p>
@@ -1607,8 +1627,12 @@ Kindly note that TRACKING ID is different from MESSAGE ID.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$campaignTrackingId</span> = <span class="php-quote">'125e05df-0dc9-41de-b3f7-4e0f71fe4f04'</span>;
 <span class="php-var">$param</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'page'</span>=&gt;<span class="php-quote">'0'</span> );
 <span class="php-keyword1">echo</span> <span class="php-var">$campaignTrackingResponse</span> = <span class="php-var">$sms</span>-&gt;trackCampaignMultiSMS( <span class="php-var">$campaignTrackingId</span>,<span class="php-var">$param</span> );</pre><br>
@@ -1630,7 +1654,7 @@ Kindly note that TRACKING ID is different from MESSAGE ID.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_filterMultipleSMS">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#817-942" title="Go to source code">filterMultipleSMS</a>( <span>array <var>$dataFilters</var> = <span class="php-keyword1">array</span>() </span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#841-970" title="Go to source code">filterMultipleSMS</a>( <span>array <var>$dataFilters</var> = <span class="php-keyword1">array</span>() </span> )</code>
 
 		<div class="description short">
 			<p>Use this function to track multiple sms with filters for a specific time range.
@@ -1877,8 +1901,12 @@ Limit the tracking result of multiple sms by passing filters.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span> );
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
          <span class="php-quote">'filter_param'</span> =&gt; <span class="php-keyword1">array</span>(
                 <span class="php-keyword1">array</span>(
@@ -1907,7 +1935,7 @@ Limit the tracking result of multiple sms by passing filters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retriveCountriesQuietHour">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#945-997" title="Go to source code">retriveCountriesQuietHour</a>( <span>string <var>$langCode</var> = <span class="php-quote">''</span> </span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#973-1029" title="Go to source code">retriveCountriesQuietHour</a>( <span>string <var>$langCode</var> = <span class="php-quote">''</span> </span> )</code>
 
 		<div class="description short">
 			<p>You can retrieve all the supported countries in your preferred language.</p>
@@ -1985,8 +2013,12 @@ Limit the tracking result of multiple sms by passing filters.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$countryID</span> = <span class="php-quote">'en'</span>;
 <span class="php-keyword1">echo</span> <span class="php-var">$retriveCountriesResponse</span> = <span class="php-var">$sms</span>-&gt;retriveCountriesQuietHour( <span class="php-var">$countryID</span> );</pre><br>
 				</div>
@@ -2007,7 +2039,7 @@ Limit the tracking result of multiple sms by passing filters.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_updateScheduledCampaign">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#1000-1133" title="Go to source code">updateScheduledCampaign</a>( <span>array <var>$data</var></span>, <span>string <var>$campaignID</var> = <span class="php-quote">''</span> </span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#1032-1169" title="Go to source code">updateScheduledCampaign</a>( <span>array <var>$data</var></span>, <span>string <var>$campaignID</var> = <span class="php-quote">''</span> </span> )</code>
 
 		<div class="description short">
 			<p>Update an already scheduled campaign. You can change the recipients
@@ -2132,8 +2164,12 @@ Note that the campaign must have status "Scheduled" in order to update it.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$updateData</span> = <span class="php-keyword1">array</span>(
     <span class="php-quote">'from'</span> =&gt; <span class="php-quote">'amdTelecome'</span>,
     <span class="php-quote">'callback'</span> =&gt; <span class="php-keyword1">array</span>(
@@ -2170,7 +2206,7 @@ Note that the campaign must have status "Scheduled" in order to update it.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteScheduledCampaign">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#1136-1174" title="Go to source code">deleteScheduledCampaign</a>( <span>string <var>$campTrackingID</var> = <span class="php-quote">''</span> </span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#1172-1214" title="Go to source code">deleteScheduledCampaign</a>( <span>string <var>$campTrackingID</var> = <span class="php-quote">''</span> </span> )</code>
 
 		<div class="description short">
 			<p>When you no longer want to send an already scheduled campaign, deleting it is very simple.</p>
@@ -2214,8 +2250,12 @@ Note that the campaign must have status "Scheduled" in order to update it.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$delCampTrID</span> = <span class="php-quote">'a23e8ffc-f606-49aa-98c4-d46a83ed41f1'</span>;
 <span class="php-keyword1">echo</span> <span class="php-var">$deleteScheduledCampaignResponse</span> = <span class="php-var">$sms</span>-&gt;deleteScheduledCampaign( <span class="php-var">$delCampTrID</span> );</pre><br>
 				</div>
@@ -2236,7 +2276,7 @@ Note that the campaign must have status "Scheduled" in order to update it.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieveDetailsCampaign">#</a>
-		<code><a href="source-class-Routee.lib.Api.Messaging.html#1177-1335" title="Go to source code">retrieveDetailsCampaign</a>( <span>string <var>$campTrackingID</var> = <span class="php-quote">''</span> </span> )</code>
+		<code><a href="source-class-Routee.lib.Api.Messaging.html#1217-1379" title="Go to source code">retrieveDetailsCampaign</a>( <span>string <var>$campTrackingID</var> = <span class="php-quote">''</span> </span> )</code>
 
 		<div class="description short">
 			<p>You can retrieve the details of a specific campaign by its tracking id.</p>
@@ -2537,8 +2577,12 @@ Note that the campaign must have status "Scheduled" in order to update it.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging();
+<span class="php-var">$sms</span> = <span class="php-keyword1">new</span> api\Messaging(<span class="php-var">$config</span>);
 <span class="php-var">$retrieveCampID</span> = <span class="php-quote">'0b978991-2b39-4b8b-874a-e449e792e020'</span>;
 <span class="php-keyword1">echo</span> <span class="php-var">$retrieveCampaignResponse</span> = <span class="php-var">$sms</span>-&gt;retrieveDetailsCampaign( <span class="php-var">$retrieveCampID</span> );</pre><br>
 				</div>

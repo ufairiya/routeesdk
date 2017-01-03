@@ -27,7 +27,7 @@ $data = array(
        'type' => 'Number'
 	)
 );
-$contactResponse = new api\Contacts();
+$contactResponse = new api\Contacts($config);
 $contactlabelResult = $contactResponse->createLabel($data);
 $ContactlabelDecode = json_decode($contactlabelResult);
 

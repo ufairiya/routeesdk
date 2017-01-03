@@ -29,18 +29,7 @@ class RouteeConfig
      *
      * @return array
      */ 
-     
-    public function getDefaultConfig()
-    {   
-        $defaultConfig = array(
-            'application-id' => '57b5b7bde4b007f5ba82952b',
-            'application-secret' => '6k6sitD5hU',
-            'scope'  => ''
-        );
-        
-        return $defaultConfig;
-    }
-
+    
     const CONNECTURL = 'https://connect.routee.net';
 
     const AUTHURL = 'https://auth.routee.net';

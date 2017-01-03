@@ -61,9 +61,13 @@ class Authorization
      * @example
      * <code>
      * require_once __DIR__ . '/vendor/autoload.php';
+     * $config = array(
+     *     'application-id' => 'APPLICATION-ID', // ex : 57b5b7bde4b007f5ba82952b
+     *     'application-secret' => 'APPLICATION-SECRET', // ex: 6k6sitDAXR
+     * );
      * use Routee\lib\Api as auth;
      * $authResponse = new auth\Authorization();
-     * $authResult = $authResponse->getAuthorization();
+     * $authResult = $authResponse->getAuthorization($config);
      * echo $authResult;
      * </code>
      * @throws RouteeConnectionException
@@ -73,11 +77,7 @@ class Authorization
     {     
         $defaultRouteeConfig = new config\RouteeConfig();
 
-        if(count($config) > 0){
-            $appConfig = $config;
-        }else{
-            $appConfig = $defaultRouteeConfig->getDefaultConfig();
-        }
+        $appConfig = $config;
         
         $this->defaultRouteeConfigUrls = (object) $defaultRouteeConfig->getDefaultUrl();
         $this->requestUrl = $this->defaultRouteeConfigUrls->authUrl;

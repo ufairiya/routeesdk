@@ -62,7 +62,7 @@ class UseCase
 	 *        'type' => 'Number'
 	 * 	)
 	 * );
-	 * $contactResponse = new api\Contacts();
+	 * $contactResponse = new api\Contacts($config);
 	 * $contactlabelResult = $contactResponse->createLabel($data);
 	 * $ContactlabelDecode = json_decode($contactlabelResult);
 	 * 
@@ -277,11 +277,11 @@ class UseCase
 	 * // Step 2:  Send a single SMS to a mobile number and “To”:”amdTelecom”
 	 * $sms = new api\Messaging($config);
 	 *     $data_sms = array(
-     *         'body'=>'Test Message- AMDTelcom Routee Api',
+     *         'body'=>'Test Message- AMDTelecom Routee Api',
      *         'to'=> 'amdTelecom',
      *         'from'=> 'kesav',
      *         'flash'=> false,
-     *         'label'=>'AMDTelcom Routee',
+     *         'label'=>'AMDTelecom Routee',
      *         'callback' => array(
      *             'strategy' => 'OnChange',
      *             'url' => 'http://www.yourserver.com/message/callback.php',
@@ -290,11 +290,11 @@ class UseCase
      * $sendSmsResult = $sms->sendSingleSMS($data_sms);
      * $sendSmsResultDecode = json_decode($sendSmsResult);
      * $data_sms_success = array(
-     *     'body'=>'Test Message- AMDTelcom Routee Api',
+     *     'body'=>'Test Message- AMDTelecom Routee Api',
      *     'to'=> '919787136232',
      *     'from'=> 'kesav',
      *     'flash'=> false,
-     *     'label'=>'AMDTelcom Routee',
+     *     'label'=>'AMDTelecom Routee',
      *     'callback' => array(
      *         'strategy' => 'OnChange',
      *         'url' => 'http://www.yourserver.com/message/callback.php',
@@ -371,7 +371,7 @@ class UseCase
      *     [createdAt] => 2016-09-19T07:54:50.95Z
      *     [from] => kesav
      *     [to] => +919787136232
-     *     [body] => Test Message- AMDTelcom Routee Api
+     *     [body] => Test Message- AMDTelecom Routee Api
      *     [bodyAnalysis] => stdClass Object
      *         (
      *             [parts] => 1
@@ -384,7 +384,7 @@ class UseCase
      *             [url] => http://www.yourserver.com/message/callback.php
      *             [strategy] => OnChange
      *         )
-     *     [label] => AMDTelcom Routee
+     *     [label] => AMDTelecom Routee
      * )
      * 
      * Step 3 a): Track your messages with filters and use fieldName: "To" and "searchTerm":"amdTelecom" - Result
@@ -483,7 +483,7 @@ class UseCase
      *     'mobile' => '+919787136232',
      *     'vip' => 'false',                      
      * );
-     * $contactResponse = new api\Contacts();
+     * $contactResponse = new api\Contacts($config);
      * $contactResult = $contactResponse->createContacts( $data_contact );
      * $contactDecode = json_decode($contactResult);
      * 

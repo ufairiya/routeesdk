@@ -126,7 +126,7 @@
 		<b>Namespace:</b> <a href="namespace-Routee.html">Routee</a>\<a href="namespace-Routee.lib.html">lib</a>\<a href="namespace-Routee.lib.Api.html">Api</a><br>
 		<b>Package:</b> Routee\lib\Api<br>
 
-			<b>Located at</b> <a href="source-class-Routee.lib.Api.TwoStep.html#24-454" title="Go to source code">Routee/lib/Api/TwoStep.php</a>
+			<b>Located at</b> <a href="source-class-Routee.lib.Api.TwoStep.html#24-471" title="Go to source code">Routee/lib/Api/TwoStep.php</a>
 		<br>
 	</div>
 
@@ -146,7 +146,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#75-109" title="Go to source code">__construct</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#68-102" title="Go to source code">__construct</a>( <span>array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Default constructor.</p>
@@ -181,7 +181,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_getInstance">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#112-120" title="Go to source code">getInstance</a>( <span>array <var>$config</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#105-113" title="Go to source code">getInstance</a>( <span>array <var>$config</var></span> )</code>
 
 		<div class="description short">
 			<p>Static function which reurns new TwoStep Object.</p>
@@ -220,7 +220,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_start2StepVerification">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#148-215" title="Go to source code">start2StepVerification</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#141-212" title="Go to source code">start2StepVerification</a>( <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 		<div class="description short">
 			<p>Used for retrieving the status of a 2step verification.</p>
@@ -347,8 +347,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$twostep</span> = api\TwoStep::getInstance( );
+<span class="php-var">$twostep</span> = api\TwoStep::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(
    <span class="php-quote">'method'</span> =&gt; <span class="php-quote">'sms'</span>,
    <span class="php-quote">'type'</span>   =&gt; <span class="php-quote">'code'</span>,
@@ -373,7 +377,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieve2StepStatus">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#218-261" title="Go to source code">retrieve2StepStatus</a>( <span>string <var>$trackID</var> = <span class="php-quote">''</span> </span> )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#215-262" title="Go to source code">retrieve2StepStatus</a>( <span>string <var>$trackID</var> = <span class="php-quote">''</span> </span> )</code>
 
 		<div class="description short">
 			<p>Retrieve the status of a 2step verification by providing its trackingId.</p>
@@ -444,8 +448,12 @@
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$twostep</span> = api\TwoStep::getInstance( );
+<span class="php-var">$twostep</span> = api\TwoStep::getInstance(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$twostep</span>-&gt;retrieve2StepStatus(<span class="php-quote">'52040307-2179-49da-8291-83bbfd4ac4d3'</span>) ;</pre><br>
 				</div>
 
@@ -465,7 +473,7 @@
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cancel2StepStatus">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#264-304" title="Go to source code">cancel2StepStatus</a>( <span>string <var>$trackID</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#265-309" title="Go to source code">cancel2StepStatus</a>( <span>string <var>$trackID</var></span> )</code>
 
 		<div class="description short">
 			<p>Cancel a 2step verification by providing its trackingId.
@@ -538,8 +546,12 @@ Note that the verification must have a Pending status.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$twostep</span> = api\TwoStep::getInstance( );
+<span class="php-var">$twostep</span> = api\TwoStep::getInstance(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$twostep</span>-&gt;cancel2StepStatus(<span class="php-quote">'1b5df1e8-3701-41e5-9c41-00904532b656'</span>);</pre><br>
 				</div>
 
@@ -559,7 +571,7 @@ Note that the verification must have a Pending status.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_confirm2StepStatus">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#307-358" title="Go to source code">confirm2StepStatus</a>( <span>array <var>$data</var></span>, <span>string <var>$trackID</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#312-367" title="Go to source code">confirm2StepStatus</a>( <span>array <var>$data</var></span>, <span>string <var>$trackID</var></span> )</code>
 
 		<div class="description short">
 			<p>Confirm a 2Step verification by providing the answer.</p>
@@ -649,8 +661,12 @@ Note that the verification must have a Pending status.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$twostep</span> = api\TwoStep::getInstance( );
+<span class="php-var">$twostep</span> = api\TwoStep::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$data</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'answer'</span>=&gt;<span class="php-quote">'6036'</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$twostep</span>-&gt;confirm2StepStatus(<span class="php-var">$data</span>,<span class="php-quote">'52040307-2179-49da-8291-83bbfd4ac4d3'</span>);</pre><br>
 				</div>
@@ -671,7 +687,7 @@ Note that the verification must have a Pending status.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieve2StepAccountReport">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#361-402" title="Go to source code">retrieve2StepAccountReport</a>( )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#370-415" title="Go to source code">retrieve2StepAccountReport</a>( )</code>
 
 		<div class="description short">
 			<p>Retrieve 2Step verification reports from all of your applications.</p>
@@ -730,8 +746,12 @@ Note that the verification must have a Pending status.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$twostep</span> = api\TwoStep::getInstance( );
+<span class="php-var">$twostep</span> = api\TwoStep::getInstance(<span class="php-var">$config</span>);
 <span class="php-keyword1">echo</span> <span class="php-var">$twostep</span>-&gt;retrieve2StepAccountReport();</pre><br>
 				</div>
 
@@ -751,7 +771,7 @@ Note that the verification must have a Pending status.</p>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_retrieve2StepAppReport">#</a>
-		<code><a href="source-class-Routee.lib.Api.TwoStep.html#405-453" title="Go to source code">retrieve2StepAppReport</a>( <span>array <var>$appId</var></span> )</code>
+		<code><a href="source-class-Routee.lib.Api.TwoStep.html#418-470" title="Go to source code">retrieve2StepAppReport</a>( <span>array <var>$appId</var></span> )</code>
 
 		<div class="description short">
 			<p>Retrieve 2Step verification reports for any of your applications by providing the application id.</p>
@@ -834,8 +854,12 @@ Note that the verification must have a Pending status.</p>
 				<h4>Example</h4>
 				<div class="list">
 						<pre><span class="php-keyword1">require_once</span> __DIR__ . <span class="php-quote">'/vendor/autoload.php'</span>;
+<span class="php-var">$config</span> = <span class="php-keyword1">array</span>(
+    <span class="php-quote">'application-id'</span> =&gt; <span class="php-quote">'APPLICATION-ID'</span>, <span class="php-comment">// ex : 57b5b7bde4b007f5ba82952b</span>
+    <span class="php-quote">'application-secret'</span> =&gt; <span class="php-quote">'APPLICATION-SECRET'</span>, <span class="php-comment">// ex: 6k6sitDAXR</span>
+);
 <span class="php-keyword1">use</span> Routee\lib\Api <span class="php-keyword1">as</span> api;
-<span class="php-var">$twostep</span> = api\TwoStep::getInstance( );
+<span class="php-var">$twostep</span> = api\TwoStep::getInstance(<span class="php-var">$config</span>);
 <span class="php-var">$app_id</span>  = <span class="php-quote">'Your routee application-id'</span>;
 <span class="php-keyword1">echo</span> <span class="php-var">$twostep</span>-&gt;retrieve2StepAppReport(<span class="php-var">$app_id</span>);</pre><br>
 				</div>
@@ -857,34 +881,6 @@ Note that the verification must have a Pending status.</p>
 
 
 
-	<table class="summary properties" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="requestURL" id="$requestURL">
-		<td class="attributes"><code>
-			public static 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Routee.lib.Api.TwoStep.html#67-72" title="Go to source code"><var>$requestURL</var></a>
-
-			<div class="description short">
-				<p>This is the default variable declaration for 2step URL.</p>
-			</div>
-
-			<div class="description detailed hidden">
-				<p>This is the default variable declaration for 2step URL.</p>
-
-			</div>
-		</td>
-		<td class="value">
-			<div>
-				<a href="#$requestURL" class="anchor">#</a>
-				<code><span class="php-quote">'https://connect.routee.net'</span></code>
-			</div>
-		</td>
-	</tr>
-	</table>
 
 
 

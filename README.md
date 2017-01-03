@@ -9,16 +9,14 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 
 ## Routee SDK Configuration 
-Update your application-id, application-secret at the following path. (Global setting)
-PATH : /src/Routee/config
+Add your application-id, application-secret at every Api call
 
-$defaultConfig = array(
+$Config = array(
         'application-id' => 'enter your application-id',
         'application-secret' => 'enter your application-secret',
         'scope'  => 'string'
     );
 
-Otherwise, the above values can be overridden by passing as argument to the constructor. 
 Please refer example file: examples/authenticateTest.php
 
 

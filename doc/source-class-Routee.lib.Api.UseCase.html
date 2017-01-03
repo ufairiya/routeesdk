@@ -176,7 +176,7 @@
 </span></span><span id="62" class="l"><a href="#62">  62: </a><span class="php-comment">     *        'type' =&gt; 'Number'
 </span></span><span id="63" class="l"><a href="#63">  63: </a><span class="php-comment">     *  )
 </span></span><span id="64" class="l"><a href="#64">  64: </a><span class="php-comment">     * );
-</span></span><span id="65" class="l"><a href="#65">  65: </a><span class="php-comment">     * $contactResponse = new api\Contacts();
+</span></span><span id="65" class="l"><a href="#65">  65: </a><span class="php-comment">     * $contactResponse = new api\Contacts($config);
 </span></span><span id="66" class="l"><a href="#66">  66: </a><span class="php-comment">     * $contactlabelResult = $contactResponse-&gt;createLabel($data);
 </span></span><span id="67" class="l"><a href="#67">  67: </a><span class="php-comment">     * $ContactlabelDecode = json_decode($contactlabelResult);
 </span></span><span id="68" class="l"><a href="#68">  68: </a><span class="php-comment">     * 
@@ -391,11 +391,11 @@
 </span></span><span id="277" class="l"><a href="#277"> 277: </a><span class="php-comment">     * // Step 2:  Send a single SMS to a mobile number and “To”:”amdTelecom”
 </span></span><span id="278" class="l"><a href="#278"> 278: </a><span class="php-comment">     * $sms = new api\Messaging($config);
 </span></span><span id="279" class="l"><a href="#279"> 279: </a><span class="php-comment">     *     $data_sms = array(
-</span></span><span id="280" class="l"><a href="#280"> 280: </a><span class="php-comment">     *         'body'=&gt;'Test Message- AMDTelcom Routee Api',
+</span></span><span id="280" class="l"><a href="#280"> 280: </a><span class="php-comment">     *         'body'=&gt;'Test Message- AMDTelecom Routee Api',
 </span></span><span id="281" class="l"><a href="#281"> 281: </a><span class="php-comment">     *         'to'=&gt; 'amdTelecom',
 </span></span><span id="282" class="l"><a href="#282"> 282: </a><span class="php-comment">     *         'from'=&gt; 'kesav',
 </span></span><span id="283" class="l"><a href="#283"> 283: </a><span class="php-comment">     *         'flash'=&gt; false,
-</span></span><span id="284" class="l"><a href="#284"> 284: </a><span class="php-comment">     *         'label'=&gt;'AMDTelcom Routee',
+</span></span><span id="284" class="l"><a href="#284"> 284: </a><span class="php-comment">     *         'label'=&gt;'AMDTelecom Routee',
 </span></span><span id="285" class="l"><a href="#285"> 285: </a><span class="php-comment">     *         'callback' =&gt; array(
 </span></span><span id="286" class="l"><a href="#286"> 286: </a><span class="php-comment">     *             'strategy' =&gt; 'OnChange',
 </span></span><span id="287" class="l"><a href="#287"> 287: </a><span class="php-comment">     *             'url' =&gt; 'http://www.yourserver.com/message/callback.php',
@@ -404,11 +404,11 @@
 </span></span><span id="290" class="l"><a href="#290"> 290: </a><span class="php-comment">     * $sendSmsResult = $sms-&gt;sendSingleSMS($data_sms);
 </span></span><span id="291" class="l"><a href="#291"> 291: </a><span class="php-comment">     * $sendSmsResultDecode = json_decode($sendSmsResult);
 </span></span><span id="292" class="l"><a href="#292"> 292: </a><span class="php-comment">     * $data_sms_success = array(
-</span></span><span id="293" class="l"><a href="#293"> 293: </a><span class="php-comment">     *     'body'=&gt;'Test Message- AMDTelcom Routee Api',
+</span></span><span id="293" class="l"><a href="#293"> 293: </a><span class="php-comment">     *     'body'=&gt;'Test Message- AMDTelecom Routee Api',
 </span></span><span id="294" class="l"><a href="#294"> 294: </a><span class="php-comment">     *     'to'=&gt; '919787136232',
 </span></span><span id="295" class="l"><a href="#295"> 295: </a><span class="php-comment">     *     'from'=&gt; 'kesav',
 </span></span><span id="296" class="l"><a href="#296"> 296: </a><span class="php-comment">     *     'flash'=&gt; false,
-</span></span><span id="297" class="l"><a href="#297"> 297: </a><span class="php-comment">     *     'label'=&gt;'AMDTelcom Routee',
+</span></span><span id="297" class="l"><a href="#297"> 297: </a><span class="php-comment">     *     'label'=&gt;'AMDTelecom Routee',
 </span></span><span id="298" class="l"><a href="#298"> 298: </a><span class="php-comment">     *     'callback' =&gt; array(
 </span></span><span id="299" class="l"><a href="#299"> 299: </a><span class="php-comment">     *         'strategy' =&gt; 'OnChange',
 </span></span><span id="300" class="l"><a href="#300"> 300: </a><span class="php-comment">     *         'url' =&gt; 'http://www.yourserver.com/message/callback.php',
@@ -485,7 +485,7 @@
 </span></span><span id="371" class="l"><a href="#371"> 371: </a><span class="php-comment">     *     [createdAt] =&gt; 2016-09-19T07:54:50.95Z
 </span></span><span id="372" class="l"><a href="#372"> 372: </a><span class="php-comment">     *     [from] =&gt; kesav
 </span></span><span id="373" class="l"><a href="#373"> 373: </a><span class="php-comment">     *     [to] =&gt; +919787136232
-</span></span><span id="374" class="l"><a href="#374"> 374: </a><span class="php-comment">     *     [body] =&gt; Test Message- AMDTelcom Routee Api
+</span></span><span id="374" class="l"><a href="#374"> 374: </a><span class="php-comment">     *     [body] =&gt; Test Message- AMDTelecom Routee Api
 </span></span><span id="375" class="l"><a href="#375"> 375: </a><span class="php-comment">     *     [bodyAnalysis] =&gt; stdClass Object
 </span></span><span id="376" class="l"><a href="#376"> 376: </a><span class="php-comment">     *         (
 </span></span><span id="377" class="l"><a href="#377"> 377: </a><span class="php-comment">     *             [parts] =&gt; 1
@@ -498,7 +498,7 @@
 </span></span><span id="384" class="l"><a href="#384"> 384: </a><span class="php-comment">     *             [url] =&gt; http://www.yourserver.com/message/callback.php
 </span></span><span id="385" class="l"><a href="#385"> 385: </a><span class="php-comment">     *             [strategy] =&gt; OnChange
 </span></span><span id="386" class="l"><a href="#386"> 386: </a><span class="php-comment">     *         )
-</span></span><span id="387" class="l"><a href="#387"> 387: </a><span class="php-comment">     *     [label] =&gt; AMDTelcom Routee
+</span></span><span id="387" class="l"><a href="#387"> 387: </a><span class="php-comment">     *     [label] =&gt; AMDTelecom Routee
 </span></span><span id="388" class="l"><a href="#388"> 388: </a><span class="php-comment">     * )
 </span></span><span id="389" class="l"><a href="#389"> 389: </a><span class="php-comment">     * 
 </span></span><span id="390" class="l"><a href="#390"> 390: </a><span class="php-comment">     * Step 3 a): Track your messages with filters and use fieldName: &quot;To&quot; and &quot;searchTerm&quot;:&quot;amdTelecom&quot; - Result
@@ -597,7 +597,7 @@
 </span></span><span id="483" class="l"><a href="#483"> 483: </a><span class="php-comment">     *     'mobile' =&gt; '+919787136232',
 </span></span><span id="484" class="l"><a href="#484"> 484: </a><span class="php-comment">     *     'vip' =&gt; 'false',                      
 </span></span><span id="485" class="l"><a href="#485"> 485: </a><span class="php-comment">     * );
-</span></span><span id="486" class="l"><a href="#486"> 486: </a><span class="php-comment">     * $contactResponse = new api\Contacts();
+</span></span><span id="486" class="l"><a href="#486"> 486: </a><span class="php-comment">     * $contactResponse = new api\Contacts($config);
 </span></span><span id="487" class="l"><a href="#487"> 487: </a><span class="php-comment">     * $contactResult = $contactResponse-&gt;createContacts( $data_contact );
 </span></span><span id="488" class="l"><a href="#488"> 488: </a><span class="php-comment">     * $contactDecode = json_decode($contactResult);
 </span></span><span id="489" class="l"><a href="#489"> 489: </a><span class="php-comment">     * 

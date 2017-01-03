@@ -8,8 +8,8 @@ $config = array(
 
 use Routee\lib\Api as api;
 $contactResponse = new api\Contacts($config);
-$group_name = 'Stallioni';
-$data = array('57c3dc0a0cf2d47a564a2af1');
+$group_name = 'AMD Telecom';
+$data = array('580aef600cf2ea5b5f2d472c');
 $contactResult = $contactResponse->addContactsToGroupByName($data,$group_name);
 print_r( $contactResult );
 ?>
